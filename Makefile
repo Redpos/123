@@ -1,11 +1,11 @@
 CC = g++
-CPPFLAG = -Wall -g -w -fPIC -DWITH_NONAMESPACES -fno-use-cxa-atexit -fexceptions -DWITH_DOM  -DWITH_OPENSSL -std=c++0x -static-libstdc++
+CPPFLAG = -Wall -g -w -fPIC -DWITH_NONAMESPACES -fno-use-cxa-atexit -fexceptions -DWITH_DOM  -DWITH_OPENSSL -std=c++0x -static-libstdc++ `pkg-config --cflags opencv`
 
 BASE_DIR=.
 SOURCE=$(BASE_DIR)
 
 INCLUDE +=-I$(SOURCE)/include -I$(BASE_DIR) -I/usr/include/x86_64-linux-gnu
-LIB= -lssl -lcrypto -lcurl
+LIB= -lssl -lcrypto -lcurl `pkg-config --libs opencv`
 PROXYSOURCE=$(BASE_DIR)/proxycpp
 ProxyOBJ=$(PROXYSOURCE)/soapDeviceBindingProxy.o $(PROXYSOURCE)/soapMediaBindingProxy.o $(PROXYSOURCE)/soapPTZBindingProxy.o \
 		 $(PROXYSOURCE)/soapPullPointSubscriptionBindingProxy.o $(PROXYSOURCE)/soapRemoteDiscoveryBindingProxy.o
