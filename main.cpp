@@ -222,31 +222,14 @@ void detect(cv::Mat frame)
 				if(i == 8)
 				{
 					std::cout<<"Found a face"<<std::endl;
-					cv::Point face(faces[0].x*2.72 + faces[0].width*1.36, faces[0].y*1.875 + faces[0].height*0.9375);
-					if(detected_face.x == 0)
-					{
-						detected_face = face;		
-						tracking = true;
-						rect = faces[0];
-						rect.height = rect.height - 20;
-						rect.width = rect.width - 30;
-						rect.x = rect.x + 10;
-						rect.y = rect.y + 10;
-					}
-					else
-					{
-						if(abs(detected_face.x-face.x)>5)
-						{
-							detected_face = face;
-							tracking = true;
-							rect = faces[0];
-							rect.height = rect.height - 20;
-							rect.width = rect.width - 30;
-							rect.x = rect.x + 10;
-							rect.y = rect.y + 10;
-						}
-						//detected_face = face;
-					}
+					//cv::Point face(faces[0].x*2.72 + faces[0].width*1.36, faces[0].y*1.875 + faces[0].height*0.9375);
+					//detected_face = face;		
+					tracking = true;
+					rect = faces[0];
+					rect.height = rect.height - 20;
+					rect.width = rect.width - 30;
+					rect.x = rect.x + 10;
+					rect.y = rect.y + 10;
 					for(i;i>=0;i--){detected_faces.pop_back();}
 				}
 				else
@@ -292,6 +275,26 @@ void track(cv::Mat frame0)
 		{
 			tracking = false;
 			//break;
+		}
+		else
+		{
+				if(detected_face.x == 0)
+				{
+					detected_face.x = cmt.bb_rot.center.x;
+					detected_face.y = cmt.bb_rot.center.y;
+					cv::Point face(detected_face.x * 2.72, detected_face.y * 1.875);
+					move(face);
+				}
+				else
+				{
+					if(abs(cmt.bb_rot.center.x - detected_face.x) > 5 || abs(cmt.bb_rot.center.y - detected_face.y) > 5)
+					{
+						detected_face.x = cmt.bb_rot.center.x;
+						detected_face.y = cmt.bb_rot.center.y;
+						cv::Point face(detected_face.x * 2.72, detected_face.y * 1.875);
+						move(face);
+					}
+				}
 		}
 		
 	}
@@ -379,32 +382,3 @@ void move(cv::Point point)
         	soap_end(soap);
 	}
 }
-    	// PTZ
-	/*_tptz__ContinuousMove *tptz__ContinuousMove = soap_new__tptz__ContinuousMove(soap, -1);
-	_tptz__ContinuousMoveResponse *tptz__ContinuousMoveResponse = soap_new__tptz__ContinuousMoveResponse(soap, -1);
-
-	tt__PTZSpeed * Speed = soap_new_tt__PTZSpeed(soap, -1);
-	Speed->PanTilt = new tt__Vector2D;
-	Speed->Zoom = new tt__Vector1D;
-
-	Speed->PanTilt->x = 0.5;
-	Speed->PanTilt->y = 0.0;
-	Speed->Zoom->x = 0.0;
-
-	tptz__ContinuousMove->Velocity = Speed;
-	tptz__ContinuousMove->ProfileToken = "Profile_1";
-
-	LONG64 timeout = 2000;
-	tptz__ContinuousMove->Timeout = &timeout;
-
-	if(SOAP_OK != soap_wsse_add_UsernameTokenDigest(proxyPTZ.soap, NULL, camUsr, camPwd))
-	{
-		return -1;
-	}
-	if(SOAP_OK == proxyPTZ.ContinuousMove(tptz__ContinuousMove, tptz__ContinuousMoveResponse))
-	{
-		std::cout << "DONE" << std::endl;;
-	}
-	soap_destroy(soap); 
-	soap_end(soap);*/ 
-
