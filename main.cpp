@@ -42,6 +42,9 @@ cv::CascadeClassifier profile_cascade;
 PTZBindingProxy proxyPTZ;
 std::vector<cv::Rect> detected_faces;
 cv::Point detected_face(0,0);
+bool tracking = false;
+cv::Rect rect;
+cv::VideoCapture capture;
 
 char* getCmdOption(char ** begin, char ** end, const std::string & option)
 {
@@ -66,8 +69,8 @@ void PrintErr(struct soap* _psoap)
 }
 
 void detect(cv::Mat frame);
+void track(cv::Mat frame0);
 void move(cv::Point point);
-
 
 int main(int argc, char* argv[])
 {
@@ -111,7 +114,7 @@ int main(int argc, char* argv[])
 
 	strcat(szStreamName, "rtsp://");
 	strcat(szStreamName, camIp);
-	strcat(szStreamName, ":10553//Streaming/Channels/2");
+	strcat(szStreamName, ":10554//Streaming/Channels/2");
 
 	proxyDevice.soap_endpoint = szHostName;
 	proxyPTZ.soap_endpoint = szPTZName;
@@ -154,7 +157,7 @@ int main(int argc, char* argv[])
     	soap_destroy(soap); 
     	soap_end(soap); 
 	
-	cv::VideoCapture capture(szStreamName);
+	capture.open(szStreamName);
 
 	if(!capture.isOpened()){std::cout << "Error opening video capture!"<<std::endl; return -1;}
 
@@ -163,7 +166,14 @@ int main(int argc, char* argv[])
 		capture.read(frame);	
 		if(!frame.empty())
 		{
-			detect(frame);
+			if( tracking == false)
+			{
+				detect(frame);
+			}
+			else
+			{
+				track(frame);
+			}
 		}
 		else
 		{
@@ -216,16 +226,26 @@ void detect(cv::Mat frame)
 					if(detected_face.x == 0)
 					{
 						detected_face = face;		
-						move(face);
+						tracking = true;
+						rect = faces[0];
+						rect.height = rect.height - 20;
+						rect.width = rect.width - 30;
+						rect.x = rect.x + 10;
+						rect.y = rect.y + 10;
 					}
 					else
 					{
 						if(abs(detected_face.x-face.x)>5)
 						{
 							detected_face = face;
-							move(face);
+							tracking = true;
+							rect = faces[0];
+							rect.height = rect.height - 20;
+							rect.width = rect.width - 30;
+							rect.x = rect.x + 10;
+							rect.y = rect.y + 10;
 						}
-						detected_face = face;
+						//detected_face = face;
 					}
 					for(i;i>=0;i--){detected_faces.pop_back();}
 				}
@@ -235,6 +255,45 @@ void detect(cv::Mat frame)
 				}
 			}
 		}
+	}
+}
+
+void track(cv::Mat frame0)
+{
+	cv::Mat frame0_gray, frame;
+	cmt::CMT cmt;
+
+	if (frame0.channels() > 1) {
+		cvtColor(frame0, frame0_gray, CV_BGR2GRAY);
+	}
+	else {
+		frame0_gray = frame0;
+	}
+	cmt.initialize(frame0_gray, rect);
+
+	while (tracking)
+	{
+		capture >> frame;
+		if (frame.empty()) break;
+
+		cv::Mat frame_gray;
+
+		if (frame.channels() > 1) {
+			cvtColor(frame, frame_gray, CV_BGR2GRAY);
+		}
+		else {
+			frame_gray = frame;
+		}
+		cmt.processFrame(frame_gray);
+
+
+		//char key = display(frame, cmt);
+		if (abs(cmt.bb_rot.size.height - rect.height) > 20 || abs(cmt.bb_rot.size.width - rect.width) > 20)
+		{
+			tracking = false;
+			//break;
+		}
+		
 	}
 }
 
@@ -270,7 +329,8 @@ void move(cv::Point point)
 		movement->Zoom = new tt__Vector1D;
 		
 		float angl_x, angl_y, fx, fy;
-		fx = 1237.6;
+		fx = 805.5;
+		fy = 453.1;
 
 		if(abs(moveX)>0) 
 		{
@@ -279,7 +339,7 @@ void move(cv::Point point)
 		}
 		if(abs(moveY)>0) 
 		{
-			angl_y = atan2(moveY,fx) * 180/PI;
+			angl_y = atan2(moveY,fy) * 180/PI;
 			movement->PanTilt->y = angl_y/90;
 		}
         	movement->Zoom->x = 0.0;
