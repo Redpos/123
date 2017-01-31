@@ -42,7 +42,9 @@ cv::CascadeClassifier profile_cascade;
 PTZBindingProxy proxyPTZ;
 std::vector<cv::Rect> detected_faces;
 cv::Point detected_face(0,0);
+cv::Point moving_face(0, 0);
 bool tracking = false;
+bool moving = false;
 cv::Rect rect;
 cv::VideoCapture capture;
 
@@ -163,7 +165,8 @@ int main(int argc, char* argv[])
 
 	while(1)
 	{	
-		capture.read(frame);	
+		capture.grab();
+		capture.retrieve(im);	
 		if(!frame.empty())
 		{
 			if( tracking == false)
@@ -226,8 +229,8 @@ void detect(cv::Mat frame)
 					//detected_face = face;		
 					tracking = true;
 					rect = faces[0];
-					rect.height = rect.height - 20;
-					rect.width = rect.width - 30;
+					//rect.height = rect.height - 20;
+					//rect.width = rect.width - 30;
 					rect.x = rect.x + 10;
 					rect.y = rect.y + 10;
 					for(i;i>=0;i--){detected_faces.pop_back();}
@@ -243,11 +246,15 @@ void detect(cv::Mat frame)
 
 void track(cv::Mat frame0)
 {
+	int verbose_flag = 0;
+	FILELog::ReportingLevel() = verbose_flag ? logDEBUG : logINFO;
+	Output2FILE::Stream() = stdout; //Log to stdout
 	cv::Mat frame0_gray, frame;
 	cmt::CMT cmt;
 
 	if (frame0.channels() > 1) {
 		cvtColor(frame0, frame0_gray, CV_BGR2GRAY);
+		equalizeHist(frame0_gray, frame0_gray);
 	}
 	else {
 		frame0_gray = frame0;
@@ -256,13 +263,15 @@ void track(cv::Mat frame0)
 
 	while (tracking)
 	{
-		capture >> frame;
+		capture.grab();
+		capture.retrieve(frame);
 		if (frame.empty()) break;
 
 		cv::Mat frame_gray;
 
 		if (frame.channels() > 1) {
 			cvtColor(frame, frame_gray, CV_BGR2GRAY);
+			equalizeHist(frame_gray, frame_gray);
 		}
 		else {
 			frame_gray = frame;
@@ -271,7 +280,7 @@ void track(cv::Mat frame0)
 
 
 		//char key = display(frame, cmt);
-		if (abs(cmt.bb_rot.size.height - rect.height) > 20 || abs(cmt.bb_rot.size.width - rect.width) > 20)
+		if ((abs(cmt.bb_rot.size.height - rect.height) > 20 || abs(cmt.bb_rot.size.width - rect.width) > 20) && (abs(detected_face.x - cmt.bb_rot.center.x) > 20 || abs(detected_face.y - cmt.bb_rot.center.y) > 20))
 		{
 			tracking = false;
 			//break;
@@ -287,12 +296,49 @@ void track(cv::Mat frame0)
 				}
 				else
 				{
-					if(abs(cmt.bb_rot.center.x - detected_face.x) > 5 || abs(cmt.bb_rot.center.y - detected_face.y) > 5)
+					if(abs(cmt.bb_rot.center.x - detected_face.x) > 10 || abs(cmt.bb_rot.center.y - detected_face.y) > 10)
 					{
-						detected_face.x = cmt.bb_rot.center.x;
-						detected_face.y = cmt.bb_rot.center.y;
-						cv::Point face(detected_face.x * 2.72, detected_face.y * 1.875);
+						moving = true;
+						moving_face.x = cmt.bb_rot.center.x;
+						moving_face.y = cmt.bb_rot.center.y;
+						//cv::Point face(detected_face.x * 2.72, detected_face.y * 2.72);
+						//move(face);
+					}
+					if (moving == true && (abs(moving_face.x - detected_face.x) > 100 || abs(moving_face.y - detected_face.y) > 100))
+					{
+						
+						struct soap *soap = soap_new();	
+						
+						_tptz__Stop *tptz__Stop = soap_new__tptz__Stop(soap, -1);
+						_tptz__StopResponse *tptz__StopResponse = soap_new__tptz__StopResponse(soap, -1);
+						
+						tptz__Stop->ProfileToken = "Profile_1";
+						
+						if(SOAP_OK != soap_wsse_add_UsernameTokenDigest(proxyPTZ.soap, NULL, "admin", "Supervisor"))
+        					{		
+                					std::cout << "ERROR" << std::endl;
+        					}
+       						if(SOAP_OK == proxyPTZ.Stop(tptz__Stop, tptz__StopResponse))
+						{
+							std::cout << "STOPPED" << std::endl;
+						}
+						
+						soap_destroy(soap);
+						soap_end(soap);
+						
+						detected_face.x = moving_face.x;
+						detected_face.y = moving_face.y;
+						Point face(detected_face.x * 2.72, detected_face.y * 2.72);
 						move(face);
+						//cout << " DETECTED X: " << detected_face.x << " DETETCTED Y: " << detected_face.y << endl;
+					
+					}
+					else if (moving == true && abs(moving_face.x - cmt.bb_rot.center.x) < 2 && abs(moving_face.y - cmt.bb_rot.center.y) < 2)
+					{
+						moving == false;
+						detected_face.x = moving_face.x;
+						detected_face.y = moving_face.y;
+						//cout << " DETECTED X: " << detected_face.x << " DETETCTED Y: " << detected_face.y << endl;
 					}
 				}
 		}
