@@ -4,6 +4,8 @@
 #include <opencv2/imgproc/imgproc.hpp>
 
 namespace cmt {
+    
+    Ptr<DescriptorExtractor> CMT::descriptor = cv::BRISK::create();
 
 void CMT::initialize(const Mat im_gray, const Rect rect)
 {
@@ -24,7 +26,7 @@ void CMT::initialize(const Mat im_gray, const Rect rect)
     //Initialize detector and descriptor
 #if CV_MAJOR_VERSION > 2
     detector = cv::FastFeatureDetector::create();
-    descriptor = cv::BRISK::create();
+    //descriptor = cv::BRISK::create();
 #else
     detector = FeatureDetector::create(str_detector);
     descriptor = DescriptorExtractor::create(str_descriptor);
@@ -38,7 +40,7 @@ void CMT::initialize(const Mat im_gray, const Rect rect)
     vector<KeyPoint> keypoints_fg;
     vector<KeyPoint> keypoints_bg;
 
-    for (size_t i = 0; i < keypoints.size(); i++)
+    for (size_t i = 0; i < keypoints.size(); i+=2)
     {
         KeyPoint k = keypoints[i];
         Point2f pt = k.pt;
