@@ -39,7 +39,7 @@ public:
 
 private:
     Ptr<FeatureDetector> detector;
-    Ptr<DescriptorExtractor> descriptor;
+    static Ptr<DescriptorExtractor> descriptor;
 
     Size2f size_initial;
 
