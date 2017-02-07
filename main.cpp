@@ -21,6 +21,7 @@
 #include "include/soapPullPointSubscriptionBindingProxy.h"
 #include "include/soapRemoteDiscoveryBindingProxy.h" 
 
+#include <pthread.h>
 #include <math.h>
 #include <unistd.h>
 #include <stdarg.h>  // For va_start, etc.
@@ -47,6 +48,27 @@ bool tracking = false;
 bool moving = false;
 cv::Rect rect;
 cv::VideoCapture capture;
+
+cv::Mat im;
+
+void *CaptureImages(void *threadid)
+{
+	if (!capture.isOpened())
+	{
+		capture.open("rtsp://192.168.11.19:554//Streaming/Channels/2");
+	}
+	while (capture.isOpened())
+	{
+		capture >> im;
+		if (im.empty())
+		{
+			break;
+		}
+	}
+	im.release();
+	pthread_exit(NULL);
+	return NULL;
+}
 
 char* getCmdOption(char ** begin, char ** end, const std::string & option)
 {
@@ -76,7 +98,8 @@ void move(cv::Point point);
 
 int main(int argc, char* argv[])
 {
-	cv::Mat frame;
+	//cv::Mat frame;
+	
 	if(!face_cascade.load(face_cascade_name)){std::cout <<"Error loading face cascade!"<<std::endl; return -1;}
 	if(!profile_cascade.load(profileface_cascade_name)){std::cout <<"Error loading profile cascade!"<<std::endl; return -1;}
 
@@ -160,28 +183,39 @@ int main(int argc, char* argv[])
     	soap_end(soap); 
 	
 	capture.open(szStreamName);
-
+	capture.set(CAP_PROP_BUFFERSIZE, 3);
+	
 	if(!capture.isOpened()){std::cout << "Error opening video capture!"<<std::endl; return -1;}
 
+	capture.grab();
+	capture.retrieve(im);
+	
+	pthread_t capture_thread;
+	int thread_id = 0;
+	int rc = pthread_create(&capture_thread, NULL,
+		CaptureImages, (void *)thread_id);
+	if (rc)
+	{
+		return -1;
+	}
+	
 	while(1)
 	{	
-		capture.grab();
-		capture.retrieve(im);	
 		if(!frame.empty())
 		{
 			if( tracking == false)
 			{
-				detect(frame);
+				detect(im);
 			}
 			else
 			{
-				track(frame);
+				track(im);
 			}
 		}
 		else
 		{
 			std::cout <<"No captured frame!" << std::endl;
-			capture.open(szStreamName);
+			//capture.open(szStreamName);
 		}
 		//cv::waitKey(100);
 
@@ -263,18 +297,18 @@ void track(cv::Mat frame0)
 
 	while (tracking)
 	{
-		capture.grab();
-		capture.retrieve(frame);
-		if (frame.empty()) break;
+		//capture.grab();
+		//capture.retrieve(frame);
+		//if (frame.empty()) break;
 
 		cv::Mat frame_gray;
 
-		if (frame.channels() > 1) {
-			cvtColor(frame, frame_gray, CV_BGR2GRAY);
+		if (im.channels() > 1) {
+			cvtColor(im, frame_gray, CV_BGR2GRAY);
 			equalizeHist(frame_gray, frame_gray);
 		}
 		else {
-			frame_gray = frame;
+			frame_gray = im;
 		}
 		cmt.processFrame(frame_gray);
 
@@ -283,15 +317,35 @@ void track(cv::Mat frame0)
 		if ((abs(cmt.bb_rot.size.height - rect.height) > 20 || abs(cmt.bb_rot.size.width - rect.width) > 20) && (abs(detected_face.x - cmt.bb_rot.center.x) > 20 || abs(detected_face.y - cmt.bb_rot.center.y) > 20))
 		{
 			tracking = false;
+			detected_face.x = 0;
 			//break;
 		}
 		else
 		{
 				if(detected_face.x == 0)
 				{
+					struct soap *soap = soap_new();	
+						
+					_tptz__Stop *tptz__Stop = soap_new__tptz__Stop(soap, -1);
+					_tptz__StopResponse *tptz__StopResponse = soap_new__tptz__StopResponse(soap, -1);
+						
+					tptz__Stop->ProfileToken = "Profile_1";
+						
+					if(SOAP_OK != soap_wsse_add_UsernameTokenDigest(proxyPTZ.soap, NULL, "admin", "Supervisor"))
+        				{		
+                				std::cout << "ERROR" << std::endl;
+        				}
+       					if(SOAP_OK == proxyPTZ.Stop(tptz__Stop, tptz__StopResponse))
+					{
+						std::cout << "STOPPED" << std::endl;
+					}
+						
+					soap_destroy(soap);
+					soap_end(soap);
+					
 					detected_face.x = cmt.bb_rot.center.x;
 					detected_face.y = cmt.bb_rot.center.y;
-					cv::Point face(detected_face.x * 2.72, detected_face.y * 1.875);
+					cv::Point face(detected_face.x * 3, detected_face.y * 2.25);
 					move(face);
 				}
 				else
@@ -326,20 +380,22 @@ void track(cv::Mat frame0)
 						soap_destroy(soap);
 						soap_end(soap);
 						
-						detected_face.x = moving_face.x;
-						detected_face.y = moving_face.y;
-						Point face(detected_face.x * 2.72, detected_face.y * 2.72);
+						detected_face.x = 0;
+						//detected_face.y = moving_face.y;
+						Point face(moving_face.x * 3, moving_face.y * 2.25);
 						move(face);
+						
+						detected_face.x = 0;
 						//cout << " DETECTED X: " << detected_face.x << " DETETCTED Y: " << detected_face.y << endl;
 					
 					}
-					else if (moving == true && abs(moving_face.x - cmt.bb_rot.center.x) < 2 && abs(moving_face.y - cmt.bb_rot.center.y) < 2)
+					/*else if (moving == true && abs(moving_face.x - cmt.bb_rot.center.x) < 2 && abs(moving_face.y - cmt.bb_rot.center.y) < 2)
 					{
 						moving == false;
 						detected_face.x = moving_face.x;
 						detected_face.y = moving_face.y;
 						//cout << " DETECTED X: " << detected_face.x << " DETETCTED Y: " << detected_face.y << endl;
-					}
+					}*/
 				}
 		}
 		
