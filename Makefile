@@ -5,7 +5,7 @@ BASE_DIR=.
 SOURCE=$(BASE_DIR)
 
 INCLUDE +=-I$(SOURCE)/include -I$(BASE_DIR) -I/usr/include/x86_64-linux-gnu
-LIB= -lssl -lcrypto -lcurl `pkg-config --libs opencv`
+LIB= -lssl -lcrypto -lcurl -lpthread -lncurses `pkg-config --libs opencv`
 PROXYSOURCE=$(BASE_DIR)/proxycpp
 ProxyOBJ=$(PROXYSOURCE)/soapDeviceBindingProxy.o $(PROXYSOURCE)/soapMediaBindingProxy.o $(PROXYSOURCE)/soapPTZBindingProxy.o \
 		 $(PROXYSOURCE)/soapPullPointSubscriptionBindingProxy.o $(PROXYSOURCE)/soapRemoteDiscoveryBindingProxy.o
