@@ -21,6 +21,7 @@
 #include "include/soapPullPointSubscriptionBindingProxy.h"
 #include "include/soapRemoteDiscoveryBindingProxy.h" 
 
+#include <ncurses.h>
 #include <pthread.h>
 #include <math.h>
 #include <unistd.h>
@@ -46,10 +47,23 @@ cv::Point detected_face(0,0);
 cv::Point moving_face(0, 0);
 bool tracking = false;
 bool moving = false;
+bool camera_control = false;
 cv::Rect rect;
 cv::VideoCapture capture;
 
 cv::Mat im;
+
+int control(void)
+{
+    int ch = getch();
+
+    if (ch != ERR) {
+        ungetch(ch);
+        return 1;
+    } else {
+        return 0;
+    }
+}
 
 void *CaptureImages(void *threadid)
 {
@@ -100,8 +114,17 @@ int main(int argc, char* argv[])
 {
 	//cv::Mat frame;
 	
-	if(!face_cascade.load(face_cascade_name)){std::cout <<"Error loading face cascade!"<<std::endl; return -1;}
-	if(!profile_cascade.load(profileface_cascade_name)){std::cout <<"Error loading profile cascade!"<<std::endl; return -1;}
+	initscr();
+
+    	cbreak();
+    	noecho();
+    	nodelay(stdscr, TRUE);
+
+    	scrollok(stdscr, TRUE);
+	
+	if(!face_cascade.load(face_cascade_name)){printw("Error opening face cascade\n");
+            		refresh(); return -1;}
+	//if(!profile_cascade.load(profileface_cascade_name)){std::cout <<"Error loading profile cascade!"<<std::endl; return -1;}
 
 	char szHostName[MAX_HOSTNAME_LEN] = { 0 };
 	char szPTZName[MAX_HOSTNAME_LEN] = {0};
@@ -114,8 +137,9 @@ int main(int argc, char* argv[])
 			&& cmdOptionExists(argv, argv+argc, "-cUsr")
 			&& cmdOptionExists(argv, argv+argc, "-cPwd") ))
    	{
-    		std::cout  <<  "usage: ./ipconvif -cIp [<camera-ip>:<port>] -cUsr <cam-id> -cPwd <cam-pwd>\n";
-
+    		//std::cout  <<  "usage: ./ipconvif -cIp [<camera-ip>:<port>] -cUsr <cam-id> -cPwd <cam-pwd>\n";
+		printw("usage: ./ipconvif -cIp [<camera-ip>:<port>] -cUsr <cam-id> -cPwd <cam-pwd>\n");
+            	refresh();
     		return -1;
     	}
 
@@ -185,7 +209,8 @@ int main(int argc, char* argv[])
 	capture.open(szStreamName);
 	capture.set(CAP_PROP_BUFFERSIZE, 3);
 	
-	if(!capture.isOpened()){std::cout << "Error opening video capture!"<<std::endl; return -1;}
+	if(!capture.isOpened()){printw("Error opening video stream\n");
+            		refresh(); return -1;}
 
 	capture.grab();
 	capture.retrieve(im);
@@ -214,8 +239,30 @@ int main(int argc, char* argv[])
 		}
 		else
 		{
-			std::cout <<"No captured frame!" << std::endl;
+			printw("No captured frame!\n");
+			refresh();
 			//capture.open(szStreamName);
+		}
+		if (control())
+		{
+           	 	int ch = getch();
+			if(ch == 113)
+			{
+				printw("Exit\n");
+            			refresh();
+				return 0;
+			}
+			if(ch == 116)
+			{
+				printw("Tracking at specified spot\n");
+            			refresh();
+				tracking = true;
+				rect.x = 200;
+				rect.y = 200;
+				rect.height = 200;
+				rect.width = 200;
+			}
+				
 		}
 		//cv::waitKey(100);
 
@@ -228,7 +275,7 @@ void detect(cv::Mat frame)
 	std::vector<cv::Rect> faces;
 	cv::Mat frame_gray;
 	cv::cvtColor(frame, frame_gray, CV_BGR2GRAY);
-	cv::equalizeHist(frame_gray,frame_gray);
+	//cv::equalizeHist(frame_gray,frame_gray);
 	int i, dif;
 	
 	face_cascade.detectMultiScale(frame_gray, faces, 1.1, 2, 0 | cv::CASCADE_SCALE_IMAGE, cv::Size(30,30));
@@ -258,13 +305,15 @@ void detect(cv::Mat frame)
 			{
 				if(i == 8)
 				{
-					std::cout<<"Found a face"<<std::endl;
+					printw("Found a face, tracking\n");
+            				refresh();
+					//std::cout<<"Found a face"<<std::endl;
 					//cv::Point face(faces[0].x*2.72 + faces[0].width*1.36, faces[0].y*1.875 + faces[0].height*0.9375);
 					//detected_face = face;		
 					tracking = true;
 					rect = faces[0];
-					//rect.height = rect.height - 20;
-					//rect.width = rect.width - 30;
+					rect.height = rect.height - 10;
+					rect.width = rect.width - 20;
 					rect.x = rect.x + 10;
 					rect.y = rect.y + 10;
 					for(i;i>=0;i--){detected_faces.pop_back();}
@@ -280,15 +329,15 @@ void detect(cv::Mat frame)
 
 void track(cv::Mat frame0)
 {
-	int verbose_flag = 0;
-	FILELog::ReportingLevel() = verbose_flag ? logDEBUG : logINFO;
-	Output2FILE::Stream() = stdout; //Log to stdout
-	cv::Mat frame0_gray, frame;
+	//int verbose_flag = 0;
+	//FILELog::ReportingLevel() = verbose_flag ? logDEBUG : logINFO;
+	//Output2FILE::Stream() = stdout; //Log to stdout
+	cv::Mat frame0_gray;
 	cmt::CMT cmt;
 
 	if (frame0.channels() > 1) {
 		cvtColor(frame0, frame0_gray, CV_BGR2GRAY);
-		equalizeHist(frame0_gray, frame0_gray);
+		//equalizeHist(frame0_gray, frame0_gray);
 	}
 	else {
 		frame0_gray = frame0;
@@ -305,7 +354,7 @@ void track(cv::Mat frame0)
 
 		if (im.channels() > 1) {
 			cvtColor(im, frame_gray, CV_BGR2GRAY);
-			equalizeHist(frame_gray, frame_gray);
+			//equalizeHist(frame_gray, frame_gray);
 		}
 		else {
 			frame_gray = im;
@@ -314,8 +363,28 @@ void track(cv::Mat frame0)
 
 
 		//char key = display(frame, cmt);
-		if ((abs(cmt.bb_rot.size.height - rect.height) > 20 || abs(cmt.bb_rot.size.width - rect.width) > 20) && (abs(detected_face.x - cmt.bb_rot.center.x) > 20 || abs(detected_face.y - cmt.bb_rot.center.y) > 20))
+		if (control())
 		{
+           	 	int ch = getch();
+			if(ch == 115)
+			{
+				printw("Stopped tracking\n");
+            			refresh();
+				tracking = false;
+				detected_face.x = 0;
+				break;
+			}
+			if(ch == 99)
+			{
+				printw("Camera control changed\n");
+            			refresh();
+				camera_control = !camera_control;
+			}
+		}
+		if ((abs(cmt.bb_rot.size.height - rect.height) > 40 || abs(cmt.bb_rot.size.width - rect.width) > 40) /*&& (abs(detected_face.x - cmt.bb_rot.center.x) > 20 || abs(detected_face.y - cmt.bb_rot.center.y*/) > 20))
+		{
+			printw("Stopped tracking\n");
+            		refresh();
 			tracking = false;
 			detected_face.x = 0;
 			//break;
@@ -323,30 +392,14 @@ void track(cv::Mat frame0)
 		else
 		{
 				if(detected_face.x == 0)
-				{
-					struct soap *soap = soap_new();	
-						
-					_tptz__Stop *tptz__Stop = soap_new__tptz__Stop(soap, -1);
-					_tptz__StopResponse *tptz__StopResponse = soap_new__tptz__StopResponse(soap, -1);
-						
-					tptz__Stop->ProfileToken = "Profile_1";
-						
-					if(SOAP_OK != soap_wsse_add_UsernameTokenDigest(proxyPTZ.soap, NULL, "admin", "Supervisor"))
-        				{		
-                				std::cout << "ERROR" << std::endl;
-        				}
-       					if(SOAP_OK == proxyPTZ.Stop(tptz__Stop, tptz__StopResponse))
-					{
-						std::cout << "STOPPED" << std::endl;
-					}
-						
-					soap_destroy(soap);
-					soap_end(soap);
-					
+				{		
 					detected_face.x = cmt.bb_rot.center.x;
 					detected_face.y = cmt.bb_rot.center.y;
-					cv::Point face(detected_face.x * 3, detected_face.y * 2.25);
-					move(face);
+					if(camera_control)
+					{
+						cv::Point face(detected_face.x * 3, detected_face.y * 2.25);
+						move(face);
+					}
 				}
 				else
 				{
@@ -360,32 +413,17 @@ void track(cv::Mat frame0)
 					}
 					if (moving == true && (abs(moving_face.x - detected_face.x) > 100 || abs(moving_face.y - detected_face.y) > 100))
 					{
-						
-						struct soap *soap = soap_new();	
-						
-						_tptz__Stop *tptz__Stop = soap_new__tptz__Stop(soap, -1);
-						_tptz__StopResponse *tptz__StopResponse = soap_new__tptz__StopResponse(soap, -1);
-						
-						tptz__Stop->ProfileToken = "Profile_1";
-						
-						if(SOAP_OK != soap_wsse_add_UsernameTokenDigest(proxyPTZ.soap, NULL, "admin", "Supervisor"))
-        					{		
-                					std::cout << "ERROR" << std::endl;
-        					}
-       						if(SOAP_OK == proxyPTZ.Stop(tptz__Stop, tptz__StopResponse))
-						{
-							std::cout << "STOPPED" << std::endl;
-						}
-						
-						soap_destroy(soap);
-						soap_end(soap);
-						
-						detected_face.x = 0;
+						detected_face.x = moving_face.x;
+						detected_face.y = moving_face.y;						
 						//detected_face.y = moving_face.y;
-						Point face(moving_face.x * 3, moving_face.y * 2.25);
-						move(face);
+						if(camera_control)
+						{
+							Point face(moving_face.x * 3, moving_face.y * 2.25);
+							move(face);
+						}
+						moving = false;
 						
-						detected_face.x = 0;
+						//detected_face.x = 0;
 						//cout << " DETECTED X: " << detected_face.x << " DETETCTED Y: " << detected_face.y << endl;
 					
 					}
@@ -421,6 +459,28 @@ void move(cv::Point point)
 	
 	if(pan==true||tilt==true)
 	{
+		
+		struct soap *soap = soap_new();	
+						
+		_tptz__Stop *tptz__Stop = soap_new__tptz__Stop(soap, -1);
+		_tptz__StopResponse *tptz__StopResponse = soap_new__tptz__StopResponse(soap, -1);
+						
+		tptz__Stop->ProfileToken = "Profile_1";
+					
+		if(SOAP_OK != soap_wsse_add_UsernameTokenDigest(proxyPTZ.soap, NULL, "admin", "Supervisor"))
+        	{		
+  			printw("TOKEN ERROR\n");
+            		refresh();
+        	}
+       		if(SOAP_OK == proxyPTZ.Stop(tptz__Stop, tptz__StopResponse))
+		{
+			printw("STOPPED\n");
+            		refresh();
+		}
+						
+		soap_destroy(soap);
+		soap_end(soap);
+		
 		struct soap *soap = soap_new();	
 
 		_tptz__RelativeMove *tptz__RelativeMove = soap_new__tptz__RelativeMove(soap, -1);
@@ -468,16 +528,18 @@ void move(cv::Point point)
 
 	LONG64 timeout = 2000;
 	tptz__ContinuousMove->Timeout = &timeout;
-	*/
+	*/		
 		if(SOAP_OK != soap_wsse_add_UsernameTokenDigest(proxyPTZ.soap, NULL, "admin", "Supervisor"))
         	{		
-                	std::cout << "ERROR" << std::endl;
+                	printw("TOKEN ERROR\n");
+            		refresh();
         	}
        		if(SOAP_OK == proxyPTZ.RelativeMove(tptz__RelativeMove, tptz__RelativeMoveResponse))
         	{
-                	std::cout << "DONE" << std::endl;
-			std::cout << moveX << std::endl;
-			std::cout << moveY << std::endl;
+                	printw("MOVED X: %d\n", moveX);
+            		refresh();
+			printw("MOVED Y: %d\n", moveY);
+            		refresh();
 			//sleep(8);
 		}
         	soap_destroy(soap);
