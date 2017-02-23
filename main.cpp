@@ -37,6 +37,8 @@
 #define MAX_HOSTNAME_LEN 128
 #define MAX_LOGMSG_LEN 256 
 
+using cmt::CMT;
+
 cv::String face_cascade_name = "haarcascade_frontalface_alt.xml";
 cv::String profileface_cascade_name = "haarcascade_profileface.xml";
 cv::CascadeClassifier face_cascade;
@@ -207,7 +209,7 @@ int main(int argc, char* argv[])
     	soap_end(soap); 
 	
 	capture.open(szStreamName);
-	capture.set(CAP_PROP_BUFFERSIZE, 3);
+	capture.set(cv::CAP_PROP_BUFFERSIZE, 3);
 	
 	if(!capture.isOpened()){printw("Error opening video stream\n");
             		refresh(); return -1;}
@@ -226,7 +228,7 @@ int main(int argc, char* argv[])
 	
 	while(1)
 	{	
-		if(!frame.empty())
+		if(!im.empty())
 		{
 			if( tracking == false)
 			{
@@ -381,7 +383,7 @@ void track(cv::Mat frame0)
 				camera_control = !camera_control;
 			}
 		}
-		if ((abs(cmt.bb_rot.size.height - rect.height) > 40 || abs(cmt.bb_rot.size.width - rect.width) > 40) /*&& (abs(detected_face.x - cmt.bb_rot.center.x) > 20 || abs(detected_face.y - cmt.bb_rot.center.y*/) > 20))
+		if ((abs(cmt.bb_rot.size.height - rect.height) > 40 || abs(cmt.bb_rot.size.width - rect.width) > 40) /*&& (abs(detected_face.x - cmt.bb_rot.center.x) > 20 || abs(detected_face.y - cmt.bb_rot.center.y) > 20)*/)
 		{
 			printw("Stopped tracking\n");
             		refresh();
@@ -418,7 +420,7 @@ void track(cv::Mat frame0)
 						//detected_face.y = moving_face.y;
 						if(camera_control)
 						{
-							Point face(moving_face.x * 3, moving_face.y * 2.25);
+							cv::Point face(moving_face.x * 3, moving_face.y * 2.25);
 							move(face);
 						}
 						moving = false;
@@ -480,8 +482,6 @@ void move(cv::Point point)
 						
 		soap_destroy(soap);
 		soap_end(soap);
-		
-		struct soap *soap = soap_new();	
 
 		_tptz__RelativeMove *tptz__RelativeMove = soap_new__tptz__RelativeMove(soap, -1);
         	_tptz__RelativeMoveResponse *tptz__RelativeMoveResponse = soap_new__tptz__RelativeMoveResponse(soap, -1);
