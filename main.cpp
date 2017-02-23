@@ -13,6 +13,7 @@
 #include "plugin/wsaapi.h"
 #include <openssl/rsa.h>
 #include "ErrorLog.h"
+#include "CMT.h"
  
 #include "include/soapDeviceBindingProxy.h"
 #include "include/soapMediaBindingProxy.h"
@@ -335,7 +336,7 @@ void track(cv::Mat frame0)
 	//FILELog::ReportingLevel() = verbose_flag ? logDEBUG : logINFO;
 	//Output2FILE::Stream() = stdout; //Log to stdout
 	cv::Mat frame0_gray;
-	cmt::CMT cmt;
+	CMT cmt;
 
 	if (frame0.channels() > 1) {
 		cvtColor(frame0, frame0_gray, CV_BGR2GRAY);
