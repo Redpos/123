@@ -12,7 +12,8 @@ ProxyOBJ=$(PROXYSOURCE)/soapDeviceBindingProxy.o $(PROXYSOURCE)/soapMediaBinding
 PluginSOURCE=$(BASE_DIR)/plugin
 PluginOBJ=$(PluginSOURCE)/wsaapi.o $(PluginSOURCE)/wsseapi.o $(PluginSOURCE)/threads.o $(PluginSOURCE)/duration.o \
 		  $(PluginSOURCE)/smdevp.o $(PluginSOURCE)/mecevp.o $(PluginSOURCE)/dom.o
-SRC= $(SOURCE)/stdsoap2.o  $(SOURCE)/soapC.o $(SOURCE)/soapClient.o $(SOURCE)/Media.o $(SOURCE)/Snapshot.o  $(SOURCE)/main.o $(PluginOBJ) $(ProxyOBJ)
+SRC= $(SOURCE)/stdsoap2.o  $(SOURCE)/soapC.o $(SOURCE)/soapClient.o $(SOURCE)/Media.o $(SOURCE)/Snapshot.o $(SOURCE)/CMT.o $(SOURCE)/common.o \
+		  $(SOURCE)/Consensus.o $(SOURCE)/fastcluster.o $(SOURCE)/Fusion.o $(SOURCE)/getopt.o $(SOURCE)/Matcher.o $(SOURCE)/Tracker.o  $(SOURCE)/main.o $(PluginOBJ) $(ProxyOBJ)
 OBJECTS = $(patsubst %.cpp,%.o,$(SRC))
 TARGET=ipconvif
 all: $(TARGET) 
