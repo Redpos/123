@@ -158,15 +158,15 @@ int main(int argc, char* argv[])
 
     	strcat(szHostName, "http://");
 	strcat(szHostName, camIp);
-	strcat(szHostName, ":10080/onvif/device_service");
+	strcat(szHostName, ":80/onvif/device_service");
 
 	strcat(szPTZName, "http://");
 	strcat(szPTZName, camIp);
-	strcat(szPTZName, ":10080/onvif/PTZ");
+	strcat(szPTZName, ":80/onvif/PTZ");
 
 	strcat(szStreamName, "rtsp://");
 	strcat(szStreamName, camIp);
-	strcat(szStreamName, ":10554//Streaming/Channels/2");
+	strcat(szStreamName, ":554//Streaming/Channels/2");
 
 	proxyDevice.soap_endpoint = szHostName;
 	proxyPTZ.soap_endpoint = szPTZName;
@@ -406,7 +406,7 @@ void track(cv::Mat frame0)
 				}
 				else
 				{
-					if(abs(cmt.bb_rot.center.x - detected_face.x) > 10 || abs(cmt.bb_rot.center.y - detected_face.y) > 10)
+					if(moving == false && (abs(cmt.bb_rot.center.x - detected_face.x) > 30 || abs(cmt.bb_rot.center.y - detected_face.y) > 30))
 					{
 						moving = true;
 						moving_face.x = cmt.bb_rot.center.x;
@@ -414,22 +414,30 @@ void track(cv::Mat frame0)
 						//cv::Point face(detected_face.x * 2.72, detected_face.y * 2.72);
 						//move(face);
 					}
-					if (moving == true && (abs(moving_face.x - detected_face.x) > 100 || abs(moving_face.y - detected_face.y) > 100))
+					if (moving == true)
+					{
+						moving_face.x = cmt.bb_rot.center.x;
+						moving_face.y = cmt.bb_rot.center.y;						
+						//detected_face.y = moving_face.y;
+						
+						//detected_face.x = 0; && (abs(moving_face.x - detected_face.x) > 100 || abs(moving_face.y - detected_face.y) > 100)
+						//cout << " DETECTED X: " << detected_face.x << " DETETCTED Y: " << detected_face.y << endl;
+					
+					}
+					if (moving == true && (abs(cmt.bb_rot.center.x - moving_face.x) < 5 || abs(cmt.bb_rot.center.y - moving_face.y) < 5))
 					{
 						detected_face.x = moving_face.x;
-						detected_face.y = moving_face.y;						
-						//detected_face.y = moving_face.y;
+						detected_face.y = moving_face.y;
+						
 						if(camera_control)
 						{
 							cv::Point face(moving_face.x * 3, moving_face.y * 2.25);
 							move(face);
 						}
-						moving = false;
 						
-						//detected_face.x = 0;
-						//cout << " DETECTED X: " << detected_face.x << " DETETCTED Y: " << detected_face.y << endl;
-					
+						moving = false;
 					}
+					
 					/*else if (moving == true && abs(moving_face.x - cmt.bb_rot.center.x) < 2 && abs(moving_face.y - cmt.bb_rot.center.y) < 2)
 					{
 						moving == false;
