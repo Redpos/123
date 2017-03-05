@@ -563,19 +563,20 @@ void move(cv::Point point)
 		movement->PanTilt = new tt__Vector2D;
 		movement->Zoom = new tt__Vector1D;
 		
-		float angl_x, angl_y, fx, fy, f;
+		float angl_x, angl_y, fx, fy, f, f1;
 		fx = 805.5;
 		fy = 453.1;
 		f = 924.3;
+		f1 = 700.0;
 
 		if(abs(moveX)>0) 
 		{
-			angl_x = atan2(moveX,fx) * 180/PI;
+			angl_x = atan2(moveX,f1) * 180/PI;
 			movement->PanTilt->x = angl_x/350;
 		}
 		if(abs(moveY)>0) 
 		{
-			angl_y = atan2(moveY,fx) * 180/PI;
+			angl_y = atan2(moveY,f) * 180/PI;
 			movement->PanTilt->y = angl_y/90;
 		}
 		
