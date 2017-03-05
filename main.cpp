@@ -127,7 +127,7 @@ int main(int argc, char* argv[])
     	scrollok(stdscr, TRUE);
 	
 	if(!face_cascade.load(face_cascade_name)){printw("Error opening face cascade\n");
-            		refresh(); return -1;}
+            		refresh();endwin(); return -1;}
 	//if(!profile_cascade.load(profileface_cascade_name)){std::cout <<"Error loading profile cascade!"<<std::endl; return -1;}
 
 	char szHostName[MAX_HOSTNAME_LEN] = { 0 };
@@ -144,6 +144,7 @@ int main(int argc, char* argv[])
     		//std::cout  <<  "usage: ./ipconvif -cIp [<camera-ip>:<port>] -cUsr <cam-id> -cPwd <cam-pwd>\n";
 		printw("usage: ./ipconvif -cIp [<camera-ip>:<port>] -cUsr <cam-id> -cPwd <cam-pwd>\n");
             	refresh();
+		endwin();
     		return -1;
     	}
 
@@ -154,6 +155,7 @@ int main(int argc, char* argv[])
     	if (!(camIp && camUsr && camPwd ))
     	{
     		processEventLog(__FILE__, __LINE__, stdout, "Error: Invalid args (All args are required!)");
+		endwin();
     		return -1;
     	}
 
@@ -180,11 +182,13 @@ int main(int argc, char* argv[])
 	// For DeviceBindingProxy
 	if (SOAP_OK != soap_wsse_add_UsernameTokenDigest(proxyDevice.soap, NULL, camUsr, camPwd))
 	{
+		endwin();
 		return -1;
 	}
 
 	if (SOAP_OK != soap_wsse_add_Timestamp(proxyDevice.soap, "Time", 10)) 
 	{
+		endwin();
 		return -1;
 	}
     
@@ -202,6 +206,7 @@ int main(int argc, char* argv[])
     	else
     	{
         	PrintErr(proxyDevice.soap);
+		endwin();
         	//std::cout << "Error getting device information"<<std::endl;
 		return -1;
     	}
@@ -214,7 +219,7 @@ int main(int argc, char* argv[])
 	capture.set(cv::CAP_PROP_BUFFERSIZE, 3);
 	
 	if(!capture.isOpened()){printw("Error opening video stream\n");
-            		refresh(); return -1;}
+            		refresh(); endwin(); return -1;}
 
 	capture.grab();
 	capture.retrieve(im);
@@ -225,6 +230,7 @@ int main(int argc, char* argv[])
 		CaptureImages, (void *)thread_id);
 	if (rc)
 	{
+		endwin();
 		return -1;
 	}
 	
