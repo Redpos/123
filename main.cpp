@@ -442,10 +442,10 @@ void track(cv::Mat frame0)
 					cv::Point face(detected_face.x * 3, detected_face.y * 2.25);
 					printw("detected face x == 0\n");
             				refresh();
-					printw("MOVING X: %d\n", detected_face.x);
-            				refresh();
-					printw("MOVING Y: %d\n", detected_face.y);
-            				refresh();
+					//printw("MOVING X: %d\n", detected_face.x);
+            				//refresh();
+					//printw("MOVING Y: %d\n", detected_face.y);
+            				//refresh();
 					move(face);
 				}
 				else
@@ -466,10 +466,10 @@ void track(cv::Mat frame0)
 						detected_face.x = moving_face.x;
 						detected_face.y = moving_face.y;
 						cv::Point face(moving_face.x * 3, moving_face.y * 2.25);
-						printw("MOVING X: %d\n", detected_face.x);
-            					refresh();
-						printw("MOVING Y: %d\n", detected_face.y);
-            					refresh();
+						//printw("MOVING X: %d\n", detected_face.x);
+            					//refresh();
+						//printw("MOVING Y: %d\n", detected_face.y);
+            					//refresh();
 						move(face);
 						
 						moving = false;
@@ -515,7 +515,7 @@ void move(cv::Point point)
 		tilt = true;
 		moveY = border_y - point.y;
 	}
-	printw("border x: %f\n", border_x);
+	/*printw("border x: %f\n", border_x);
             		refresh();
 	printw("border y: %f\n", border_y);
             		refresh();
@@ -526,7 +526,7 @@ void move(cv::Point point)
 	printw("move X: %f\n", moveX);
             		refresh();
 	printw("move Y: %f\n", moveY);
-            		refresh();
+            		refresh();*/
 	
 	if(pan==true||tilt==true)
 	{
@@ -579,10 +579,10 @@ void move(cv::Point point)
 			movement->PanTilt->y = angl_y/90;
 		}
 		
-		printw("angl X: %f\n", angl_x);
-            		refresh();
-		printw("andl Y: %f\n", angl_y);
-            		refresh();
+		//printw("angl X: %f\n", angl_x);
+            		//refresh();
+		//printw("andl Y: %f\n", angl_y);
+            		//refresh();
         	movement->Zoom->x = 0.0;
 
         	tptz__RelativeMove->Translation = movement;
