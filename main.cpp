@@ -341,9 +341,9 @@ void detect(cv::Mat frame)
 
 void track(cv::Mat frame0)
 {
-	//int verbose_flag = 0;
-	//FILELog::ReportingLevel() = verbose_flag ? logDEBUG : logINFO;
-	//Output2FILE::Stream() = stdout; //Log to stdout
+	int verbose_flag = 0;
+	FILELog::ReportingLevel() = verbose_flag ? logDEBUG : logINFO;
+	Output2FILE::Stream() = stdout; //Log to stdout
 	cv::Mat frame0_gray;
 	CMT cmt;
 
