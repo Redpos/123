@@ -399,14 +399,14 @@ void track(cv::Mat frame0)
 				position = 0;
 				detected_face.x == 0;
 			}
-			else if(ch == 114)
+			else if(ch == 108)
 			{
 				printw("Left position\n");
             			refresh();
 				position = 1;
 				detected_face.x == 0;
 			}
-			else if(ch == 108)
+			else if(ch == 114)
 			{
 				printw("Right position\n");
             			refresh();
