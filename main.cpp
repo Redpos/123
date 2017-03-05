@@ -515,8 +515,6 @@ void move(cv::Point point)
 		tilt = true;
 		moveY = border_y - point.y;
 	}
-	printw("position: %d\n", position);
-            		refresh();
 	printw("border x: %d\n", border_x);
             		refresh();
 	printw("border y: %d\n", border_y);
