@@ -433,21 +433,18 @@ void track(cv::Mat frame0)
 			detected_face.x = 0;
 			//break;
 		}
-		else
+		else if(camera_control)
 		{
 				if(detected_face.x == 0)
 				{		
 					detected_face.x = cmt.bb_rot.center.x;
 					detected_face.y = cmt.bb_rot.center.y;
-					if(camera_control)
-					{
-						cv::Point face(detected_face.x * 3, detected_face.y * 2.25);
-						printw("MOVING X: %d\n", detected_face.x);
-            					refresh();
-						printw("MOVING Y: %d\n", detected_face.y);
-            					refresh();
-						move(face);
-					}
+					cv::Point face(detected_face.x * 3, detected_face.y * 2.25);
+					printw("MOVING X: %d\n", detected_face.x);
+            				refresh();
+					printw("MOVING Y: %d\n", detected_face.y);
+            				refresh();
+					move(face);
 				}
 				else
 				{
@@ -473,16 +470,12 @@ void track(cv::Mat frame0)
 					{
 						detected_face.x = moving_face.x;
 						detected_face.y = moving_face.y;
-						
-						if(camera_control)
-						{
-							cv::Point face(moving_face.x * 3, moving_face.y * 2.25);
-							printw("MOVING X: %d\n", detected_face.x);
-            						refresh();
-							printw("MOVING Y: %d\n", detected_face.y);
-            						refresh();
-							move(face);
-						}
+						cv::Point face(moving_face.x * 3, moving_face.y * 2.25);
+						printw("MOVING X: %d\n", detected_face.x);
+            					refresh();
+						printw("MOVING Y: %d\n", detected_face.y);
+            					refresh();
+						move(face);
 						
 						moving = false;
 					}
