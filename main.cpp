@@ -263,7 +263,7 @@ int main(int argc, char* argv[])
 				endwin();
 				return 0;
 			}
-			if(ch == 116)
+			else if(ch == 116)
 			{
 				printw("Tracking at specified spot\n");
             			refresh();
@@ -272,6 +272,13 @@ int main(int argc, char* argv[])
 				rect.y = 250;
 				rect.height = 150;
 				rect.width = 150;
+			}
+			else if(ch == 112)
+			{
+				printw("Moving to a specific point\n");
+            			refresh();
+				cv::Point face(150, 150);
+				move(face);
 			}
 				
 		}
