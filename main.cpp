@@ -414,7 +414,7 @@ void track(cv::Mat frame0)
 				detected_face.x == 0;
 			}
 		}
-		if ((abs(cmt.bb_rot.size.height - rect.height) > 40 || abs(cmt.bb_rot.size.width - rect.width) > 40) /*&& (abs(detected_face.x - cmt.bb_rot.center.x) > 20 || abs(detected_face.y - cmt.bb_rot.center.y) > 20)*/)
+		if ((abs(cmt.bb_rot.size.height - rect.height) > 40 || abs(cmt.bb_rot.size.width - rect.width) > 40) || /*&& (abs(detected_face.x - cmt.bb_rot.center.x) > 20 || abs(detected_face.y - cmt.bb_rot.center.y) > 20)*/)
 		{
 			printw("Stopped tracking\n");
             		refresh();
@@ -431,6 +431,10 @@ void track(cv::Mat frame0)
 					if(camera_control)
 					{
 						cv::Point face(detected_face.x * 3, detected_face.y * 2.25);
+						printw("MOVING X: %d\n", detected_face.x);
+            					refresh();
+						printw("MOVING Y: %d\n", detected_face.y);
+            					refresh();
 						move(face);
 					}
 				}
@@ -462,6 +466,10 @@ void track(cv::Mat frame0)
 						if(camera_control)
 						{
 							cv::Point face(moving_face.x * 3, moving_face.y * 2.25);
+							printw("MOVING X: %d\n", detected_face.x);
+            						refresh();
+							printw("MOVING Y: %d\n", detected_face.y);
+            						refresh();
 							move(face);
 						}
 						
