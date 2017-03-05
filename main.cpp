@@ -566,8 +566,8 @@ void move(cv::Point point)
 		float angl_x, angl_y, fx, fy, f, f1;
 		fx = 805.5;
 		fy = 453.1;
-		f = 924.3;
-		f1 = 700.0;
+		f = 1000.0;
+		f1 = 600.0;
 
 		if(abs(moveX)>0) 
 		{
