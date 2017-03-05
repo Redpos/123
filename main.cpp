@@ -529,6 +529,19 @@ void move(cv::Point point)
 		moveY = border_y - point.y;
 	}
 	
+	printw("border x: %d\n", border_x);
+            		refresh();
+	printw("border y: %d\n", border_y);
+            		refresh();
+	printw("point X: %d\n", point.x);
+            		refresh();
+	printw("point Y: %d\n", point.y);
+            		refresh();
+	printw("move X: %d\n", moveX);
+            		refresh();
+	printw("move Y: %d\n", moveY);
+            		refresh();
+	
 	if(pan==true||tilt==true)
 	{
 		
