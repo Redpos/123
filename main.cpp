@@ -53,8 +53,8 @@ bool moving = false;
 bool camera_control = false;
 cv::Rect rect;
 cv::VideoCapture capture;
-float border_x = 0;
-float border_y = 0;
+float border_x = 960;
+float border_y = 540;
 
 cv::Mat im;
 
@@ -214,10 +214,7 @@ int main(int argc, char* argv[])
     
     	// DeviceBindingProxy ends
     	soap_destroy(soap); 
-    	soap_end(soap); 
-	
-	border_x = 960;
-        border_y = 540;
+    	soap_end(soap);
 	
 	capture.open(szStreamName);
 	capture.set(cv::CAP_PROP_BUFFERSIZE, 3);
@@ -519,17 +516,17 @@ void move(cv::Point point)
 		tilt = true;
 		moveY = border_y - point.y;
 	}
-	printw("border x: %d\n", border_x);
+	printw("border x: %f\n", border_x);
             		refresh();
-	printw("border y: %d\n", border_y);
+	printw("border y: %f\n", border_y);
             		refresh();
-	printw("point X: %d\n", point.x);
+	printw("point X: %f\n", point.x);
             		refresh();
-	printw("point Y: %d\n", point.y);
+	printw("point Y: %f\n", point.y);
             		refresh();
-	printw("move X: %d\n", moveX);
+	printw("move X: %f\n", moveX);
             		refresh();
-	printw("move Y: %d\n", moveY);
+	printw("move Y: %f\n", moveY);
             		refresh();
 	
 	if(pan==true||tilt==true)
