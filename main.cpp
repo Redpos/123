@@ -278,7 +278,7 @@ int main(int argc, char* argv[])
 			{
 				printw("Moving to a specific point\n");
             			refresh();
-				cv::Point face(150.0, 150.0);
+				cv::Point face(150.0, 800.0);
 				move(face);
 			}
 				
