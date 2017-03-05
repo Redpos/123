@@ -457,11 +457,11 @@ void track(cv::Mat frame0)
 						moving_face.y = cmt.bb_rot.center.y;
 						printw("moving = true\n");
             					refresh();
-						sleep(1);
+						//sleep(1);
 						//cv::Point face(detected_face.x * 2.72, detected_face.y * 2.72);
 						//move(face);
 					}
-					if (moving == true && (abs(cmt.bb_rot.center.x - moving_face.x) < 5 || abs(cmt.bb_rot.center.y - moving_face.y) < 5))
+					if (moving == true && (abs(cmt.bb_rot.center.x - moving_face.x) < 2 && abs(cmt.bb_rot.center.y - moving_face.y) < 2))
 					{
 						detected_face.x = moving_face.x;
 						detected_face.y = moving_face.y;
