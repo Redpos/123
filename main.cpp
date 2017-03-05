@@ -520,9 +520,9 @@ void move(cv::Point point)
             		refresh();
 	printw("border y: %f\n", border_y);
             		refresh();
-	printw("point X: %f\n", point.x);
+	printw("point X: %d\n", point.x);
             		refresh();
-	printw("point Y: %f\n", point.y);
+	printw("point Y: %d\n", point.y);
             		refresh();
 	printw("move X: %f\n", moveX);
             		refresh();
@@ -577,6 +577,11 @@ void move(cv::Point point)
 			angl_y = atan2(moveY,fy) * 180/PI;
 			movement->PanTilt->y = angl_y/90;
 		}
+		
+		printw("angl X: %f\n", angl_x);
+            		refresh();
+		printw("andl Y: %f\n", angl_y);
+            		refresh();
         	movement->Zoom->x = 0.0;
 
         	tptz__RelativeMove->Translation = movement;
@@ -606,9 +611,9 @@ void move(cv::Point point)
         	}
        		if(SOAP_OK == proxyPTZ.RelativeMove(tptz__RelativeMove, tptz__RelativeMoveResponse))
         	{
-                	printw("MOVED X: %d\n", moveX);
+                	printw("MOVED X: %f\n", moveX);
             		refresh();
-			printw("MOVED Y: %d\n", moveY);
+			printw("MOVED Y: %f\n", moveY);
             		refresh();
 			//sleep(8);
 		}
