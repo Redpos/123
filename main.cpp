@@ -46,14 +46,15 @@ cv::CascadeClassifier face_cascade;
 cv::CascadeClassifier profile_cascade;
 PTZBindingProxy proxyPTZ;
 std::vector<cv::Rect> detected_faces;
-cv::Point detected_face(0,0);
-cv::Point moving_face(0, 0);
+cv::Point detected_face(0.0,0.0);
+cv::Point moving_face(0.0, 0.0);
 bool tracking = false;
 bool moving = false;
 bool camera_control = false;
 cv::Rect rect;
 cv::VideoCapture capture;
-float border_x = 960, border_y = 540;
+float border_x = 960.0;
+float border_y = 540.0;
 
 cv::Mat im;
 
@@ -277,7 +278,7 @@ int main(int argc, char* argv[])
 			{
 				printw("Moving to a specific point\n");
             			refresh();
-				cv::Point face(150, 150);
+				cv::Point face(150.0, 150.0);
 				move(face);
 			}
 				
