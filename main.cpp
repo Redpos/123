@@ -269,9 +269,9 @@ int main(int argc, char* argv[])
             			refresh();
 				tracking = true;
 				rect.x = 200;
-				rect.y = 200;
-				rect.height = 200;
-				rect.width = 200;
+				rect.y = 250;
+				rect.height = 150;
+				rect.width = 150;
 			}
 				
 		}
