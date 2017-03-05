@@ -254,6 +254,7 @@ int main(int argc, char* argv[])
 			{
 				printw("Exit\n");
             			refresh();
+				endwin();
 				return 0;
 			}
 			if(ch == 116)
@@ -271,6 +272,7 @@ int main(int argc, char* argv[])
 		//cv::waitKey(100);
 
 	}
+	endwin();
 	return 0;
 }
 
