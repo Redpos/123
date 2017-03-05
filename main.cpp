@@ -389,21 +389,21 @@ void track(cv::Mat frame0)
 				printw("Center position\n");
             			refresh();
 				position = 0;
-				detected_face.x == 0
+				detected_face.x == 0;
 			}
 			else if(ch == 114)
 			{
 				printw("Left position\n");
             			refresh();
 				position = 1;
-				detected_face.x == 0
+				detected_face.x == 0;
 			}
 			else if(ch == 108)
 			{
 				printw("Right position\n");
             			refresh();
 				position = 2;
-				detected_face.x == 0
+				detected_face.x == 0;
 			}
 		}
 		if ((abs(cmt.bb_rot.size.height - rect.height) > 40 || abs(cmt.bb_rot.size.width - rect.width) > 40) /*&& (abs(detected_face.x - cmt.bb_rot.center.x) > 20 || abs(detected_face.y - cmt.bb_rot.center.y) > 20)*/)
