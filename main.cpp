@@ -532,7 +532,7 @@ void move(cv::Point point)
 	{
 		
 		struct soap *soap = soap_new();	
-						
+		/*				
 		_tptz__Stop *tptz__Stop = soap_new__tptz__Stop(soap, -1);
 		_tptz__StopResponse *tptz__StopResponse = soap_new__tptz__StopResponse(soap, -1);
 						
@@ -550,7 +550,7 @@ void move(cv::Point point)
 		}
 						
 		soap_destroy(soap);
-		soap_end(soap);
+		soap_end(soap);*/
 
 		_tptz__RelativeMove *tptz__RelativeMove = soap_new__tptz__RelativeMove(soap, -1);
         	_tptz__RelativeMoveResponse *tptz__RelativeMoveResponse = soap_new__tptz__RelativeMoveResponse(soap, -1);
