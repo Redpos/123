@@ -271,7 +271,7 @@ int main(int argc, char* argv[])
 				tracking = true;
 				rect.x = 200;
 				rect.y = 250;
-				rect.height = 150;
+				rect.height = 50;
 				rect.width = 150;
 			}
 			else if(ch == 112)
