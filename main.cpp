@@ -461,7 +461,7 @@ void track(cv::Mat frame0)
 						//cv::Point face(detected_face.x * 2.72, detected_face.y * 2.72);
 						//move(face);
 					}
-					if (moving == true && (abs(cmt.bb_rot.center.x - moving_face.x) < 2 && abs(cmt.bb_rot.center.y - moving_face.y) < 2))
+					if (moving == true && (abs(cmt.bb_rot.center.x - moving_face.x) < 1 && abs(cmt.bb_rot.center.y - moving_face.y) < 1))
 					{
 						detected_face.x = moving_face.x;
 						detected_face.y = moving_face.y;
@@ -513,7 +513,7 @@ void move(cv::Point point)
 	if(abs(point.y-border_y)>60)
 	{
 		tilt = true;
-		moveY = border_y - point.y;
+		moveY = point.y - border_y;
 	}
 	/*printw("border x: %f\n", border_x);
             		refresh();
