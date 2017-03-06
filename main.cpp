@@ -183,14 +183,18 @@ int main(int argc, char* argv[])
 	// For DeviceBindingProxy
 	if (SOAP_OK != soap_wsse_add_UsernameTokenDigest(proxyDevice.soap, NULL, camUsr, camPwd))
 	{
-		endwin();
-		return -1;
+		PrintErr(proxyDevice.soap);
+		refresh();
+		//endwin();
+		//return -1;
 	}
 
 	if (SOAP_OK != soap_wsse_add_Timestamp(proxyDevice.soap, "Time", 10)) 
 	{
-		endwin();
-		return -1;
+		PrintErr(proxyDevice.soap);
+		refresh();
+		//endwin();
+		//return -1;
 	}
     
     	// Get Device info
@@ -203,13 +207,15 @@ int main(int argc, char* argv[])
         	processEventLog(__FILE__, __LINE__, stdout, "Manufacturer:%sModel:%s\r\nFirmwareVersion:%s\r\nSerialNumber:%s\r\nHardwareId:%s", tds__GetDeviceInformationResponse->Manufacturer.c_str(),
                         tds__GetDeviceInformationResponse->Model.c_str(), tds__GetDeviceInformationResponse->FirmwareVersion.c_str(),
                         tds__GetDeviceInformationResponse->SerialNumber.c_str(), tds__GetDeviceInformationResponse->HardwareId.c_str());
+		refresh();
     	}
     	else
     	{
         	PrintErr(proxyDevice.soap);
-		endwin();
+		refresh();
+		//endwin();
         	//std::cout << "Error getting device information"<<std::endl;
-		return -1;
+		//return -1;
     	}
     
     	// DeviceBindingProxy ends
@@ -220,10 +226,12 @@ int main(int argc, char* argv[])
 	capture.set(cv::CAP_PROP_BUFFERSIZE, 3);
 	
 	if(!capture.isOpened()){printw("Error opening video stream\n");
-            		refresh(); endwin(); return -1;}
-
-	capture.grab();
-	capture.retrieve(im);
+            		refresh(); /*endwin(); return -1;*/}
+	else
+	{
+		capture.grab();
+		capture.retrieve(im);
+	}
 	
 	pthread_t capture_thread;
 	int thread_id = 0;
