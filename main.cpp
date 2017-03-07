@@ -225,8 +225,10 @@ int main(int argc, char* argv[])
 	capture.open(szStreamName);
 	capture.set(cv::CAP_PROP_BUFFERSIZE, 3);
 	
-	if(!capture.isOpened()){printw("Error opening video stream\n");
-            		refresh(); /*endwin(); return -1;*/}
+	while(!capture.isOpened()){printw("Error opening video stream\n");
+            		refresh();
+			sleep(1);
+			capture.open(szStreamName);/*endwin(); return -1;*/}
 	else
 	{
 		capture.grab();
