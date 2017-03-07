@@ -227,13 +227,11 @@ int main(int argc, char* argv[])
 	
 	while(!capture.isOpened()){printw("Error opening video stream\n");
             		refresh();
-			sleep(1);
+			sleep(3);
 			capture.open(szStreamName);/*endwin(); return -1;*/}
-	else
-	{
-		capture.grab();
-		capture.retrieve(im);
-	}
+	capture.grab();
+	capture.retrieve(im);
+	
 	
 	pthread_t capture_thread;
 	int thread_id = 0;
