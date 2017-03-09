@@ -297,7 +297,7 @@ int main(int argc, char* argv[])
 		if(fd)
 		{
 			char buf;
-			read(fd, buf, sizeof(buf));
+			read(fd, buf, sizeof(char));
 			if(buf == 113)
 			{
 				printw("Exit\n");
