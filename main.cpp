@@ -57,6 +57,7 @@ float border_x = 960;
 float border_y = 540;
 char *fifo = "ipcfifo";
 int fd;
+char *buf;
 
 cv::Mat im;
 
@@ -294,10 +295,8 @@ int main(int argc, char* argv[])
 				
 		}
 		fd = open(fifo, O_RDONLY);
-		if(fd)
+		if(read(fd, buf, sizeof(char));)
 		{
-			char *buf;
-			read(fd, buf, sizeof(char));
 			if(*buf == 113)
 			{
 				printw("Exit\n");
