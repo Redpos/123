@@ -305,7 +305,7 @@ int main(int argc, char* argv[])
 				endwin();
 				return 0;
 			}
-			else if(*buf == 116)
+			/*else if(*buf == 116)
 			{
 				printw("Tracking at specified spot\n");
             			refresh();
@@ -314,7 +314,7 @@ int main(int argc, char* argv[])
 				rect.y = 250;
 				rect.height = 50;
 				rect.width = 150;
-			}
+			}*/
 			else if(*buf == 112)
 			{
 				printw("Moving to a specific point\n");
@@ -464,6 +464,23 @@ void track(cv::Mat frame0)
 				border_x = 1280;
 				border_y = 720;
 				detected_face.x == 0;
+			}
+		}
+		if(read(fd, buf, 1024))
+		{
+			if(*buf == 115)
+			{
+				printw("Stopped tracking\n");
+            			refresh();
+				tracking = false;
+				detected_face.x = 0;
+				break;
+			}
+			else if(*buf == 99)
+			{
+				printw("Camera control changed\n");
+            			refresh();
+				camera_control = !camera_control;
 			}
 		}
 		if ((abs(cmt.bb_rot.size.height - rect.height) > 40 || abs(cmt.bb_rot.size.width - rect.width) > 40)/*&& (abs(detected_face.x - cmt.bb_rot.center.x) > 20 || abs(detected_face.y - cmt.bb_rot.center.y) > 20)*/)
