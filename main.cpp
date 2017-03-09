@@ -57,7 +57,7 @@ float border_x = 960;
 float border_y = 540;
 char *fifo = "ipcfifo";
 int fd;
-char *buf;
+char buf[1024];
 
 cv::Mat im;
 
