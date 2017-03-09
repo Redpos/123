@@ -296,7 +296,7 @@ int main(int argc, char* argv[])
 			}
 				
 		}
-		if(read(fd, buf, sizeof(char)))
+		if(read(fd, buf, 1024))
 		{
 			if(*buf == 113)
 			{
