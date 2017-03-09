@@ -296,16 +296,16 @@ int main(int argc, char* argv[])
 		fd = open(fifo, O_RDONLY);
 		if(fd)
 		{
-			char buf[sizeof(char)];
-			read(fd, buf, sizeof(buf));
-			if(buf == 113)
+			char *buf;
+			read(fd, buf, sizeof(char));
+			if(*buf == 113)
 			{
 				printw("Exit\n");
             			refresh();
 				endwin();
 				return 0;
 			}
-			else if(buf == 116)
+			else if(*buf == 116)
 			{
 				printw("Tracking at specified spot\n");
             			refresh();
@@ -315,7 +315,7 @@ int main(int argc, char* argv[])
 				rect.height = 50;
 				rect.width = 150;
 			}
-			else if(buf == 112)
+			else if(*buf == 112)
 			{
 				printw("Moving to a specific point\n");
             			refresh();
