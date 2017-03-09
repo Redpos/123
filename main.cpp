@@ -55,6 +55,8 @@ cv::Rect rect;
 cv::VideoCapture capture;
 float border_x = 960;
 float border_y = 540;
+char *fifo = "ipcfifo";
+int fd;
 
 cv::Mat im;
 
@@ -130,7 +132,7 @@ int main(int argc, char* argv[])
 	if(!face_cascade.load(face_cascade_name)){printw("Error opening face cascade\n");
             		refresh();endwin(); return -1;}
 	//if(!profile_cascade.load(profileface_cascade_name)){std::cout <<"Error loading profile cascade!"<<std::endl; return -1;}
-
+	
 	char szHostName[MAX_HOSTNAME_LEN] = { 0 };
 	char szPTZName[MAX_HOSTNAME_LEN] = {0};
 	char szStreamName[MAX_HOSTNAME_LEN] = {0};
@@ -290,6 +292,37 @@ int main(int argc, char* argv[])
 				move(face);
 			}
 				
+		}
+		fd = open(fifo, O_RDONLY);
+		if(fd)
+		{
+			char buf;
+			read(fd, buf, sizeof(buf));
+			if(buf == 113)
+			{
+				printw("Exit\n");
+            			refresh();
+				endwin();
+				return 0;
+			}
+			else if(buf == 116)
+			{
+				printw("Tracking at specified spot\n");
+            			refresh();
+				tracking = true;
+				rect.x = 200;
+				rect.y = 250;
+				rect.height = 50;
+				rect.width = 150;
+			}
+			else if(buf == 112)
+			{
+				printw("Moving to a specific point\n");
+            			refresh();
+				cv::Point face(0.0, 0.0);
+				move(face);
+			}
+			close(fd);
 		}
 		//cv::waitKey(100);
 
