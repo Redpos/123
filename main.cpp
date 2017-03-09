@@ -243,9 +243,10 @@ int main(int argc, char* argv[])
 	if (rc)
 	{
 		endwin();
-		return -1;
+		close(fd);
 	}
 	
+	fd = open(fifo, O_RDONLY | O_NONBLOCK);
 	while(1)
 	{	
 		if(!im.empty())
@@ -273,6 +274,7 @@ int main(int argc, char* argv[])
 				printw("Exit\n");
             			refresh();
 				endwin();
+				close(fd);
 				return 0;
 			}
 			else if(ch == 116)
@@ -294,7 +296,6 @@ int main(int argc, char* argv[])
 			}
 				
 		}
-		fd = open(fifo, O_RDONLY);
 		if(read(fd, buf, sizeof(char)))
 		{
 			if(*buf == 113)
@@ -321,11 +322,11 @@ int main(int argc, char* argv[])
 				cv::Point face(0.0, 0.0);
 				move(face);
 			}
-			close(fd);
 		}
 		//cv::waitKey(100);
 
 	}
+	close(fd);
 	endwin();
 	return 0;
 }
