@@ -295,7 +295,7 @@ int main(int argc, char* argv[])
 				
 		}
 		fd = open(fifo, O_RDONLY);
-		if(read(fd, buf, sizeof(char));)
+		if(read(fd, buf, sizeof(char)))
 		{
 			if(*buf == 113)
 			{
