@@ -489,6 +489,8 @@ void track(cv::Mat frame0)
 				printw("Camera control changed\n");
             			refresh();
 				camera_control = !camera_control;
+				x = 0.0;
+				y = 0.0;
 			}
 			else if(ch == 109)
 			{
@@ -530,6 +532,8 @@ void track(cv::Mat frame0)
 				printw("Camera control changed\n");
             			refresh();
 				camera_control = !camera_control;
+				x = 0.0;
+				y = 0.0;
 			}
 		}
 		if ((abs(cmt.bb_rot.size.height - rect.height) > 50 || abs(cmt.bb_rot.size.width - rect.width) > 50)/*&& (abs(detected_face.x - cmt.bb_rot.center.x) > 20 || abs(detected_face.y - cmt.bb_rot.center.y) > 20)*/)
