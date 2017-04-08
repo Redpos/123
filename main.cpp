@@ -131,6 +131,10 @@ void *ContMove(void *threadid)
 				printw("MOVED Y: %f\n", tptz__ContinuousMove->Velocity->PanTilt->y);
             			refresh();
 			}
+			else
+			{
+				printw("ERROR\n");	
+			}
 			soap_destroy(soap); 
     			soap_end(soap);
 		}
@@ -568,7 +572,6 @@ void track(cv::Mat frame0)
 				{
 					y = 0;
 				}
-				printw("-----X-----: %f\n", x);
 				moving = true;
 			}
 			else if (moving)
