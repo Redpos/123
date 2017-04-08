@@ -542,6 +542,9 @@ void track(cv::Mat frame0)
             		refresh();
 			tracking = false;
 			detected_face.x = 0;
+			x = 0.0;
+			y = 0.0;
+			moving = false;
 			//break;
 		}
 		else if(camera_control)
