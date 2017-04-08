@@ -139,6 +139,8 @@ void *ContMove(void *threadid)
 			soap_destroy(soap); 
     			soap_end(soap);
 			
+			usleep(100000);
+			
 		}
 	}
 	pthread_exit(NULL);
@@ -570,11 +572,11 @@ void track(cv::Mat frame0)
 			{
 				if((cmt.bb_rot.center.x - 320)/1000 > 0.035)
 				{
-					x = (cmt.bb_rot.center.x - 320)/1000 + 0.2;
+					x = (cmt.bb_rot.center.x - 320)/1000 + 0.1;
 				}
 				else if ((cmt.bb_rot.center.x - 320)/1000 < -0.035)
 				{
-					x = (cmt.bb_rot.center.x - 320)/1000 - 0.2;
+					x = (cmt.bb_rot.center.x - 320)/1000 - 0.1;
 				}
 				else
 				{
@@ -582,11 +584,11 @@ void track(cv::Mat frame0)
 				}
 				if((cmt.bb_rot.center.y - 240)/1000 > 0.03)
 				{
-					y = -((cmt.bb_rot.center.y - 240)/1000 + 0.2);
+					y = -((cmt.bb_rot.center.y - 240)/1000 + 0.1);
 				}
 				else if ((cmt.bb_rot.center.y - 240)/1000 < -0.03)
 				{
-					y = -((cmt.bb_rot.center.y - 240)/1000 - 0.2);
+					y = -((cmt.bb_rot.center.y - 240)/1000 - 0.1);
 				}
 				else
 				{
