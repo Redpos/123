@@ -42,9 +42,6 @@ using cmt::CMT;
 
 struct soap *soap = soap_new();
 
-_tptz__ContinuousMove *tptz__ContinuousMove;
-_tptz__ContinuousMoveResponse *tptz__ContinuousMoveResponse;
-
 cv::String face_cascade_name = "haarcascade_frontalface_alt.xml";
 cv::String profileface_cascade_name = "haarcascade_profileface.xml";
 cv::CascadeClassifier face_cascade;
@@ -58,6 +55,7 @@ bool moving = false;
 bool camera_control = false;
 cv::Rect rect;
 cv::VideoCapture capture;
+float x = 0, y = 0;
 float border_x = 960;
 float border_y = 540;
 char *fifo = "ipcfifo";
@@ -106,6 +104,20 @@ void *ContMove(void *threadid)
 	{
 		if (moving)
 		{
+			_tptz__ContinuousMove *tptz__ContinuousMove = soap_new__tptz__ContinuousMove(soap, -1);
+			_tptz__ContinuousMoveResponse *tptz__ContinuousMoveResponse = soap_new__tptz__ContinuousMoveResponse(soap, -1);
+
+			tt__PTZSpeed *Speed = soap_new_tt__PTZSpeed(soap, -1);
+			
+			Speed->PanTilt = new tt__Vector2D;
+			Speed->Zoom = new tt__Vector1D;
+			Speed->PanTilt->x = x;
+			Speed->PanTilt->y = y;
+			Speed->Zoom->x = 0.0;
+			
+			tptz__ContinuousMove->ProfileToken = "Profile_1";
+			tptz__ContinuousMove->Velocity = Speed;
+			
 			if (SOAP_OK != soap_wsse_add_UsernameTokenDigest(proxyPTZ.soap, NULL, "admin", "Supervisor"))
 			{
 				printw("TOKEN ERROR\n");
@@ -172,17 +184,6 @@ int main(int argc, char* argv[])
 	char szHostName[MAX_HOSTNAME_LEN] = { 0 };
 	char szPTZName[MAX_HOSTNAME_LEN] = {0};
 	char szStreamName[MAX_HOSTNAME_LEN] = {0};
-	
-	tt__PTZSpeed *Speed = soap_new_tt__PTZSpeed(soap, -1);
-	
-	Speed->PanTilt = new tt__Vector2D;
-	Speed->Zoom = new tt__Vector1D;
-	
-	tptz__ContinuousMove = soap_new__tptz__ContinuousMove(soap, -1);
-	tptz__ContinuousMoveResponse = soap_new__tptz__ContinuousMoveResponse(soap, -1);
-	
-	tptz__ContinuousMove->ProfileToken = "Profile_1";
-	tptz__ContinuousMove->Velocity = Speed;
 	// Proxy declarations
 	//PTZBindingProxy proxyPTZ;
 	DeviceBindingProxy proxyDevice;
@@ -548,8 +549,8 @@ void track(cv::Mat frame0)
 		{
 			if(abs(cmt.bb_rot.center.x - 320) > 30 || abs(cmt.bb_rot.center.y - 240) > 25)
 			{
-				tptz__ContinuousMove->Velocity->PanTilt->x = (cmt.bb_rot.center.x - 320)/1000 + 0.1;
-				tptz__ContinuousMove->Velocity->PanTilt->y = -((cmt.bb_rot.center.y - 240)/1000 + 0.1);
+				x = (cmt.bb_rot.center.x - 320)/1000 + 0.1;
+				y = -((cmt.bb_rot.center.y - 240)/1000 + 0.1);
 				moving = true;
 			}
 			else
