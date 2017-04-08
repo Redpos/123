@@ -561,7 +561,7 @@ void track(cv::Mat frame0)
 				soap_destroy(soap);
 				soap_end(soap);
 			}
-				if(detected_face.x == 0)
+				/*if(detected_face.x == 0)
 				{		
 					detected_face.x = cmt.bb_rot.center.x;
 					detected_face.y = cmt.bb_rot.center.y;
@@ -611,7 +611,7 @@ void track(cv::Mat frame0)
 						//detected_face.x = 0; && (abs(moving_face.x - detected_face.x) > 100 || abs(moving_face.y - detected_face.y) > 100)
 						//cout << " DETECTED X: " << detected_face.x << " DETETCTED Y: " << detected_face.y << endl;
 					
-					}
+					}*/
 					/*else if (moving == true && abs(moving_face.x - cmt.bb_rot.center.x) < 2 && abs(moving_face.y - cmt.bb_rot.center.y) < 2)
 					{
 						moving == false;
@@ -619,7 +619,7 @@ void track(cv::Mat frame0)
 						detected_face.y = moving_face.y;
 						//cout << " DETECTED X: " << detected_face.x << " DETETCTED Y: " << detected_face.y << endl;
 					}*/
-				}
+				//}
 		}
 		
 	}
