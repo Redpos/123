@@ -40,12 +40,8 @@
 
 using cmt::CMT;
 
-struct soap *soap = soap_new();
-
-_tptz__ContinuousMove *tptz__ContinuousMove = soap_new__tptz__ContinuousMove(soap, -1);
-_tptz__ContinuousMoveResponse *tptz__ContinuousMoveResponse = soap_new__tptz__ContinuousMoveResponse(soap, -1);
-
-tt__PTZSpeed *Speed = soap_new_tt__PTZSpeed(soap, -1);
+_tptz__ContinuousMove *tptz__ContinuousMove;
+_tptz__ContinuousMoveResponse *tptz__ContinuousMoveResponse;
 
 cv::String face_cascade_name = "haarcascade_frontalface_alt.xml";
 cv::String profileface_cascade_name = "haarcascade_profileface.xml";
@@ -165,12 +161,19 @@ int main(int argc, char* argv[])
             		refresh();endwin(); return -1;}
 	//if(!profile_cascade.load(profileface_cascade_name)){std::cout <<"Error loading profile cascade!"<<std::endl; return -1;}
 	
+	struct soap *soap = soap_new();
+	
 	char szHostName[MAX_HOSTNAME_LEN] = { 0 };
 	char szPTZName[MAX_HOSTNAME_LEN] = {0};
 	char szStreamName[MAX_HOSTNAME_LEN] = {0};
 	
+	tt__PTZSpeed *Speed = soap_new_tt__PTZSpeed(soap, -1);
+	
 	Speed->PanTilt = new tt__Vector2D;
 	Speed->Zoom = new tt__Vector1D;
+	
+	tptz__ContinuousMove = soap_new__tptz__ContinuousMove(soap, -1);
+	tptz__ContinuousMoveResponse = soap_new__tptz__ContinuousMoveResponse(soap, -1);
 	
 	tptz__ContinuousMove->ProfileToken = "Profile_1";
 	tptz__ContinuousMove->Velocity = Speed;
