@@ -80,13 +80,13 @@ int control(void)
 
 void *CaptureImages(void *threadid)
 {
-	printw("good14\n");
 	if (!capture.isOpened())
 	{
 		capture.open("rtsp://192.168.11.19:554//Streaming/Channels/2");
 	}
 	while (capture.isOpened())
 	{
+		printw("good14\n");
 		capture >> im;
 		if (im.empty())
 		{
