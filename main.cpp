@@ -123,7 +123,7 @@ void *ContMove(void *threadid)
 				printw("TOKEN ERROR\n");
             			refresh();
 			}
-			//soap_wsse_add_Timestamp(proxyPTZ.soap, "Time", 10);
+			soap_wsse_add_Timestamp(proxyPTZ.soap, "Time", 10);
 			if (SOAP_OK == proxyPTZ.ContinuousMove(tptz__ContinuousMove, tptz__ContinuousMoveResponse))
 			{
 				printw("MOVED X: %f\n", tptz__ContinuousMove->Velocity->PanTilt->x);
@@ -556,13 +556,13 @@ void track(cv::Mat frame0)
 				{
 					x = 0;
 				}
-				if(abs(cmt.bb_rot.center.y - 240) > 0.025)
+				if((cmt.bb_rot.center.y - 240)/1000 > 0.025)
 				{
-					y = abs(cmt.bb_rot.center.y - 240) + 0.1;
+					y = (cmt.bb_rot.center.y - 240)/1000 + 0.1;
 				}
-				else if (abs(cmt.bb_rot.center.y - 240) < -0.025)
+				else if ((cmt.bb_rot.center.y - 240)/1000 < -0.025)
 				{
-					y = abs(cmt.bb_rot.center.y - 240) - 0.1;
+					y = (cmt.bb_rot.center.y - 240)/1000 - 0.1;
 				}
 				else
 				{
