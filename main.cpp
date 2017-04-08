@@ -68,7 +68,6 @@ cv::Mat im;
 
 int control(void)
 {
-    printw("good14\n");
     int ch = getch();
  
     if (ch != ERR) {
@@ -77,11 +76,11 @@ int control(void)
     } else {
         return 0;
     }
-	printw("good15\n");
 }
 
 void *CaptureImages(void *threadid)
 {
+	printw("good14\n");
 	if (!capture.isOpened())
 	{
 		capture.open("rtsp://192.168.11.19:554//Streaming/Channels/2");
