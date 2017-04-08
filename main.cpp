@@ -80,16 +80,19 @@ int control(void)
 
 void *CaptureImages(void *threadid)
 {
-	if (!capture.isOpened())
+	while(1)
 	{
-		capture.open("rtsp://192.168.11.19:554//Streaming/Channels/2");
-	}
-	while (capture.isOpened())
-	{
-		capture >> im;
-		if (im.empty())
+		if (!capture.isOpened())
 		{
-			break;
+			capture.open("rtsp://192.168.11.19:554//Streaming/Channels/2");
+		}
+		while (capture.isOpened())
+		{
+			capture >> im;
+			if (im.empty())
+			{
+				break;
+			}
 		}
 	}
 	im.release();
@@ -99,26 +102,27 @@ void *CaptureImages(void *threadid)
 
 void *ContMove(void *threadid)
 {
-	printw("good8\n");
-	if (moving)
+	while(1)
 	{
-		if (SOAP_OK != soap_wsse_add_UsernameTokenDigest(proxyPTZ.soap, NULL, "admin", "Supervisor"))
+		printw("good8\n");
+		if (moving)
 		{
-			printw("TOKEN ERROR\n");
-            		refresh();
+			if (SOAP_OK != soap_wsse_add_UsernameTokenDigest(proxyPTZ.soap, NULL, "admin", "Supervisor"))
+			{
+				printw("TOKEN ERROR\n");
+            			refresh();
+			}
+			soap_wsse_add_Timestamp(proxyPTZ.soap, "Time", 10);
+			if (SOAP_OK == proxyPTZ.ContinuousMove(tptz__ContinuousMove, tptz__ContinuousMoveResponse))
+			{
+				printw("MOVED X: %f\n", tptz__ContinuousMove->Velocity->PanTilt->x);
+            			refresh();
+				printw("MOVED Y: %f\n", tptz__ContinuousMove->Velocity->PanTilt->y);
+            			refresh();
+			}
+			soap_destroy(soap); 
+    			soap_end(soap);
 		}
-		soap_wsse_add_Timestamp(proxyPTZ.soap, "Time", 10);
-		if (SOAP_OK == proxyPTZ.ContinuousMove(tptz__ContinuousMove, tptz__ContinuousMoveResponse))
-		{
-			printw("MOVED X: %f\n", tptz__ContinuousMove->Velocity->PanTilt->x);
-            		refresh();
-			printw("MOVED Y: %f\n", tptz__ContinuousMove->Velocity->PanTilt->y);
-            		refresh();
-		}
-		printw("good9\n");
-		soap_destroy(soap); 
-    		soap_end(soap);
-		printw("good10\n");
 	}
 	pthread_exit(NULL);
 	return NULL;
