@@ -103,12 +103,12 @@ void *ContMove(void *threadid)
 {
 	if (moving)
 	{
-		if (SOAP_OK != soap_wsse_add_UsernameTokenDigest(&proxyPTZ, NULL, "admin", "Supervisor"))
+		if (SOAP_OK != soap_wsse_add_UsernameTokenDigest(proxyPTZ.soap, NULL, "admin", "Supervisor"))
 		{
 			printw("TOKEN ERROR\n");
             		refresh();
 		}
-		soap_wsse_add_Timestamp(&proxyPTZ, "Time", 10);
+		soap_wsse_add_Timestamp(proxyPTZ.soap, "Time", 10);
 		if (SOAP_OK == proxyPTZ.ContinuousMove(tptz__ContinuousMove, tptz__ContinuousMoveResponse))
 		{
 			printw("MOVED X: %f\n", tptz__ContinuousMove->Velocity->PanTilt->x);
@@ -551,7 +551,7 @@ void track(cv::Mat frame0)
   					printw("TOKEN ERROR\n");
             				refresh();
         			}
-				soap_wsse_add_Timestamp(&proxyPTZ, "Time", 10);
+				soap_wsse_add_Timestamp(proxyPTZ.soap, "Time", 10);
        				if(SOAP_OK == proxyPTZ.Stop(tptz__Stop, tptz__StopResponse))
 				{
 					printw("STOPPED\n");
