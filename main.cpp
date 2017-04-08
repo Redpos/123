@@ -549,8 +549,30 @@ void track(cv::Mat frame0)
 		{
 			if(abs(cmt.bb_rot.center.x - 320) > 30 || abs(cmt.bb_rot.center.y - 240) > 25)
 			{
-				x = (cmt.bb_rot.center.x - 320)/1000 + 0.1;
-				y = -((cmt.bb_rot.center.y - 240)/1000 + 0.1);
+				if((cmt.bb_rot.center.x - 320)/1000 > 0.03)
+				{
+					x = (cmt.bb_rot.center.x - 320)/1000 + 0.1;
+				}
+				else if ((cmt.bb_rot.center.x - 320)/1000 < -0.03)
+				{
+					x = (cmt.bb_rot.center.x - 320)/1000 - 0.1;
+				}
+				else
+				{
+					x = 0;
+				}
+				if(abs(cmt.bb_rot.center.y - 240) > 0.025)
+				{
+					y = abs(cmt.bb_rot.center.y - 240) + 0.1;
+				}
+				else if (abs(cmt.bb_rot.center.y - 240) < -0.025)
+				{
+					y = abs(cmt.bb_rot.center.y - 240) - 0.1;
+				}
+				else
+				{
+					y = 0;
+				}
 				moving = true;
 			}
 			else
