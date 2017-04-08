@@ -68,14 +68,16 @@ cv::Mat im;
 
 int control(void)
 {
+    printw("good14\n");
     int ch = getch();
-
+ 
     if (ch != ERR) {
         ungetch(ch);
         return 1;
     } else {
         return 0;
     }
+	printw("good15\n");
 }
 
 void *CaptureImages(void *threadid)
@@ -482,9 +484,11 @@ void track(cv::Mat frame0)
 			}
 			else if(ch == 99)
 			{
+				printw("good11\n");
 				printw("Camera control changed\n");
             			refresh();
 				camera_control = !camera_control;
+				printw("good12\n");
 			}
 			else if(ch == 109)
 			{
@@ -510,6 +514,7 @@ void track(cv::Mat frame0)
 				border_y = 720;
 				detected_face.x == 0;
 			}
+			printw("good13\n");
 		}
 		if(read(fd, buf, 1024))
 		{
