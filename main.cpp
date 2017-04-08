@@ -368,7 +368,7 @@ int main(int argc, char* argv[])
 			}
 				
 		}
-		if(read(fd, buf, 1024))
+		if(read(fd, buf, sizeof(buf)))
 		{
 			if(*buf == 113)
 			{
@@ -550,7 +550,7 @@ void track(cv::Mat frame0)
 				detected_face.x == 0;
 			}
 		}
-		if(read(fd, buf, 1024))
+		if(read(fd, buf, sizeof(buf)))
 		{
 			if(*buf == 115)
 			{
