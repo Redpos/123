@@ -99,6 +99,7 @@ void *CaptureImages(void *threadid)
 
 void *ContMove(void *threadid)
 {
+	printw("good8\n");
 	if (moving)
 	{
 		if (SOAP_OK != soap_wsse_add_UsernameTokenDigest(proxyPTZ.soap, NULL, "admin", "Supervisor"))
@@ -114,8 +115,10 @@ void *ContMove(void *threadid)
 			printw("MOVED Y: %f\n", tptz__ContinuousMove->Velocity->PanTilt->y);
             		refresh();
 		}
+		printw("good9\n");
 		soap_destroy(soap); 
     		soap_end(soap);
+		printw("good10\n");
 	}
 	pthread_exit(NULL);
 	return NULL;
@@ -535,20 +538,24 @@ void track(cv::Mat frame0)
 		}
 		else if(camera_control)
 		{
+			printw("good1\n");
 			if(abs(cmt.bb_rot.center.x - 320) > 30 || abs(cmt.bb_rot.center.y - 240) > 25)
 			{
+				printw("good2\n");
 				tptz__ContinuousMove->Velocity->PanTilt->x = (cmt.bb_rot.center.x - 320)/1000 + 0.1;
 				tptz__ContinuousMove->Velocity->PanTilt->y = -((cmt.bb_rot.center.y - 240)/1000 + 0.1);
 				moving = true;
+				printw("good3\n");
 			}
 			else
 			{
+				printw("good4\n");
 				moving = false;
 				_tptz__Stop *tptz__Stop = soap_new__tptz__Stop(soap, -1);
 				_tptz__StopResponse *tptz__StopResponse = soap_new__tptz__StopResponse(soap, -1);
 						
 				tptz__Stop->ProfileToken = "Profile_1";
-					
+				printw("goof5\n");
 				if(SOAP_OK != soap_wsse_add_UsernameTokenDigest(proxyPTZ.soap, NULL, "admin", "Supervisor"))
         			{		
   					printw("TOKEN ERROR\n");
@@ -560,9 +567,10 @@ void track(cv::Mat frame0)
 					printw("STOPPED\n");
             				refresh();
 				}
-						
+				printw("good6\n");		
 				soap_destroy(soap);
 				soap_end(soap);
+				printw("good7\n");
 			}
 				/*if(detected_face.x == 0)
 				{		
