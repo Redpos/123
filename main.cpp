@@ -40,6 +40,13 @@
 
 using cmt::CMT;
 
+struct soap *soap = soap_new();
+
+_tptz__ContinuousMove *tptz__ContinuousMove = soap_new__tptz__ContinuousMove(soap, -1);
+_tptz__ContinuousMoveResponse *tptz__ContinuousMoveResponse = soap_new__tptz__ContinuousMoveResponse(soap, -1);
+
+tt__PTZSpeed *Speed = soap_new_tt__PTZSpeed(soap, -1);
+
 cv::String face_cascade_name = "haarcascade_frontalface_alt.xml";
 cv::String profileface_cascade_name = "haarcascade_profileface.xml";
 cv::CascadeClassifier face_cascade;
@@ -92,6 +99,30 @@ void *CaptureImages(void *threadid)
 	return NULL;
 }
 
+void *ContMove(void *threadid)
+{
+	if (moving)
+	{
+		if (SOAP_OK != soap_wsse_add_UsernameTokenDigest(&proxyPTZ, NULL, "admin", "Supervisor"))
+		{
+			printw("TOKEN ERROR\n");
+            		refresh();
+		}
+		soap_wsse_add_Timestamp(&proxyPTZ, "Time", 10);
+		if (SOAP_OK == proxyPTZ.ContinuousMove(tptz__ContinuousMove, tptz__ContinuousMoveResponse))
+		{
+			printw("MOVED X: %f\n", tptz__ContinuousMove->Velocity->PanTilt->x);
+            		refresh();
+			printw("MOVED Y: %f\n", tptz__ContinuousMove->Velocity->PanTilt->y);
+            		refresh();
+		}
+		soap_destroy(soap); 
+    		soap_end(soap);
+	}
+	pthread_exit(NULL);
+	return NULL;
+}
+
 char* getCmdOption(char ** begin, char ** end, const std::string & option)
 {
     char ** itr = std::find(begin, end, option);
@@ -137,6 +168,12 @@ int main(int argc, char* argv[])
 	char szHostName[MAX_HOSTNAME_LEN] = { 0 };
 	char szPTZName[MAX_HOSTNAME_LEN] = {0};
 	char szStreamName[MAX_HOSTNAME_LEN] = {0};
+	
+	Speed->PanTilt = new tt__Vector2D;
+	Speed->Zoom = new tt__Vector1D;
+	
+	tptz__ContinuousMove->ProfileToken = "Profile_1";
+	tptz__ContinuousMove->Velocity = Speed;
 	// Proxy declarations
 	//PTZBindingProxy proxyPTZ;
 	DeviceBindingProxy proxyDevice;
@@ -182,7 +219,7 @@ int main(int argc, char* argv[])
 	soap_register_plugin(proxyDevice.soap, soap_wsse);
 	soap_register_plugin(proxyPTZ.soap, soap_wsse);
 
-	struct soap *soap = soap_new();
+	//struct soap *soap = soap_new();
 	// For DeviceBindingProxy
 	if (SOAP_OK != soap_wsse_add_UsernameTokenDigest(proxyDevice.soap, NULL, camUsr, camPwd))
 	{
@@ -236,15 +273,17 @@ int main(int argc, char* argv[])
 	capture.retrieve(im);
 	
 	
-	pthread_t capture_thread;
-	int thread_id = 0;
-	int rc = pthread_create(&capture_thread, NULL,
-		CaptureImages, (void *)thread_id);
-	if (rc)
+	pthread_t capture_thread, move_thread;
+	int thread_id1 = 0, thread_id2 = 0;
+	pthread_create(&capture_thread, NULL,
+		CaptureImages, (void *)thread_id1);
+	pthread_create(&move_thread, NULL,
+		ContMove, (void *)thread_id2);
+	/*if (rc)
 	{
 		endwin();
 		close(fd);
-	}
+	}*/
 	
 	fd = open(fifo, O_RDONLY | O_NONBLOCK);
 	while(1)
@@ -483,7 +522,7 @@ void track(cv::Mat frame0)
 				camera_control = !camera_control;
 			}
 		}
-		if ((abs(cmt.bb_rot.size.height - rect.height) > 40 || abs(cmt.bb_rot.size.width - rect.width) > 40)/*&& (abs(detected_face.x - cmt.bb_rot.center.x) > 20 || abs(detected_face.y - cmt.bb_rot.center.y) > 20)*/)
+		if ((abs(cmt.bb_rot.size.height - rect.height) > 60 || abs(cmt.bb_rot.size.width - rect.width) > 60)/*&& (abs(detected_face.x - cmt.bb_rot.center.x) > 20 || abs(detected_face.y - cmt.bb_rot.center.y) > 20)*/)
 		{
 			printw("Stopped tracking\n");
             		refresh();
@@ -493,6 +532,35 @@ void track(cv::Mat frame0)
 		}
 		else if(camera_control)
 		{
+			if(abs(cmt.bb_rot.center.x - 320) > 30 || abs(cmt.bb_rot.center.y - 240) > 25)
+			{
+				tptz__ContinuousMove->Velocity->PanTilt->x = (cmt.bb_rot.center.x - 320)/1000 + 0.1;
+				tptz__ContinuousMove->Velocity->PanTilt->y = -((cmt.bb_rot.center.y - 240)/1000 + 0.1);
+				moving = true;
+			}
+			else
+			{
+				moving = false;
+				_tptz__Stop *tptz__Stop = soap_new__tptz__Stop(soap, -1);
+				_tptz__StopResponse *tptz__StopResponse = soap_new__tptz__StopResponse(soap, -1);
+						
+				tptz__Stop->ProfileToken = "Profile_1";
+					
+				if(SOAP_OK != soap_wsse_add_UsernameTokenDigest(proxyPTZ.soap, NULL, "admin", "Supervisor"))
+        			{		
+  					printw("TOKEN ERROR\n");
+            				refresh();
+        			}
+				soap_wsse_add_Timestamp(&proxyPTZ, "Time", 10);
+       				if(SOAP_OK == proxyPTZ.Stop(tptz__Stop, tptz__StopResponse))
+				{
+					printw("STOPPED\n");
+            				refresh();
+				}
+						
+				soap_destroy(soap);
+				soap_end(soap);
+			}
 				if(detected_face.x == 0)
 				{		
 					detected_face.x = cmt.bb_rot.center.x;
@@ -504,7 +572,7 @@ void track(cv::Mat frame0)
             				//refresh();
 					//printw("MOVING Y: %d\n", detected_face.y);
             				//refresh();
-					move(face);
+					//move(face);
 				}
 				else
 				{
@@ -589,7 +657,7 @@ void move(cv::Point point)
 	if(pan==true||tilt==true)
 	{
 		
-		struct soap *soap = soap_new();	
+		//struct soap *soap = soap_new();	
 		/*				
 		_tptz__Stop *tptz__Stop = soap_new__tptz__Stop(soap, -1);
 		_tptz__StopResponse *tptz__StopResponse = soap_new__tptz__StopResponse(soap, -1);
