@@ -477,7 +477,7 @@ void track(cv::Mat frame0)
 		}
 		cmt.processFrame(frame_gray);
 		
-		if(cmt.bb_rot.points.size<5)
+		if(cmt.points_active.size<5)
 		{
 			printw("Stopped tracking\n");
             		refresh();
