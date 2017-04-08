@@ -40,6 +40,8 @@
 
 using cmt::CMT;
 
+struct soap *soap = soap_new();
+
 _tptz__ContinuousMove *tptz__ContinuousMove;
 _tptz__ContinuousMoveResponse *tptz__ContinuousMoveResponse;
 
@@ -160,8 +162,6 @@ int main(int argc, char* argv[])
 	if(!face_cascade.load(face_cascade_name)){printw("Error opening face cascade\n");
             		refresh();endwin(); return -1;}
 	//if(!profile_cascade.load(profileface_cascade_name)){std::cout <<"Error loading profile cascade!"<<std::endl; return -1;}
-	
-	struct soap *soap = soap_new();
 	
 	char szHostName[MAX_HOSTNAME_LEN] = { 0 };
 	char szPTZName[MAX_HOSTNAME_LEN] = {0};
