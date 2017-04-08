@@ -123,17 +123,13 @@ void *ContMove(void *threadid)
 				printw("TOKEN ERROR\n");
             			refresh();
 			}
-			soap_wsse_add_Timestamp(proxyPTZ.soap, "Time", 10);
+			//soap_wsse_add_Timestamp(proxyPTZ.soap, "Time", 10);
 			if (SOAP_OK == proxyPTZ.ContinuousMove(tptz__ContinuousMove, tptz__ContinuousMoveResponse))
 			{
 				printw("MOVED X: %f\n", tptz__ContinuousMove->Velocity->PanTilt->x);
             			refresh();
 				printw("MOVED Y: %f\n", tptz__ContinuousMove->Velocity->PanTilt->y);
             			refresh();
-			}
-			else
-			{
-				printw("ERROR\n");	
 			}
 			soap_destroy(soap); 
     			soap_end(soap);
