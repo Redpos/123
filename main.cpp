@@ -131,6 +131,11 @@ void *ContMove(void *threadid)
 				printw("MOVED Y: %f\n", tptz__ContinuousMove->Velocity->PanTilt->y);
             			refresh();
 			}
+			else
+			{
+				printw("ERROR\n");
+			}
+				
 			soap_destroy(soap); 
     			soap_end(soap);
 		}
