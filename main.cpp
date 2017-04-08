@@ -134,6 +134,21 @@ void *ContMove(void *threadid)
 			else
 			{
 				printw("ERROR\n");
+				_tptz__Stop *tptz__Stop = soap_new__tptz__Stop(soap, -1);
+				_tptz__StopResponse *tptz__StopResponse = soap_new__tptz__StopResponse(soap, -1);
+						
+				tptz__Stop->ProfileToken = "Profile_1";
+				if(SOAP_OK != soap_wsse_add_UsernameTokenDigest(proxyPTZ.soap, NULL, "admin", "Supervisor"))
+        			{		
+  					printw("TOKEN ERROR\n");
+            				refresh();
+        			}
+				soap_wsse_add_Timestamp(proxyPTZ.soap, "Time", 10);
+       				if(SOAP_OK == proxyPTZ.Stop(tptz__Stop, tptz__StopResponse))
+				{
+					printw("STOPPED2\n");
+            				refresh();
+				}		
 			}
 				
 			soap_destroy(soap); 
@@ -584,11 +599,11 @@ void track(cv::Mat frame0)
 				}
 				if((cmt.bb_rot.center.y - 240)/1000 > 0.03)
 				{
-					y = -((cmt.bb_rot.center.y - 240)/1000 + 0.1);
+					y = -((cmt.bb_rot.center.y - 240)/1000 + 0.2);
 				}
 				else if ((cmt.bb_rot.center.y - 240)/1000 < -0.03)
 				{
-					y = -((cmt.bb_rot.center.y - 240)/1000 - 0.1);
+					y = -((cmt.bb_rot.center.y - 240)/1000 - 0.2);
 				}
 				else
 				{
