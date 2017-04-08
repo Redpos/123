@@ -139,7 +139,7 @@ void *ContMove(void *threadid)
 			soap_destroy(soap); 
     			soap_end(soap);
 			
-			usleep(100000);
+			usleep(200000);
 			
 		}
 	}
