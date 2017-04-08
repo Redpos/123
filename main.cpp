@@ -138,6 +138,7 @@ void *ContMove(void *threadid)
 				
 			soap_destroy(soap); 
     			soap_end(soap);
+			
 		}
 	}
 	pthread_exit(NULL);
@@ -475,7 +476,17 @@ void track(cv::Mat frame0)
 			frame_gray = im;
 		}
 		cmt.processFrame(frame_gray);
-
+		
+		if(cmt.bb_rot.points.size<5)
+		{
+			printw("Stopped tracking\n");
+            		refresh();
+			tracking = false;
+			//detected_face.x = 0;
+			x = 0.0;
+			y = 0.0;
+			moving = false;
+		}
 
 		//char key = display(frame, cmt);
 		if (control())
@@ -554,6 +565,7 @@ void track(cv::Mat frame0)
 		}
 		else if(camera_control)
 		{
+			
 			if(abs(cmt.bb_rot.center.x - 320) > 35 || abs(cmt.bb_rot.center.y - 240) > 30)
 			{
 				if((cmt.bb_rot.center.x - 320)/1000 > 0.035)
