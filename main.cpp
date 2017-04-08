@@ -550,7 +550,7 @@ void track(cv::Mat frame0)
 				detected_face.x == 0;
 			}
 		}
-		if(read(fd, &buf, sizeof(buf)))
+		/*if(read(fd, &buf, sizeof(buf)))
 		{
 			if(*buf == 115)
 			{
@@ -568,7 +568,7 @@ void track(cv::Mat frame0)
 				x = 0.0;
 				y = 0.0;
 			}
-		}
+		}*/
 		if ((abs(cmt.bb_rot.size.height - rect.height) > 50 || abs(cmt.bb_rot.size.width - rect.width) > 50)/*&& (abs(detected_face.x - cmt.bb_rot.center.x) > 20 || abs(detected_face.y - cmt.bb_rot.center.y) > 20)*/)
 		{
 			printw("Stopped tracking\n");
