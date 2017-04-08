@@ -477,12 +477,10 @@ void track(cv::Mat frame0)
            	 	int ch = getch();
 			if(ch == 115)
 			{
-				printw("good1\n");
 				printw("Stopped tracking\n");
             			refresh();
 				tracking = false;
 				detected_face.x = 0;
-				printw("good2\n");
 				break;
 			}
 			else if(ch == 99)
@@ -490,8 +488,9 @@ void track(cv::Mat frame0)
 				printw("good11\n");
 				printw("Camera control changed\n");
             			refresh();
-				camera_control = !camera_control;
 				printw("good12\n");
+				camera_control = !camera_control;
+				printw("good13\n");
 			}
 			else if(ch == 109)
 			{
