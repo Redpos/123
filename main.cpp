@@ -542,10 +542,8 @@ void track(cv::Mat frame0)
 		}
 		else if(camera_control)
 		{
-			printw("321\n");
 			if(abs(cmt.bb_rot.center.x - 320) > 30 || abs(cmt.bb_rot.center.y - 240) > 25)
 			{
-				printw("yes\n");
 				if((cmt.bb_rot.center.x - 320)/1000 > 0.03)
 				{
 					x = (cmt.bb_rot.center.x - 320)/1000 + 0.1;
@@ -570,6 +568,7 @@ void track(cv::Mat frame0)
 				{
 					y = 0;
 				}
+				printw("-----X-----: %f\n", x);
 				moving = true;
 			}
 			else if (moving)
