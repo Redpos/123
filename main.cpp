@@ -102,7 +102,6 @@ void *ContMove(void *threadid)
 {
 	while(1)
 	{
-		printw("da\n");
 		if (moving)
 		{
 			_tptz__ContinuousMove *tptz__ContinuousMove = soap_new__tptz__ContinuousMove(soap, -1);
@@ -543,7 +542,7 @@ void track(cv::Mat frame0)
 		}
 		else if(camera_control)
 		{
-			printw("123\n");
+			printw("321\n");
 			if(abs(cmt.bb_rot.center.x - 320) > 30 || abs(cmt.bb_rot.center.y - 240) > 25)
 			{
 				printw("yes\n");
