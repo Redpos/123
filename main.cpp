@@ -104,7 +104,6 @@ void *ContMove(void *threadid)
 {
 	while(1)
 	{
-		printw("good8\n");
 		if (moving)
 		{
 			if (SOAP_OK != soap_wsse_add_UsernameTokenDigest(proxyPTZ.soap, NULL, "admin", "Supervisor"))
@@ -516,7 +515,6 @@ void track(cv::Mat frame0)
 				border_y = 720;
 				detected_face.x == 0;
 			}
-			printw("good13\n");
 		}
 		if(read(fd, buf, 1024))
 		{
@@ -530,9 +528,11 @@ void track(cv::Mat frame0)
 			}
 			else if(*buf == 99)
 			{
+				printw("good1\n");
 				printw("Camera control changed\n");
             			refresh();
 				camera_control = !camera_control;
+				printw("good2\n");
 			}
 		}
 		if ((abs(cmt.bb_rot.size.height - rect.height) > 60 || abs(cmt.bb_rot.size.width - rect.width) > 60)/*&& (abs(detected_face.x - cmt.bb_rot.center.x) > 20 || abs(detected_face.y - cmt.bb_rot.center.y) > 20)*/)
@@ -545,24 +545,19 @@ void track(cv::Mat frame0)
 		}
 		else if(camera_control)
 		{
-			printw("good1\n");
 			if(abs(cmt.bb_rot.center.x - 320) > 30 || abs(cmt.bb_rot.center.y - 240) > 25)
 			{
-				printw("good2\n");
 				tptz__ContinuousMove->Velocity->PanTilt->x = (cmt.bb_rot.center.x - 320)/1000 + 0.1;
 				tptz__ContinuousMove->Velocity->PanTilt->y = -((cmt.bb_rot.center.y - 240)/1000 + 0.1);
 				moving = true;
-				printw("good3\n");
 			}
 			else
 			{
-				printw("good4\n");
 				moving = false;
 				_tptz__Stop *tptz__Stop = soap_new__tptz__Stop(soap, -1);
 				_tptz__StopResponse *tptz__StopResponse = soap_new__tptz__StopResponse(soap, -1);
 						
 				tptz__Stop->ProfileToken = "Profile_1";
-				printw("goof5\n");
 				if(SOAP_OK != soap_wsse_add_UsernameTokenDigest(proxyPTZ.soap, NULL, "admin", "Supervisor"))
         			{		
   					printw("TOKEN ERROR\n");
@@ -573,11 +568,9 @@ void track(cv::Mat frame0)
 				{
 					printw("STOPPED\n");
             				refresh();
-				}
-				printw("good6\n");		
+				}		
 				soap_destroy(soap);
 				soap_end(soap);
-				printw("good7\n");
 			}
 				/*if(detected_face.x == 0)
 				{		
