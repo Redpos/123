@@ -86,7 +86,6 @@ void *CaptureImages(void *threadid)
 	}
 	while (capture.isOpened())
 	{
-		printw("good14\n");
 		capture >> im;
 		if (im.empty())
 		{
@@ -281,7 +280,7 @@ int main(int argc, char* argv[])
 	
 	
 	pthread_t capture_thread, move_thread;
-	int thread_id1 = 0, thread_id2 = 0;
+	int thread_id1 = 0, thread_id2 = 1;
 	pthread_create(&capture_thread, NULL,
 		CaptureImages, (void *)thread_id1);
 	pthread_create(&move_thread, NULL,
