@@ -307,7 +307,7 @@ int main(int argc, char* argv[])
 	
 	
 	pthread_t capture_thread, move_thread;
-	int thread_id1 = 0, thread_id2 = 2;
+	int thread_id1 = 0, thread_id2 = 1;
 	pthread_create(&capture_thread, NULL,
 		CaptureImages, (void *)thread_id1);
 	pthread_create(&move_thread, NULL,
@@ -368,7 +368,7 @@ int main(int argc, char* argv[])
 			}
 				
 		}
-		if(read(fd, buf, sizeof(buf)))
+		if(read(fd, &buf, sizeof(buf)))
 		{
 			if(*buf == 113)
 			{
@@ -550,7 +550,7 @@ void track(cv::Mat frame0)
 				detected_face.x == 0;
 			}
 		}
-		if(read(fd, buf, sizeof(buf)))
+		if(read(fd, &buf, sizeof(buf)))
 		{
 			if(*buf == 115)
 			{
