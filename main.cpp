@@ -549,13 +549,13 @@ void track(cv::Mat frame0)
 		}
 		else if(camera_control)
 		{
-			if(abs(cmt.bb_rot.center.x - 320) > 30 || abs(cmt.bb_rot.center.y - 240) > 25)
+			if(abs(cmt.bb_rot.center.x - 320) > 35 || abs(cmt.bb_rot.center.y - 240) > 30)
 			{
-				if((cmt.bb_rot.center.x - 320)/1000 > 0.03)
+				if((cmt.bb_rot.center.x - 320)/1000 > 0.035)
 				{
 					x = (cmt.bb_rot.center.x - 320)/1000 + 0.2;
 				}
-				else if ((cmt.bb_rot.center.x - 320)/1000 < -0.03)
+				else if ((cmt.bb_rot.center.x - 320)/1000 < -0.035)
 				{
 					x = (cmt.bb_rot.center.x - 320)/1000 - 0.2;
 				}
@@ -563,11 +563,11 @@ void track(cv::Mat frame0)
 				{
 					x = 0;
 				}
-				if((cmt.bb_rot.center.y - 240)/1000 > 0.025)
+				if((cmt.bb_rot.center.y - 240)/1000 > 0.03)
 				{
 					y = -((cmt.bb_rot.center.y - 240)/1000 + 0.2);
 				}
-				else if ((cmt.bb_rot.center.y - 240)/1000 < -0.025)
+				else if ((cmt.bb_rot.center.y - 240)/1000 < -0.03)
 				{
 					y = -((cmt.bb_rot.center.y - 240)/1000 - 0.2);
 				}
