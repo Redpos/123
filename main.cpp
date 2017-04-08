@@ -486,12 +486,9 @@ void track(cv::Mat frame0)
 			}
 			else if(ch == 99)
 			{
-				printw("good11\n");
 				printw("Camera control changed\n");
             			refresh();
-				printw("good12\n");
 				camera_control = !camera_control;
-				printw("good13\n");
 			}
 			else if(ch == 109)
 			{
@@ -530,14 +527,12 @@ void track(cv::Mat frame0)
 			}
 			else if(*buf == 99)
 			{
-				printw("good1\n");
 				printw("Camera control changed\n");
             			refresh();
 				camera_control = !camera_control;
-				printw("good2\n");
 			}
 		}
-		if ((abs(cmt.bb_rot.size.height - rect.height) > 60 || abs(cmt.bb_rot.size.width - rect.width) > 60)/*&& (abs(detected_face.x - cmt.bb_rot.center.x) > 20 || abs(detected_face.y - cmt.bb_rot.center.y) > 20)*/)
+		if ((abs(cmt.bb_rot.size.height - rect.height) > 50 || abs(cmt.bb_rot.size.width - rect.width) > 50)/*&& (abs(detected_face.x - cmt.bb_rot.center.x) > 20 || abs(detected_face.y - cmt.bb_rot.center.y) > 20)*/)
 		{
 			printw("Stopped tracking\n");
             		refresh();
@@ -575,7 +570,7 @@ void track(cv::Mat frame0)
 				}
 				moving = true;
 			}
-			else
+			else if (moving)
 			{
 				moving = false;
 				_tptz__Stop *tptz__Stop = soap_new__tptz__Stop(soap, -1);
