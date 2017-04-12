@@ -48,19 +48,27 @@ cv::CascadeClassifier face_cascade;
 cv::CascadeClassifier profile_cascade;
 PTZBindingProxy proxyPTZ;
 std::vector<cv::Rect> detected_faces;
-cv::Point detected_face(0.0,0.0);
-cv::Point moving_face(0.0, 0.0);
+//cv::Point detected_face(0.0,0.0);
+//cv::Point moving_face(0.0, 0.0);
 bool tracking = false;
 bool moving = false;
 bool camera_control = false;
 cv::Rect rect;
 cv::VideoCapture capture;
 float x = 0, y = 0;
-float border_x = 960;
-float border_y = 540;
+float border_x = 320;
+float border_y = 240;
 char *fifo = "ipcfifo";
 int fd;
 char buf[1024];
+
+char szHostName[MAX_HOSTNAME_LEN] = {0};
+char szPTZName[MAX_HOSTNAME_LEN] = {0};
+char szStreamName[MAX_HOSTNAME_LEN] = {0};
+
+char camIp[MAX_HOSTNAME_LEN] = {0};
+char camUsr[MAX_HOSTNAME_LEN] = {0};
+char camPwd[MAX_HOSTNAME_LEN] = {0};
 
 cv::Mat im;
 
@@ -82,7 +90,7 @@ void *CaptureImages(void *threadid)
 	{
 		if (!capture.isOpened())
 		{
-			capture.open("rtsp://192.168.11.19:554//Streaming/Channels/2");
+			capture.open(szStreamName);
 		}
 		while (capture.isOpened())
 		{
@@ -204,9 +212,6 @@ int main(int argc, char* argv[])
             		refresh();endwin(); return -1;}
 	//if(!profile_cascade.load(profileface_cascade_name)){std::cout <<"Error loading profile cascade!"<<std::endl; return -1;}
 	
-	char szHostName[MAX_HOSTNAME_LEN] = { 0 };
-	char szPTZName[MAX_HOSTNAME_LEN] = {0};
-	char szStreamName[MAX_HOSTNAME_LEN] = {0};
 	// Proxy declarations
 	//PTZBindingProxy proxyPTZ;
 	DeviceBindingProxy proxyDevice;
@@ -222,9 +227,9 @@ int main(int argc, char* argv[])
     		return -1;
     	}
 
-    	char *camIp = getCmdOption(argv, argv+argc, "-cIp");
-   	char *camUsr = getCmdOption(argv, argv+argc, "-cUsr");
-    	char *camPwd = getCmdOption(argv, argv+argc, "-cPwd");
+    	camIp = getCmdOption(argv, argv+argc, "-cIp");
+   	camUsr = getCmdOption(argv, argv+argc, "-cUsr");
+    	camPwd = getCmdOption(argv, argv+argc, "-cPwd");
 
     	if (!(camIp && camUsr && camPwd ))
     	{
@@ -394,6 +399,15 @@ int main(int argc, char* argv[])
 				cv::Point face(0.0, 0.0);
 				move(face);
 			}
+			else if(*buf == 110)
+			{
+				printw("new camera\n");
+				refresh();
+				char temp[128];
+				
+				
+			}
+					
 		}
 		//cv::waitKey(100);
 
@@ -445,8 +459,8 @@ void detect(cv::Mat frame)
 					//detected_face = face;		
 					tracking = true;
 					rect = faces[0];
-					rect.height = rect.height - 10;
-					rect.width = rect.width - 20;
+					rect.height = rect.height - 5;
+					rect.width = rect.width - 10;
 					rect.x = rect.x + 10;
 					rect.y = rect.y + 10;
 					for(i;i>=0;i--){detected_faces.pop_back();}
@@ -529,25 +543,25 @@ void track(cv::Mat frame0)
 			{
 				printw("Center position\n");
             			refresh();
-				detected_face.x == 0;
-				border_x = 960;
-				border_y = 540;
+				//detected_face.x == 0;
+				border_x = 320;
+				border_y = 240;
 			}
 			else if(ch == 108)
 			{
 				printw("Left position\n");
             			refresh();
-				border_x = 640;
-				border_y = 720;
-				detected_face.x == 0;
+				border_x = 220;
+				border_y = 320;
+				//detected_face.x == 0;
 			}
 			else if(ch == 114)
 			{
 				printw("Right position\n");
             			refresh();
-				border_x = 1280;
-				border_y = 720;
-				detected_face.x == 0;
+				border_x = 420;
+				border_y = 320;
+				//detected_face.x == 0;
 			}
 		}
 		/*if(read(fd, &buf, sizeof(buf)))
@@ -574,7 +588,7 @@ void track(cv::Mat frame0)
 			printw("Stopped tracking\n");
             		refresh();
 			tracking = false;
-			detected_face.x = 0;
+			//detected_face.x = 0;
 			x = 0.0;
 			y = 0.0;
 			moving = false;
@@ -583,27 +597,27 @@ void track(cv::Mat frame0)
 		else if(camera_control)
 		{
 			
-			if(abs(cmt.bb_rot.center.x - 320) > 35 || abs(cmt.bb_rot.center.y - 240) > 30)
+			if(abs(cmt.bb_rot.center.x - border_x) > 35 || abs(cmt.bb_rot.center.y - border_y) > 30)
 			{
-				if((cmt.bb_rot.center.x - 320)/1000 > 0.035)
+				if((cmt.bb_rot.center.x - border_x)/1000 > 0.035)
 				{
-					x = (cmt.bb_rot.center.x - 320)/1000 + 0.1;
+					x = (cmt.bb_rot.center.x - border_x)/1000 + 0.1;
 				}
-				else if ((cmt.bb_rot.center.x - 320)/1000 < -0.035)
+				else if ((cmt.bb_rot.center.x - border_x)/1000 < -0.035)
 				{
-					x = (cmt.bb_rot.center.x - 320)/1000 - 0.1;
+					x = (cmt.bb_rot.center.x - border_x)/1000 - 0.1;
 				}
 				else
 				{
 					x = 0;
 				}
-				if((cmt.bb_rot.center.y - 240)/1000 > 0.03)
+				if((cmt.bb_rot.center.y - border_y)/1000 > 0.03)
 				{
-					y = -((cmt.bb_rot.center.y - 240)/1000 + 0.2);
+					y = -((cmt.bb_rot.center.y - border_y)/1000 + 0.2);
 				}
-				else if ((cmt.bb_rot.center.y - 240)/1000 < -0.03)
+				else if ((cmt.bb_rot.center.y - border_y)/1000 < -0.03)
 				{
-					y = -((cmt.bb_rot.center.y - 240)/1000 - 0.2);
+					y = -((cmt.bb_rot.center.y - border_y)/1000 - 0.2);
 				}
 				else
 				{
