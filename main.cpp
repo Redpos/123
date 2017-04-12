@@ -60,6 +60,7 @@ float border_x = 320;
 float border_y = 240;
 char *fifo = "ipcfifo";
 int fd;
+char c;
 char buf[1024];
 
 char szHostName[MAX_HOSTNAME_LEN] = {0};
@@ -373,9 +374,9 @@ int main(int argc, char* argv[])
 			}
 				
 		}
-		if(read(fd, &buf, sizeof(buf)))
+		if(read(fd, &c, 1))
 		{
-			if(*buf == 113)
+			if(c == 113)
 			{
 				printw("Exit\n");
             			refresh();
@@ -392,20 +393,27 @@ int main(int argc, char* argv[])
 				rect.height = 50;
 				rect.width = 150;
 			}*/
-			else if(*buf == 112)
+			else if(c == 112)
 			{
 				printw("Moving to a specific point\n");
             			refresh();
 				cv::Point face(0.0, 0.0);
 				move(face);
 			}
-			else if(*buf == 110)
+			else if(c == 110)
 			{
 				printw("new camera\n");
 				refresh();
-				char temp[128];
-				
-				
+				int i = 0;
+				while (read(fd, &c, 1) !=0)
+				{
+					if(c == '\n')
+					{
+						break;
+					}
+					buf[i++] = c;
+				}
+				printw("new address: %S\n", buf); 
 			}
 					
 		}
