@@ -60,7 +60,6 @@ float border_x = 320;
 float border_y = 240;
 char *fifo = "ipcfifo";
 int fd;
-char c;
 char buf[1024];
 
 char szHostName[MAX_HOSTNAME_LEN] = {0};
@@ -374,9 +373,9 @@ int main(int argc, char* argv[])
 			}
 				
 		}
-		if(read(fd, &c, 1))
+		if(read(fd, &buf, sizeof(buf)))
 		{
-			if(c == 113)
+			if(*buf == 113)
 			{
 				printw("Exit\n");
             			refresh();
@@ -393,27 +392,66 @@ int main(int argc, char* argv[])
 				rect.height = 50;
 				rect.width = 150;
 			}*/
-			else if(c == 112)
+			else if(*buf == 112)
 			{
 				printw("Moving to a specific point\n");
             			refresh();
 				cv::Point face(0.0, 0.0);
 				move(face);
 			}
-			else if(c == 110)
+			else if(*buf == 110)
 			{
 				printw("new camera\n");
 				refresh();
-				int i = 0;
-				while (read(fd, &c, 1) !=0)
+				char temp[128];
+				int i = 0, k = 0, j;
+				char c;
+				while(1)
 				{
-					if(c == '\n')
+					j = 0;
+					if(buf[i]) == ' ')
 					{
-						break;
+						i++;
+						while(buf[i] != ' ' || buf[i] != '\n')
+						{
+							temp[j] = buf[i];
+							j++;
+							i++;
+						}
+						temp[j] = '\0';
+						if(k == 0)
+						{
+							strcpy(camIp, temp);
+							k++;
+						}
+						else if(k == 1)
+						{
+							strcpy(camUsr, temp);
+							k++;
+						}
+						else if (k == 2)
+						{
+							strcpy(camPwd, temp);
+							k++;
+						}
+						else 
+						{
+							break;
+						}
 					}
-					buf[i++] = c;
 				}
-				printw("new address: %S\n", buf); 
+				printw("new address: %S\n", camIp);
+				strcpy(szHostName, "http://");
+				strcat(szHostName, camIp);
+				strcat(szHostName, ":80/onvif/device_service");
+
+				strcpy(szPTZName, "http://");
+				strcat(szPTZName, camIp);
+				strcat(szPTZName, ":80/onvif/PTZ");
+
+				strcpy(szStreamName, "rtsp://");
+				strcat(szStreamName, camIp);
+				strcat(szStreamName, ":554//Streaming/Channels/2");	
 			}
 					
 		}
