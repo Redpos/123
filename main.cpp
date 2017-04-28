@@ -66,9 +66,9 @@ char szHostName[MAX_HOSTNAME_LEN] = {0};
 char szPTZName[MAX_HOSTNAME_LEN] = {0};
 char szStreamName[MAX_HOSTNAME_LEN] = {0};
 
-char camIp[MAX_HOSTNAME_LEN] = {0};
-char camUsr[MAX_HOSTNAME_LEN] = {0};
-char camPwd[MAX_HOSTNAME_LEN] = {0};
+char *camIp;
+char *camUsr;
+char *camPwd;
 
 cv::Mat im;
 
