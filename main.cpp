@@ -409,7 +409,7 @@ int main(int argc, char* argv[])
 				while(1)
 				{
 					j = 0;
-					if(buf[i]) == ' ')
+					if(buf[i] == ' ')
 					{
 						i++;
 						while(buf[i] != ' ' || buf[i] != '\n')
@@ -574,7 +574,7 @@ void track(cv::Mat frame0)
 				printw("Stopped tracking\n");
             			refresh();
 				tracking = false;
-				detected_face.x = 0;
+				//detected_face.x = 0;
 				break;
 			}
 			else if(ch == 99)
