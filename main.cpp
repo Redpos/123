@@ -663,6 +663,24 @@ void track(cv::Mat frame0)
 			x = 0.0;
 			y = 0.0;
 			moving = false;
+			_tptz__Stop *tptz__Stop = soap_new__tptz__Stop(soap, -1);
+			_tptz__StopResponse *tptz__StopResponse = soap_new__tptz__StopResponse(soap, -1);
+						
+			tptz__Stop->ProfileToken = "Profile_1";
+			if(SOAP_OK != soap_wsse_add_UsernameTokenDigest(proxyPTZ.soap, NULL, "admin", "Supervisor"))
+       			{		
+				printw("TOKEN ERROR\n");
+            			refresh();
+        		}
+			soap_wsse_add_Timestamp(proxyPTZ.soap, "Time", 10);
+       			if(SOAP_OK == proxyPTZ.Stop(tptz__Stop, tptz__StopResponse))
+			{
+				printw("STOPPED\n");
+            			refresh();
+			}		
+			soap_destroy(soap);
+			soap_end(soap);
+			
 			//break;
 		}
 		else if(camera_control)
