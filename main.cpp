@@ -63,7 +63,7 @@ int fd;
 char buf[1024];
 
 float speed_x = 0.1;
-float speed_y = 0.2
+float speed_y = 0.2;
 
 char szHostName[MAX_HOSTNAME_LEN] = {0};
 char szPTZName[MAX_HOSTNAME_LEN] = {0};
