@@ -62,6 +62,9 @@ char *fifo = "ipcfifo";
 int fd;
 char buf[1024];
 
+float speed_x = 0.1;
+float speed_y = 0.2
+
 char szHostName[MAX_HOSTNAME_LEN] = {0};
 char szPTZName[MAX_HOSTNAME_LEN] = {0};
 char szStreamName[MAX_HOSTNAME_LEN] = {0};
@@ -579,11 +582,33 @@ void track(cv::Mat frame0)
 			}
 			else if(ch == 99)
 			{
-				printw("Camera control changed\n");
+				printw("Camera control enabled\n");
             			refresh();
-				camera_control = !camera_control;
+				camera_control = true;
 				x = 0.0;
 				y = 0.0;
+			}
+			else if(ch == 102)
+			{
+				printw("Camera control disabled\n");
+            			refresh();
+				camera_control = false;
+				x = 0.0;
+				y = 0.0;
+			}
+			else if(ch == 43)
+			{
+				printw("Speed increased\n");
+            			refresh();
+				speed_x = speed_x + 0.1;
+				speed_y = speed_y + 0.1;
+			}
+			else if(ch == 45)
+			{
+				printw("Speed decreased\n");
+            			refresh();
+				speed_x = speed_x - 0.1;
+				speed_y = speed_y - 0.1;
 			}
 			else if(ch == 109)
 			{
@@ -647,11 +672,11 @@ void track(cv::Mat frame0)
 			{
 				if((cmt.bb_rot.center.x - border_x)/1000 > 0.035)
 				{
-					x = (cmt.bb_rot.center.x - border_x)/1000 + 0.1;
+					x = (cmt.bb_rot.center.x - border_x)/1000 + speed_x;
 				}
 				else if ((cmt.bb_rot.center.x - border_x)/1000 < -0.035)
 				{
-					x = (cmt.bb_rot.center.x - border_x)/1000 - 0.1;
+					x = (cmt.bb_rot.center.x - border_x)/1000 - speed_x;
 				}
 				else
 				{
@@ -659,11 +684,11 @@ void track(cv::Mat frame0)
 				}
 				if((cmt.bb_rot.center.y - border_y)/1000 > 0.03)
 				{
-					y = -((cmt.bb_rot.center.y - border_y)/1000 + 0.2);
+					y = -((cmt.bb_rot.center.y - border_y)/1000 + speed_y);
 				}
 				else if ((cmt.bb_rot.center.y - border_y)/1000 < -0.03)
 				{
-					y = -((cmt.bb_rot.center.y - border_y)/1000 - 0.2);
+					y = -((cmt.bb_rot.center.y - border_y)/1000 - speed_y);
 				}
 				else
 				{
