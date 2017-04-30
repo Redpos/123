@@ -594,7 +594,7 @@ void track(cv::Mat frame0)
 				printw("Camera control disabled\n");
             			refresh();
 				camera_control = false;
-				moving = false
+				moving = false;
 				x = 0.0;
 				y = 0.0;
 			}
