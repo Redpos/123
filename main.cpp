@@ -561,11 +561,11 @@ void track(cv::Mat frame0)
 		{
 			printw("Stopped tracking1\n");
             		refresh();
-			tracking = false;
+			moving = false;
 			//detected_face.x = 0;
 			x = 0.0;
 			y = 0.0;
-			moving = false;
+			break;
 		}
 
 		//char key = display(frame, cmt);
@@ -683,7 +683,7 @@ void track(cv::Mat frame0)
 			soap_destroy(soap);
 			soap_end(soap);
 			
-			//break;
+			break;
 		}
 		else if(camera_control)
 		{
