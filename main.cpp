@@ -665,8 +665,9 @@ void track(cv::Mat frame0)
 			//detected_face.x = 0;
 			x = 0.0;
 			y = 0.0;
+			sleep(300000);
 			moving = false;
-			_tptz__Stop *tptz__Stop = soap_new__tptz__Stop(soap, -1);
+			/*_tptz__Stop *tptz__Stop = soap_new__tptz__Stop(soap, -1);
 			_tptz__StopResponse *tptz__StopResponse = soap_new__tptz__StopResponse(soap, -1);
 						
 			tptz__Stop->ProfileToken = "Profile_1";
@@ -680,9 +681,14 @@ void track(cv::Mat frame0)
 			{
 				printw("STOPPED\n");
             			refresh();
-			}		
+			}
+			else
+			{
+				printw("ERROR2\n");
+				refresh();
+			}
 			soap_destroy(soap);
-			soap_end(soap);
+			soap_end(soap);*/
 			
 			//break;
 		}
