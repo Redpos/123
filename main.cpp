@@ -562,10 +562,11 @@ void track(cv::Mat frame0)
 			printw("Stopped tracking1\n");
             		refresh();
 			moving = false;
+			tracking = false;
 			//detected_face.x = 0;
 			x = 0.0;
 			y = 0.0;
-			break;
+			//break;
 		}
 
 		//char key = display(frame, cmt);
@@ -579,7 +580,7 @@ void track(cv::Mat frame0)
 				tracking = false;
 				moving = false;
 				//detected_face.x = 0;
-				break;
+				//break;
 			}
 			else if(ch == 99)
 			{
@@ -683,9 +684,9 @@ void track(cv::Mat frame0)
 			soap_destroy(soap);
 			soap_end(soap);
 			
-			break;
+			//break;
 		}
-		else if(camera_control)
+		else if(camera_control && tracking)
 		{
 			
 			if(abs(cmt.bb_rot.center.x - border_x) > 35 || abs(cmt.bb_rot.center.y - border_y) > 30)
