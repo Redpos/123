@@ -559,7 +559,7 @@ void track(cv::Mat frame0)
 		
 		if(cmt.points_active.size()<5)
 		{
-			printw("Stopped tracking\n");
+			printw("Stopped tracking1\n");
             		refresh();
 			tracking = false;
 			//detected_face.x = 0;
@@ -574,7 +574,7 @@ void track(cv::Mat frame0)
            	 	int ch = getch();
 			if(ch == 115)
 			{
-				printw("Stopped tracking\n");
+				printw("Stopped tracking2\n");
             			refresh();
 				tracking = false;
 				moving = false;
@@ -658,7 +658,7 @@ void track(cv::Mat frame0)
 		}*/
 		if ((abs(cmt.bb_rot.size.height - rect.height) > 50 || abs(cmt.bb_rot.size.width - rect.width) > 50)/*&& (abs(detected_face.x - cmt.bb_rot.center.x) > 20 || abs(detected_face.y - cmt.bb_rot.center.y) > 20)*/)
 		{
-			printw("Stopped tracking\n");
+			printw("Stopped tracking3\n");
             		refresh();
 			tracking = false;
 			//detected_face.x = 0;
