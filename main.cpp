@@ -165,7 +165,7 @@ void *ContMove(void *threadid)
 			soap_destroy(soap); 
     			soap_end(soap);
 			
-			usleep(300000);
+			usleep(200000);
 			
 		}
 	}
@@ -561,11 +561,12 @@ void track(cv::Mat frame0)
 		{
 			printw("Stopped tracking1\n");
             		refresh();
+			x = 0.0;
+			y = 0.0;
+			usleep(300000);
 			moving = false;
 			tracking = false;
 			//detected_face.x = 0;
-			x = 0.0;
-			y = 0.0;
 			//break;
 		}
 
@@ -577,6 +578,9 @@ void track(cv::Mat frame0)
 			{
 				printw("Stopped tracking2\n");
             			refresh();
+				x = 0.0;
+				y = 0.0;
+				usleep(300000);
 				tracking = false;
 				moving = false;
 				//detected_face.x = 0;
