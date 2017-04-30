@@ -563,7 +563,7 @@ void track(cv::Mat frame0)
             		refresh();
 			x = 0.0;
 			y = 0.0;
-			usleep(400000);
+			usleep(450000);
 			moving = false;
 			tracking = false;
 			//detected_face.x = 0;
