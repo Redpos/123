@@ -563,7 +563,7 @@ void track(cv::Mat frame0)
             		refresh();
 			x = 0.0;
 			y = 0.0;
-			usleep(300000);
+			usleep(400000);
 			moving = false;
 			tracking = false;
 			//detected_face.x = 0;
@@ -580,7 +580,7 @@ void track(cv::Mat frame0)
             			refresh();
 				x = 0.0;
 				y = 0.0;
-				usleep(300000);
+				usleep(400000);
 				tracking = false;
 				moving = false;
 				//detected_face.x = 0;
@@ -669,7 +669,7 @@ void track(cv::Mat frame0)
 			//detected_face.x = 0;
 			x = 0.0;
 			y = 0.0;
-			usleep(300000);
+			usleep(400000);
 			moving = false;
 			/*_tptz__Stop *tptz__Stop = soap_new__tptz__Stop(soap, -1);
 			_tptz__StopResponse *tptz__StopResponse = soap_new__tptz__StopResponse(soap, -1);
