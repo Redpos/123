@@ -577,6 +577,7 @@ void track(cv::Mat frame0)
 				printw("Stopped tracking\n");
             			refresh();
 				tracking = false;
+				moving = false;
 				//detected_face.x = 0;
 				break;
 			}
@@ -593,6 +594,7 @@ void track(cv::Mat frame0)
 				printw("Camera control disabled\n");
             			refresh();
 				camera_control = false;
+				moving = false
 				x = 0.0;
 				y = 0.0;
 			}
