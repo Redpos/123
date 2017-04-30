@@ -145,7 +145,7 @@ void *ContMove(void *threadid)
 			else
 			{
 				printw("ERROR\n");
-				_tptz__Stop *tptz__Stop = soap_new__tptz__Stop(soap, -1);
+				/*_tptz__Stop *tptz__Stop = soap_new__tptz__Stop(soap, -1);
 				_tptz__StopResponse *tptz__StopResponse = soap_new__tptz__StopResponse(soap, -1);
 						
 				tptz__Stop->ProfileToken = "Profile_1";
@@ -159,7 +159,7 @@ void *ContMove(void *threadid)
 				{
 					printw("STOPPED2\n");
             				refresh();
-				}		
+				}	*/	
 			}
 				
 			soap_destroy(soap); 
