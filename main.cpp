@@ -310,8 +310,8 @@ int main(int argc, char* argv[])
             		refresh();
 			sleep(3);
 			capture.open(szStreamName);/*endwin(); return -1;*/}
-	capture.grab();
-	capture.retrieve(im);
+	//capture.grab();
+	//capture.retrieve(im);
 	
 	
 	pthread_t capture_thread, move_thread;
