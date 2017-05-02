@@ -176,7 +176,7 @@ void *ContMove(void *threadid)
 void StopMove ()
 {
 	bool success = false;
-	while(!succes)
+	while(!success)
 	{
 		_tptz__Stop *tptz__Stop = soap_new__tptz__Stop(soap, -1);
 		_tptz__StopResponse *tptz__StopResponse = soap_new__tptz__StopResponse(soap, -1);
