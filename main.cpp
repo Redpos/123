@@ -641,25 +641,37 @@ void track(cv::Mat frame0)
 				//detected_face.x == 0;
 			}
 		}
-		/*if(read(fd, &buf, sizeof(buf)))
+		if(read(fd, &buf, sizeof(buf)))
 		{
 			if(*buf == 115)
 			{
 				printw("Stopped tracking\n");
             			refresh();
 				tracking = false;
-				detected_face.x = 0;
-				break;
+				x = 0.0;
+				y = 0.0;
+				usleep(400000);
+				moving = false;
 			}
 			else if(*buf == 99)
 			{
-				printw("Camera control changed\n");
+				printw("Camera control enabled\n");
             			refresh();
-				camera_control = !camera_control;
+				camera_control = true;
 				x = 0.0;
 				y = 0.0;
 			}
-		}*/
+			else if(*buf == 102)
+			{
+				printw("Camera control disabled\n");
+            			refresh();
+				camera_control = false;
+				x = 0.0;
+				y = 0.0;
+				usleep(400000);
+				moving = false;
+			}
+		}
 		if ((abs(cmt.bb_rot.size.height - rect.height) > 50 || abs(cmt.bb_rot.size.width - rect.width) > 50)/*&& (abs(detected_face.x - cmt.bb_rot.center.x) > 20 || abs(detected_face.y - cmt.bb_rot.center.y) > 20)*/)
 		{
 			printw("Stopped tracking3\n");
