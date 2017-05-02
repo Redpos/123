@@ -670,7 +670,7 @@ void track(cv::Mat frame0)
 		}
 		if(read(fd, &buf, sizeof(buf)))
 		{
-			else if(*buf == 115)
+			if(*buf == 115)
 			{
 				printw("Stopped tracking\n");
             			refresh();
