@@ -401,7 +401,7 @@ int main(int argc, char* argv[])
 		}
 		if(read(fd, &buf, sizeof(buf)))
 		{
-			if(*buf == 113)
+			if(*buf == 107)
 			{
 				printw("Exit\n");
             			refresh();
@@ -670,7 +670,14 @@ void track(cv::Mat frame0)
 		}
 		if(read(fd, &buf, sizeof(buf)))
 		{
-			if(*buf == 115)
+			if(*buf == 107)
+			{
+				printw("Exit\n");
+            			refresh();
+				endwin();
+				return 0;
+			}
+			else if(*buf == 115)
 			{
 				printw("Stopped tracking\n");
             			refresh();
