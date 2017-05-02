@@ -373,8 +373,7 @@ int main(int argc, char* argv[])
             			refresh();
 				cv::Point face(0.0, 0.0);
 				move(face);
-			}
-				
+			}	
 		}
 		if(read(fd, &buf, sizeof(buf)))
 		{
@@ -385,7 +384,7 @@ int main(int argc, char* argv[])
 				endwin();
 				return 0;
 			}
-			/*else if(*buf == 116)
+			else if(*buf == 116)
 			{
 				printw("Tracking at specified spot\n");
             			refresh();
@@ -394,7 +393,7 @@ int main(int argc, char* argv[])
 				rect.y = 250;
 				rect.height = 50;
 				rect.width = 150;
-			}*/
+			}
 			else if(*buf == 112)
 			{
 				printw("Moving to a specific point\n");
