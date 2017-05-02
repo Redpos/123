@@ -173,6 +173,30 @@ void *ContMove(void *threadid)
 	return NULL;
 }
 
+void StopMove ()
+{
+	bool success = false;
+	while(!succes)
+	{
+		_tptz__Stop *tptz__Stop = soap_new__tptz__Stop(soap, -1);
+		_tptz__StopResponse *tptz__StopResponse = soap_new__tptz__StopResponse(soap, -1);
+						
+		tptz__Stop->ProfileToken = "Profile_1";
+		if(SOAP_OK != soap_wsse_add_UsernameTokenDigest(proxyPTZ.soap, NULL, "admin", "Supervisor"))
+    		{		
+  			printw("TOKEN ERROR\n");
+            		refresh();
+     		   }	
+		soap_wsse_add_Timestamp(proxyPTZ.soap, "Time", 10);
+       		if(SOAP_OK == proxyPTZ.Stop(tptz__Stop, tptz__StopResponse))
+		{
+			printw("STOPPED2\n");
+            		refresh();
+			success = true;
+		}
+	}
+}
+	
 char* getCmdOption(char ** begin, char ** end, const std::string & option)
 {
     char ** itr = std::find(begin, end, option);
@@ -562,9 +586,10 @@ void track(cv::Mat frame0)
             		refresh();
 			x = 0.0;
 			y = 0.0;
-			usleep(450000);
+			//usleep(450000);
 			moving = false;
 			tracking = false;
+			StopMove();
 			//detected_face.x = 0;
 			//break;
 		}
@@ -579,9 +604,10 @@ void track(cv::Mat frame0)
             			refresh();
 				x = 0.0;
 				y = 0.0;
-				usleep(400000);
+				//usleep(400000);
 				tracking = false;
 				moving = false;
+				StopMove();
 				//detected_face.x = 0;
 				//break;
 			}
@@ -598,9 +624,10 @@ void track(cv::Mat frame0)
 				printw("Camera control disabled\n");
             			refresh();
 				camera_control = false;
-				moving = false;
 				x = 0.0;
 				y = 0.0;
+				moving = false;
+				StopMove();
 			}
 			else if(ch == 43)
 			{
@@ -650,8 +677,9 @@ void track(cv::Mat frame0)
 				tracking = false;
 				x = 0.0;
 				y = 0.0;
-				usleep(400000);
+				//usleep(400000);
 				moving = false;
+				StopMove();
 			}
 			else if(*buf == 99)
 			{
@@ -668,8 +696,9 @@ void track(cv::Mat frame0)
 				camera_control = false;
 				x = 0.0;
 				y = 0.0;
-				usleep(400000);
+				//usleep(400000);
 				moving = false;
+				StopMove();
 			}
 		}
 		if ((abs(cmt.bb_rot.size.height - rect.height) > 50 || abs(cmt.bb_rot.size.width - rect.width) > 50)/*&& (abs(detected_face.x - cmt.bb_rot.center.x) > 20 || abs(detected_face.y - cmt.bb_rot.center.y) > 20)*/)
@@ -680,8 +709,9 @@ void track(cv::Mat frame0)
 			//detected_face.x = 0;
 			x = 0.0;
 			y = 0.0;
-			usleep(400000);
+			//usleep(400000);
 			moving = false;
+			StopMove();
 			/*_tptz__Stop *tptz__Stop = soap_new__tptz__Stop(soap, -1);
 			_tptz__StopResponse *tptz__StopResponse = soap_new__tptz__StopResponse(soap, -1);
 						
