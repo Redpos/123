@@ -33,12 +33,30 @@
 #include "Snapshot.hpp"
 #include <algorithm>
 #include <cstring>
+#include <fstream>
 
 #define PI 3.14159265
 #define MAX_HOSTNAME_LEN 128
 #define MAX_LOGMSG_LEN 256 
 
 using cmt::CMT;
+
+class Timer
+{
+public:
+    Timer() { clock_gettime(CLOCK_REALTIME, &beg_); }
+
+    double elapsed() {
+        clock_gettime(CLOCK_REALTIME, &end_);
+        return end_.tv_sec - beg_.tv_sec +
+            (end_.tv_nsec - beg_.tv_nsec) / 1000000000.;
+    }
+
+    void reset() { clock_gettime(CLOCK_REALTIME, &beg_); }
+
+private:
+    timespec beg_, end_;
+};
 
 struct soap *soap = soap_new();
 
@@ -491,6 +509,10 @@ int main(int argc, char* argv[])
 
 void detect(cv::Mat frame)
 {
+	ofstream myfile;
+	myfile.open("table_haar_miem.csv", ios::app);
+	Timer tmr2;
+	tmr2.reset();
 	std::vector<cv::Rect> faces;
 	cv::Mat frame_gray;
 	cv::cvtColor(frame, frame_gray, CV_BGR2GRAY);
@@ -529,7 +551,7 @@ void detect(cv::Mat frame)
 					//std::cout<<"Found a face"<<std::endl;
 					//cv::Point face(faces[0].x*2.72 + faces[0].width*1.36, faces[0].y*1.875 + faces[0].height*0.9375);
 					//detected_face = face;		
-					tracking = true;
+					//tracking = true;
 					rect = faces[0];
 					rect.height = rect.height - 5;
 					rect.width = rect.width - 10;
@@ -544,6 +566,10 @@ void detect(cv::Mat frame)
 			}
 		}
 	}
+	double t = tmr2.elapsed();
+	//std::cout << t << std::endl;
+	myfile << t << std::endl;
+	myfile.close();
 }
 
 void track(cv::Mat frame0)
