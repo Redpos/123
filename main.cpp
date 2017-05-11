@@ -510,7 +510,7 @@ int main(int argc, char* argv[])
 void detect(cv::Mat frame)
 {
 	std::ofstream myfile;
-	myfile.open("table_haar_miem.csv", ios::app);
+	myfile.open("table_haar_miem.csv", std::ios::app);
 	Timer tmr2;
 	tmr2.reset();
 	std::vector<cv::Rect> faces;
