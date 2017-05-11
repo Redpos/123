@@ -578,7 +578,7 @@ void track(cv::Mat frame0)
 	FILELog::ReportingLevel() = verbose_flag ? logDEBUG : logINFO;
 	Output2FILE::Stream() = stdout; //Log to stdout
 	std::ofstream myfile;
-	myfile.open("table_tracking_miem.csv", std::ios::app);
+	myfile.open("table_tracking_auditory.csv", std::ios::app);
 	Timer tmr2;
 	tmr2.reset();
 	cv::Mat frame0_gray;
