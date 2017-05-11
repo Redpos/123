@@ -551,7 +551,7 @@ void detect(cv::Mat frame)
 					//std::cout<<"Found a face"<<std::endl;
 					//cv::Point face(faces[0].x*2.72 + faces[0].width*1.36, faces[0].y*1.875 + faces[0].height*0.9375);
 					//detected_face = face;		
-					//tracking = true;
+					tracking = true;
 					rect = faces[0];
 					rect.height = rect.height - 5;
 					rect.width = rect.width - 10;
@@ -577,6 +577,10 @@ void track(cv::Mat frame0)
 	int verbose_flag = 0;
 	FILELog::ReportingLevel() = verbose_flag ? logDEBUG : logINFO;
 	Output2FILE::Stream() = stdout; //Log to stdout
+	std::ofstream myfile;
+	myfile.open("table_tracking_miem.csv", std::ios::app);
+	Timer tmr2;
+	tmr2.reset();
 	cv::Mat frame0_gray;
 	CMT cmt;
 
@@ -588,9 +592,11 @@ void track(cv::Mat frame0)
 		frame0_gray = frame0;
 	}
 	cmt.initialize(frame0_gray, rect);
-
+	double t = tmr2.elapsed();
+	myfile << t << std::endl;
 	while (tracking)
 	{
+		tmr2.reset();
 		//capture.grab();
 		//capture.retrieve(frame);
 		//if (frame.empty()) break;
@@ -605,7 +611,7 @@ void track(cv::Mat frame0)
 			frame_gray = im;
 		}
 		cmt.processFrame(frame_gray);
-		
+		myfile << t << std::endl;
 		if(cmt.points_active.size()<5)
 		{
 			printw("Stopped tracking1\n");
@@ -616,6 +622,7 @@ void track(cv::Mat frame0)
 			moving = false;
 			tracking = false;
 			StopMove();
+			myfile.close();
 			//detected_face.x = 0;
 			//break;
 		}
@@ -634,6 +641,7 @@ void track(cv::Mat frame0)
 				tracking = false;
 				moving = false;
 				StopMove();
+				myfile.close();
 				//detected_face.x = 0;
 				//break;
 			}
@@ -706,6 +714,7 @@ void track(cv::Mat frame0)
 				//usleep(400000);
 				moving = false;
 				StopMove();
+				myfile.close();
 			}
 			else if(*buf == 99)
 			{
@@ -738,6 +747,7 @@ void track(cv::Mat frame0)
 			//usleep(400000);
 			moving = false;
 			StopMove();
+			myfile.close();
 			/*_tptz__Stop *tptz__Stop = soap_new__tptz__Stop(soap, -1);
 			_tptz__StopResponse *tptz__StopResponse = soap_new__tptz__StopResponse(soap, -1);
 						
