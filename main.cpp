@@ -434,7 +434,7 @@ int main(int argc, char* argv[])
 				rect.x = 200;
 				rect.y = 250;
 				rect.height = 50;
-				rect.width = 150;
+				rect.width = 50;
 			}
 			else if(*buf == 112)
 			{
@@ -509,10 +509,10 @@ int main(int argc, char* argv[])
 
 void detect(cv::Mat frame)
 {
-	std::ofstream myfile;
-	myfile.open("table_haar_miem.csv", std::ios::app);
-	Timer tmr2;
-	tmr2.reset();
+	//std::ofstream myfile;
+	//myfile.open("table_haar_miem.csv", std::ios::app);
+	//Timer tmr2;
+	//tmr2.reset();
 	std::vector<cv::Rect> faces;
 	cv::Mat frame_gray;
 	cv::cvtColor(frame, frame_gray, CV_BGR2GRAY);
@@ -566,10 +566,10 @@ void detect(cv::Mat frame)
 			}
 		}
 	}
-	double t = tmr2.elapsed();
+	//double t = tmr2.elapsed();
 	//std::cout << t << std::endl;
-	myfile << t << std::endl;
-	myfile.close();
+	//myfile << t << std::endl;
+	//myfile.close();
 }
 
 void track(cv::Mat frame0)
@@ -611,6 +611,7 @@ void track(cv::Mat frame0)
 			frame_gray = im;
 		}
 		cmt.processFrame(frame_gray);
+		t = tmr2.elapsed();
 		myfile << t << std::endl;
 		if(cmt.points_active.size()<5)
 		{
