@@ -509,7 +509,7 @@ int main(int argc, char* argv[])
 
 void detect(cv::Mat frame)
 {
-	ofstream myfile;
+	std::ofstream myfile;
 	myfile.open("table_haar_miem.csv", ios::app);
 	Timer tmr2;
 	tmr2.reset();
