@@ -519,7 +519,7 @@ void detect(cv::Mat frame)
 	//cv::equalizeHist(frame_gray,frame_gray);
 	int i, dif;
 	
-	face_cascade.detectMultiScale(frame_gray, faces, 1.2, 3, 0 | cv::CASCADE_SCALE_IMAGE, cv::Size(30,30));
+	face_cascade.detectMultiScale(frame_gray, faces, 1.2, 4, 0 | cv::CASCADE_SCALE_IMAGE, cv::Size(30,30));
 	if(faces.size()!= 0)
 	{
 		/*profile_cascade.detectMultiScale(frame_gray, faces, 1.1, 2, 0 | cv::CASCADE_SCALE_IMAGE, cv::Size(30,30));
@@ -577,26 +577,26 @@ void track(cv::Mat frame0)
 	int verbose_flag = 0;
 	FILELog::ReportingLevel() = verbose_flag ? logDEBUG : logINFO;
 	Output2FILE::Stream() = stdout; //Log to stdout
-	std::ofstream myfile;
-	myfile.open("table_tracking_auditory.csv", std::ios::app);
-	Timer tmr2;
-	tmr2.reset();
+	//std::ofstream myfile;
+	//myfile.open("table_tracking_auditory.csv", std::ios::app);
+	//Timer tmr2;
+	//tmr2.reset();
 	cv::Mat frame0_gray;
 	CMT cmt;
 
 	if (frame0.channels() > 1) {
 		cvtColor(frame0, frame0_gray, CV_BGR2GRAY);
-		//equalizeHist(frame0_gray, frame0_gray);
+		equalizeHist(frame0_gray, frame0_gray);
 	}
 	else {
 		frame0_gray = frame0;
 	}
 	cmt.initialize(frame0_gray, rect);
-	double t = tmr2.elapsed();
-	myfile << t << std::endl;
+	//double t = tmr2.elapsed();
+	//myfile << t << std::endl;
 	while (tracking)
 	{
-		tmr2.reset();
+		//tmr2.reset();
 		//capture.grab();
 		//capture.retrieve(frame);
 		//if (frame.empty()) break;
@@ -605,14 +605,14 @@ void track(cv::Mat frame0)
 
 		if (im.channels() > 1) {
 			cvtColor(im, frame_gray, CV_BGR2GRAY);
-			//equalizeHist(frame_gray, frame_gray);
+			equalizeHist(frame_gray, frame_gray);
 		}
 		else {
 			frame_gray = im;
 		}
 		cmt.processFrame(frame_gray);
-		t = tmr2.elapsed();
-		myfile << t << std::endl;
+		//t = tmr2.elapsed();
+		//myfile << t << std::endl;
 		if(cmt.points_active.size()<5)
 		{
 			printw("Stopped tracking1\n");
@@ -623,7 +623,7 @@ void track(cv::Mat frame0)
 			moving = false;
 			tracking = false;
 			StopMove();
-			myfile.close();
+			//myfile.close();
 			//detected_face.x = 0;
 			//break;
 		}
@@ -642,7 +642,7 @@ void track(cv::Mat frame0)
 				tracking = false;
 				moving = false;
 				StopMove();
-				myfile.close();
+				//myfile.close();
 				//detected_face.x = 0;
 				//break;
 			}
@@ -715,7 +715,7 @@ void track(cv::Mat frame0)
 				//usleep(400000);
 				moving = false;
 				StopMove();
-				myfile.close();
+				//myfile.close();
 			}
 			else if(*buf == 99)
 			{
@@ -748,7 +748,7 @@ void track(cv::Mat frame0)
 			//usleep(400000);
 			moving = false;
 			StopMove();
-			myfile.close();
+			//myfile.close();
 			/*_tptz__Stop *tptz__Stop = soap_new__tptz__Stop(soap, -1);
 			_tptz__StopResponse *tptz__StopResponse = soap_new__tptz__StopResponse(soap, -1);
 						
