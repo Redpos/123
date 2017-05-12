@@ -70,7 +70,7 @@ std::vector<cv::Rect> detected_faces;
 //cv::Point moving_face(0.0, 0.0);
 bool tracking = false;
 bool moving = false;
-bool camera_control = false;
+bool camera_control = true;
 cv::Rect rect;
 cv::VideoCapture capture;
 float x = 0, y = 0;
