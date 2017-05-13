@@ -737,42 +737,15 @@ void track(cv::Mat frame0)
 				StopMove();
 			}
 		}
-		if ((abs(cmt.bb_rot.size.height - rect.height) > 50 || abs(cmt.bb_rot.size.width - rect.width) > 50)/*&& (abs(detected_face.x - cmt.bb_rot.center.x) > 20 || abs(detected_face.y - cmt.bb_rot.center.y) > 20)*/)
+		if ((abs(cmt.bb_rot.size.height - rect.height) > 50 || abs(cmt.bb_rot.size.width - rect.width) > 50))
 		{
 			printw("Stopped tracking3\n");
             		refresh();
 			tracking = false;
-			//detected_face.x = 0;
 			x = 0.0;
 			y = 0.0;
-			//usleep(400000);
 			moving = false;
 			StopMove();
-			//myfile.close();
-			/*_tptz__Stop *tptz__Stop = soap_new__tptz__Stop(soap, -1);
-			_tptz__StopResponse *tptz__StopResponse = soap_new__tptz__StopResponse(soap, -1);
-						
-			tptz__Stop->ProfileToken = "Profile_1";
-			if(SOAP_OK != soap_wsse_add_UsernameTokenDigest(proxyPTZ.soap, NULL, "admin", "Supervisor"))
-       			{		
-				printw("TOKEN ERROR\n");
-            			refresh();
-        		}
-			soap_wsse_add_Timestamp(proxyPTZ.soap, "Time", 10);
-       			if(SOAP_OK == proxyPTZ.Stop(tptz__Stop, tptz__StopResponse))
-			{
-				printw("STOPPED\n");
-            			refresh();
-			}
-			else
-			{
-				printw("ERROR2\n");
-				refresh();
-			}
-			soap_destroy(soap);
-			soap_end(soap);*/
-			
-			//break;
 		}
 		else if(camera_control && tracking)
 		{
