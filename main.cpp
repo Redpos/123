@@ -509,17 +509,17 @@ int main(int argc, char* argv[])
 
 void detect(cv::Mat frame)
 {
-	std::ofstream myfile;
-	myfile.open("table_haar_miem.csv", std::ios::app);
-	Timer tmr2;
-	tmr2.reset();
+	//std::ofstream myfile;
+	//myfile.open("table_haar_miem.csv", std::ios::app);
+	//Timer tmr2;
+	//tmr2.reset();
 	std::vector<cv::Rect> faces;
 	cv::Mat frame_gray;
 	cv::cvtColor(frame, frame_gray, CV_BGR2GRAY);
 	cv::equalizeHist(frame_gray,frame_gray);
 	int i, dif;
 	
-	face_cascade.detectMultiScale(frame_gray, faces, 1.1, 4, 0 | cv::CASCADE_SCALE_IMAGE, cv::Size(30,30));
+	face_cascade.detectMultiScale(frame_gray, faces, 1.2, 4, 0 | cv::CASCADE_SCALE_IMAGE, cv::Size(30,30));
 	if(faces.size()!= 0)
 	{
 		/*profile_cascade.detectMultiScale(frame_gray, faces, 1.1, 2, 0 | cv::CASCADE_SCALE_IMAGE, cv::Size(30,30));
@@ -566,10 +566,10 @@ void detect(cv::Mat frame)
 			}
 		}
 	}
-	double t = tmr2.elapsed();
+	//double t = tmr2.elapsed();
 	//std::cout << t << std::endl;
-	myfile << t << std::endl;
-	myfile.close();
+	//myfile << t << std::endl;
+	//myfile.close();
 }
 
 void track(cv::Mat frame0)
