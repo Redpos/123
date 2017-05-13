@@ -619,13 +619,9 @@ void track(cv::Mat frame0)
             		refresh();
 			x = 0.0;
 			y = 0.0;
-			//usleep(450000);
 			moving = false;
 			tracking = false;
 			StopMove();
-			//myfile.close();
-			//detected_face.x = 0;
-			//break;
 		}
 
 		//char key = display(frame, cmt);
