@@ -40,7 +40,7 @@ void CMT::initialize(const Mat im_gray, const Rect rect)
     vector<KeyPoint> keypoints_fg;
     vector<KeyPoint> keypoints_bg;
 
-    for (size_t i = 0; i < keypoints.size(); i+=2)
+    for (size_t i = 0; i < keypoints.size(); i++)
     {
         KeyPoint k = keypoints[i];
         Point2f pt = k.pt;
