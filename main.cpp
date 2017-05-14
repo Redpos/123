@@ -551,7 +551,7 @@ void detect(cv::Mat frame)
 					//std::cout<<"Found a face"<<std::endl;
 					//cv::Point face(faces[0].x*2.72 + faces[0].width*1.36, faces[0].y*1.875 + faces[0].height*0.9375);
 					//detected_face = face;		
-					//tracking = true;
+					tracking = true;
 					rect = faces[0];
 					rect.height = rect.height - 5;
 					rect.width = rect.width - 10;
