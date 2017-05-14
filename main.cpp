@@ -191,6 +191,16 @@ void *ContMove(void *threadid)
 	return NULL;
 }
 
+void WriteToStat ()
+{
+	std::ofstream myfile;
+	myfile.open("stat", std::ios::out);
+	myfile << camera_control << std::endl;
+	myfile << tracking << std::endl;
+	myfile << border_x << std::endl;
+	myfile.close();	
+}
+
 void StopMove ()
 {
 	bool success = false;
@@ -354,7 +364,7 @@ int main(int argc, char* argv[])
 			capture.open(szStreamName);/*endwin(); return -1;*/}
 	//capture.grab();
 	//capture.retrieve(im);
-	
+	WriteToStat();
 	
 	pthread_t capture_thread, move_thread;
 	int thread_id1 = 0, thread_id2 = 1;
@@ -408,6 +418,7 @@ int main(int argc, char* argv[])
 				rect.y = 250;
 				rect.height = 50;
 				rect.width = 50;
+				WriteToStat();
 			}
 			else if(ch == 112)
 			{
@@ -435,6 +446,7 @@ int main(int argc, char* argv[])
 				rect.y = 250;
 				rect.height = 50;
 				rect.width = 50;
+				WriteToStat();
 			}
 			else if(*buf == 112)
 			{
@@ -442,6 +454,67 @@ int main(int argc, char* argv[])
             			refresh();
 				cv::Point face(0.0, 0.0);
 				move(face);
+			}
+			else if(*buf == 99)
+			{
+				printw("Camera control enabled\n");
+            			refresh();
+				camera_control = true;
+				WriteToStat();
+			}
+			else if(*buf == 102)
+			{
+				printw("Camera control disabled\n");
+            			refresh();
+				camera_control = false;
+				WriteToStat();
+			}
+			else if(*buf == 43)
+			{
+				printw("Speed increased\n");
+            			refresh();
+				if(speed_y <= 0.6)
+				{
+					speed_x = speed_x + 0.1;
+					speed_y = speed_y + 0.1;
+				}
+			}
+			else if(*buf == 45)
+			{
+				printw("Speed decreased\n");
+            			refresh();
+				if(speed_y > 0.1)
+				{
+					speed_x = speed_x - 0.1;
+					speed_y = speed_y - 0.1;
+				}
+			}
+			else if(*buf == 109)
+			{
+				printw("Center position\n");
+            			refresh();
+				//detected_face.x == 0;
+				border_x = 320;
+				border_y = 240;
+				WriteToStat();
+			}
+			else if(*buf == 108)
+			{
+				printw("Left position\n");
+            			refresh();
+				border_x = 220;
+				border_y = 320;
+				//detected_face.x == 0;
+				WriteToStat();
+			}
+			else if(*buf == 114)
+			{
+				printw("Right position\n");
+            			refresh();
+				border_x = 420;
+				border_y = 320;
+				//detected_face.x == 0;
+				WriteToStat();
 			}
 			else if(*buf == 110)
 			{
@@ -641,6 +714,7 @@ void track(cv::Mat frame0)
 				//myfile.close();
 				//detected_face.x = 0;
 				//break;
+				WriteToStat();
 			}
 			else if(ch == 99)
 			{
@@ -649,6 +723,7 @@ void track(cv::Mat frame0)
 				camera_control = true;
 				x = 0.0;
 				y = 0.0;
+				WriteToStat();
 			}
 			else if(ch == 102)
 			{
@@ -659,6 +734,7 @@ void track(cv::Mat frame0)
 				y = 0.0;
 				moving = false;
 				StopMove();
+				WriteToStat();
 			}
 			else if(ch == 43)
 			{
@@ -681,6 +757,7 @@ void track(cv::Mat frame0)
 				//detected_face.x == 0;
 				border_x = 320;
 				border_y = 240;
+				WriteToStat();
 			}
 			else if(ch == 108)
 			{
@@ -688,6 +765,7 @@ void track(cv::Mat frame0)
             			refresh();
 				border_x = 220;
 				border_y = 320;
+				WriteToStat();
 				//detected_face.x == 0;
 			}
 			else if(ch == 114)
@@ -696,6 +774,7 @@ void track(cv::Mat frame0)
             			refresh();
 				border_x = 420;
 				border_y = 320;
+				WriteToStat();
 				//detected_face.x == 0;
 			}
 		}
@@ -711,6 +790,7 @@ void track(cv::Mat frame0)
 				//usleep(400000);
 				moving = false;
 				StopMove();
+				WriteToStat();
 				//myfile.close();
 			}
 			else if(*buf == 99)
@@ -720,6 +800,7 @@ void track(cv::Mat frame0)
 				camera_control = true;
 				x = 0.0;
 				y = 0.0;
+				WriteToStat();
 			}
 			else if(*buf == 102)
 			{
@@ -731,6 +812,54 @@ void track(cv::Mat frame0)
 				//usleep(400000);
 				moving = false;
 				StopMove();
+				WriteToStat();
+			}
+			else if(*buf == 43)
+			{
+				printw("Speed increased\n");
+            			refresh();
+				if(speed_y <= 0.6)
+				{
+					speed_x = speed_x + 0.1;
+					speed_y = speed_y + 0.1;
+				}
+			}
+			else if(*buf == 45)
+			{
+				printw("Speed decreased\n");
+            			refresh();
+				if(speed_y > 0.1)
+				{
+					speed_x = speed_x - 0.1;
+					speed_y = speed_y - 0.1;
+				}
+			}
+			else if(*buf == 109)
+			{
+				printw("Center position\n");
+            			refresh();
+				//detected_face.x == 0;
+				border_x = 320;
+				border_y = 240;
+				WriteToStat();
+			}
+			else if(*buf == 108)
+			{
+				printw("Left position\n");
+            			refresh();
+				border_x = 220;
+				border_y = 320;
+				WriteToStat();
+				//detected_face.x == 0;
+			}
+			else if(*buf == 114)
+			{
+				printw("Right position\n");
+            			refresh();
+				border_x = 420;
+				border_y = 320;
+				WriteToStat();
+				//detected_face.x == 0;
 			}
 		}
 		if ((abs(cmt.bb_rot.size.height - rect.height) > 50 || abs(cmt.bb_rot.size.width - rect.width) > 50))
