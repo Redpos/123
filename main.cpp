@@ -127,6 +127,30 @@ void *CaptureImages(void *threadid)
 	return NULL;
 }
 
+void StopMove ()
+{
+	bool success = false;
+	while(!success)
+	{
+		_tptz__Stop *tptz__Stop = soap_new__tptz__Stop(soap, -1);
+		_tptz__StopResponse *tptz__StopResponse = soap_new__tptz__StopResponse(soap, -1);
+						
+		tptz__Stop->ProfileToken = "Profile_1";
+		if(SOAP_OK != soap_wsse_add_UsernameTokenDigest(proxyPTZ.soap, NULL, "admin", "Supervisor"))
+    		{		
+  			printw("TOKEN ERROR\n");
+            		refresh();
+     		   }	
+		soap_wsse_add_Timestamp(proxyPTZ.soap, "Time", 10);
+       		if(SOAP_OK == proxyPTZ.Stop(tptz__Stop, tptz__StopResponse))
+		{
+			printw("STOPPED2\n");
+            		refresh();
+			success = true;
+		}
+	}
+}
+
 void *ContMove(void *threadid)
 {
 	while(1)
@@ -200,30 +224,6 @@ void WriteToStat ()
 	myfile << tracking << std::endl;
 	myfile << border_x << std::endl;
 	myfile.close();	
-}
-
-void StopMove ()
-{
-	bool success = false;
-	while(!success)
-	{
-		_tptz__Stop *tptz__Stop = soap_new__tptz__Stop(soap, -1);
-		_tptz__StopResponse *tptz__StopResponse = soap_new__tptz__StopResponse(soap, -1);
-						
-		tptz__Stop->ProfileToken = "Profile_1";
-		if(SOAP_OK != soap_wsse_add_UsernameTokenDigest(proxyPTZ.soap, NULL, "admin", "Supervisor"))
-    		{		
-  			printw("TOKEN ERROR\n");
-            		refresh();
-     		   }	
-		soap_wsse_add_Timestamp(proxyPTZ.soap, "Time", 10);
-       		if(SOAP_OK == proxyPTZ.Stop(tptz__Stop, tptz__StopResponse))
-		{
-			printw("STOPPED2\n");
-            		refresh();
-			success = true;
-		}
-	}
 }
 	
 char* getCmdOption(char ** begin, char ** end, const std::string & option)
