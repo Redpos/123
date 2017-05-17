@@ -163,6 +163,7 @@ void *ContMove(void *threadid)
 			else
 			{
 				printw("ERROR\n");
+				StopMove();
 				/*_tptz__Stop *tptz__Stop = soap_new__tptz__Stop(soap, -1);
 				_tptz__StopResponse *tptz__StopResponse = soap_new__tptz__StopResponse(soap, -1);
 						
@@ -403,6 +404,7 @@ int main(int argc, char* argv[])
            	 	int ch = getch();
 			if(ch == 113)
 			{
+				StopMove();
 				printw("Exit\n");
             			refresh();
 				endwin();
@@ -432,6 +434,7 @@ int main(int argc, char* argv[])
 		{
 			if(*buf == 107)
 			{
+				StopMove();
 				printw("Exit\n");
             			refresh();
 				endwin();
@@ -464,6 +467,7 @@ int main(int argc, char* argv[])
 			}
 			else if(*buf == 102)
 			{
+				StopMove();
 				printw("Camera control disabled\n");
             			refresh();
 				camera_control = false;
@@ -906,7 +910,8 @@ void track(cv::Mat frame0)
 			else if (moving)
 			{
 				moving = false;
-				_tptz__Stop *tptz__Stop = soap_new__tptz__Stop(soap, -1);
+				StopMove();
+				/*_tptz__Stop *tptz__Stop = soap_new__tptz__Stop(soap, -1);
 				_tptz__StopResponse *tptz__StopResponse = soap_new__tptz__StopResponse(soap, -1);
 						
 				tptz__Stop->ProfileToken = "Profile_1";
@@ -922,7 +927,7 @@ void track(cv::Mat frame0)
             				refresh();
 				}		
 				soap_destroy(soap);
-				soap_end(soap);
+				soap_end(soap);*/
 			}
 				/*if(detected_face.x == 0)
 				{		
