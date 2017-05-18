@@ -143,7 +143,6 @@ void StopMove ()
   			printw("TOKEN ERROR\n");
             		refresh();
      		}	
-		//soap_wsse_add_Timestamp(proxyPTZ.soap, "Time", 10);
        		if(SOAP_OK == proxyPTZ.Stop(tptz__Stop, tptz__StopResponse))
 		{
 			printw("STOPPED2\n");
@@ -317,6 +316,8 @@ int main(int argc, char* argv[])
 	// Register plugins
 	soap_register_plugin(proxyDevice.soap, soap_wsse);
 	soap_register_plugin(proxyPTZ.soap, soap_wsse);
+
+	soap_wsse_add_Timestamp(proxyPTZ.soap, "Time", 0);
 
 	//struct soap *soap = soap_new();
 	// For DeviceBindingProxy
