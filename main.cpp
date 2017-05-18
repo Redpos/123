@@ -71,6 +71,7 @@ std::vector<cv::Rect> detected_faces;
 bool tracking = false;
 bool moving = false;
 bool camera_control = true;
+bool last = false;
 cv::Rect rect;
 cv::VideoCapture capture;
 float x = 0, y = 0;
@@ -212,9 +213,15 @@ void *ContMove(void *threadid)
 			soap_destroy(soap); 
     			soap_end(soap);
 			
-			usleep(200000);
+			if(last)
+			{
+				moving = false;
+				last = false;
+			}
 			
+			usleep(200000);
 		}
+		//usleep(200000);
 	}
 	pthread_exit(NULL);
 	return NULL;
@@ -412,8 +419,8 @@ int main(int argc, char* argv[])
 			{
 				x = 0.0;
 				y = 0.0;
-				moving = false;
-				StopMove();
+				last = true;
+				usleep(300000);
 				printw("Exit\n");
             			refresh();
 				endwin();
@@ -445,8 +452,8 @@ int main(int argc, char* argv[])
 			{
 				x = 0.0;
 				y = 0.0;
-				moving = false;
-				StopMove();
+				last = true;
+				usleep(300000);
 				printw("Exit\n");
             			refresh();
 				endwin();
@@ -481,8 +488,8 @@ int main(int argc, char* argv[])
 			{
 				x = 0.0;
 				y = 0.0;
-				moving = false;
-				StopMove();
+				last = true;
+				usleep(300000);
 				printw("Camera control disabled\n");
             			refresh();
 				camera_control = false;
@@ -711,9 +718,10 @@ void track(cv::Mat frame0)
             		refresh();
 			x = 0.0;
 			y = 0.0;
-			moving = false;
+			last = true;
+			usleep(300000);
 			tracking = false;
-			StopMove();
+			//StopMove();
 		}
 
 		//char key = display(frame, cmt);
@@ -726,10 +734,11 @@ void track(cv::Mat frame0)
             			refresh();
 				x = 0.0;
 				y = 0.0;
-				//usleep(400000);
+				last = true;
+				usleep(300000);
 				tracking = false;
-				moving = false;
-				StopMove();
+				//moving = false;
+				//StopMove();
 				//myfile.close();
 				//detected_face.x = 0;
 				//break;
@@ -751,8 +760,8 @@ void track(cv::Mat frame0)
 				camera_control = false;
 				x = 0.0;
 				y = 0.0;
-				moving = false;
-				StopMove();
+				last = true;
+				usleep(300000);
 				WriteToStat();
 			}
 			else if(ch == 43)
@@ -806,9 +815,9 @@ void track(cv::Mat frame0)
 				tracking = false;
 				x = 0.0;
 				y = 0.0;
-				//usleep(400000);
-				moving = false;
-				StopMove();
+				last = true;
+				usleep(300000);
+				//StopMove();
 				WriteToStat();
 				//myfile.close();
 			}
@@ -828,9 +837,9 @@ void track(cv::Mat frame0)
 				camera_control = false;
 				x = 0.0;
 				y = 0.0;
-				//usleep(400000);
-				moving = false;
-				StopMove();
+				last = true;
+				usleep(300000);
+				//StopMove();
 				WriteToStat();
 			}
 			else if(*buf == 43)
@@ -888,8 +897,9 @@ void track(cv::Mat frame0)
 			tracking = false;
 			x = 0.0;
 			y = 0.0;
-			moving = false;
-			StopMove();
+			last = true;
+			usleep(300000);
+			//StopMove();
 		}
 		else if(camera_control && tracking)
 		{
@@ -926,8 +936,9 @@ void track(cv::Mat frame0)
 			{
 				x = 0.0;
 				y = 0.0;
-				moving = false;
-				StopMove();
+				last = true;
+				usleep(300000);
+				//StopMove();
 				/*_tptz__Stop *tptz__Stop = soap_new__tptz__Stop(soap, -1);
 				_tptz__StopResponse *tptz__StopResponse = soap_new__tptz__StopResponse(soap, -1);
 						
