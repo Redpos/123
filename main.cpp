@@ -112,6 +112,8 @@ void *CaptureImages(void *threadid)
 		if (!capture.isOpened())
 		{
 			capture.open(szStreamName);
+			x = 0.0;
+			y = 0.0;
 		}
 		while (capture.isOpened())
 		{
@@ -187,6 +189,9 @@ void *ContMove(void *threadid)
 			else
 			{
 				printw("ERROR\n");
+				x = 0.0;
+				y = 0.0;
+				moving = false;
 				StopMove();
 				/*_tptz__Stop *tptz__Stop = soap_new__tptz__Stop(soap, -1);
 				_tptz__StopResponse *tptz__StopResponse = soap_new__tptz__StopResponse(soap, -1);
@@ -404,6 +409,9 @@ int main(int argc, char* argv[])
            	 	int ch = getch();
 			if(ch == 113)
 			{
+				x = 0.0;
+				y = 0.0;
+				moving = false;
 				StopMove();
 				printw("Exit\n");
             			refresh();
@@ -434,6 +442,9 @@ int main(int argc, char* argv[])
 		{
 			if(*buf == 107)
 			{
+				x = 0.0;
+				y = 0.0;
+				moving = false;
 				StopMove();
 				printw("Exit\n");
             			refresh();
@@ -467,6 +478,9 @@ int main(int argc, char* argv[])
 			}
 			else if(*buf == 102)
 			{
+				x = 0.0;
+				y = 0.0;
+				moving = false;
 				StopMove();
 				printw("Camera control disabled\n");
             			refresh();
@@ -909,6 +923,8 @@ void track(cv::Mat frame0)
 			}
 			else if (moving)
 			{
+				x = 0.0;
+				y = 0.0;
 				moving = false;
 				StopMove();
 				/*_tptz__Stop *tptz__Stop = soap_new__tptz__Stop(soap, -1);
