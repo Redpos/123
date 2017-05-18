@@ -142,8 +142,8 @@ void StopMove ()
     		{		
   			printw("TOKEN ERROR\n");
             		refresh();
-     		   }	
-		soap_wsse_add_Timestamp(proxyPTZ.soap, "Time", 10);
+     		}	
+		//soap_wsse_add_Timestamp(proxyPTZ.soap, "Time", 10);
        		if(SOAP_OK == proxyPTZ.Stop(tptz__Stop, tptz__StopResponse))
 		{
 			printw("STOPPED2\n");
@@ -178,7 +178,7 @@ void *ContMove(void *threadid)
 				printw("TOKEN ERROR\n");
             			refresh();
 			}
-			soap_wsse_add_Timestamp(proxyPTZ.soap, "Time", 10);
+			//soap_wsse_add_Timestamp(proxyPTZ.soap, "Time", 10);
 			if (SOAP_OK == proxyPTZ.ContinuousMove(tptz__ContinuousMove, tptz__ContinuousMoveResponse))
 			{
 				printw("MOVED X: %f\n", tptz__ContinuousMove->Velocity->PanTilt->x);
