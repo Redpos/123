@@ -159,6 +159,13 @@ void *ContMove(void *threadid)
 	{
 		if (moving)
 		{
+			if(last)
+			{
+				moving = false;
+				last = false;
+				x = 0.0;
+				y = 0.0;
+			}
 			_tptz__ContinuousMove *tptz__ContinuousMove = soap_new__tptz__ContinuousMove(soap, -1);
 			_tptz__ContinuousMoveResponse *tptz__ContinuousMoveResponse = soap_new__tptz__ContinuousMoveResponse(soap, -1);
 
@@ -212,12 +219,6 @@ void *ContMove(void *threadid)
 				
 			soap_destroy(soap); 
     			soap_end(soap);
-			
-			if(last)
-			{
-				moving = false;
-				last = false;
-			}
 			
 			usleep(200000);
 		}
@@ -417,8 +418,8 @@ int main(int argc, char* argv[])
            	 	int ch = getch();
 			if(ch == 113)
 			{
-				x = 0.0;
-				y = 0.0;
+				//x = 0.0;
+				//y = 0.0;
 				last = true;
 				usleep(300000);
 				printw("Exit\n");
@@ -450,8 +451,8 @@ int main(int argc, char* argv[])
 		{
 			if(*buf == 107)
 			{
-				x = 0.0;
-				y = 0.0;
+				//x = 0.0;
+				//y = 0.0;
 				last = true;
 				usleep(300000);
 				printw("Exit\n");
@@ -486,8 +487,8 @@ int main(int argc, char* argv[])
 			}
 			else if(*buf == 102)
 			{
-				x = 0.0;
-				y = 0.0;
+				//x = 0.0;
+				//y = 0.0;
 				last = true;
 				usleep(300000);
 				printw("Camera control disabled\n");
@@ -732,8 +733,8 @@ void track(cv::Mat frame0)
 			{
 				printw("Stopped tracking2\n");
             			refresh();
-				x = 0.0;
-				y = 0.0;
+				//x = 0.0;
+				//y = 0.0;
 				last = true;
 				usleep(300000);
 				tracking = false;
@@ -758,8 +759,8 @@ void track(cv::Mat frame0)
 				printw("Camera control disabled\n");
             			refresh();
 				camera_control = false;
-				x = 0.0;
-				y = 0.0;
+				//x = 0.0;
+				//y = 0.0;
 				last = true;
 				usleep(300000);
 				WriteToStat();
@@ -813,8 +814,8 @@ void track(cv::Mat frame0)
 				printw("Stopped tracking\n");
             			refresh();
 				tracking = false;
-				x = 0.0;
-				y = 0.0;
+				//x = 0.0;
+				//y = 0.0;
 				last = true;
 				usleep(300000);
 				//StopMove();
@@ -835,8 +836,8 @@ void track(cv::Mat frame0)
 				printw("Camera control disabled\n");
             			refresh();
 				camera_control = false;
-				x = 0.0;
-				y = 0.0;
+				//x = 0.0;
+				//y = 0.0;
 				last = true;
 				usleep(300000);
 				//StopMove();
@@ -895,8 +896,8 @@ void track(cv::Mat frame0)
 			printw("Stopped tracking3\n");
             		refresh();
 			tracking = false;
-			x = 0.0;
-			y = 0.0;
+			//x = 0.0;
+			//y = 0.0;
 			last = true;
 			usleep(300000);
 			//StopMove();
@@ -934,8 +935,8 @@ void track(cv::Mat frame0)
 			}
 			else if (moving)
 			{
-				x = 0.0;
-				y = 0.0;
+				//x = 0.0;
+				//y = 0.0;
 				last = true;
 				usleep(300000);
 				//StopMove();
