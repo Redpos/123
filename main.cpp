@@ -316,7 +316,7 @@ int main(int argc, char* argv[])
 
 	strcat(szStreamName, "rtsp://");
 	strcat(szStreamName, camIp);
-	strcat(szStreamName, ":554//Streaming/Channels/2");
+	strcat(szStreamName, ":554/live/ch1");
 
 	proxyDevice.soap_endpoint = szHostName;
 	proxyPTZ.soap_endpoint = szPTZName;
@@ -522,7 +522,7 @@ int main(int argc, char* argv[])
             			refresh();
 				//detected_face.x == 0;
 				border_x = 320;
-				border_y = 240;
+				border_y = 160;
 				WriteToStat();
 			}
 			else if(*buf == 108)
@@ -530,7 +530,7 @@ int main(int argc, char* argv[])
 				printw("Left position\n");
             			refresh();
 				border_x = 213;
-				border_y = 160;
+				border_y = 106;
 				//detected_face.x == 0;
 				WriteToStat();
 			}
@@ -539,7 +539,7 @@ int main(int argc, char* argv[])
 				printw("Right position\n");
             			refresh();
 				border_x = 426;
-				border_y = 160;
+				border_y = 106;
 				//detected_face.x == 0;
 				WriteToStat();
 			}
@@ -785,7 +785,7 @@ void track(cv::Mat frame0)
             			refresh();
 				//detected_face.x == 0;
 				border_x = 320;
-				border_y = 240;
+				border_y = 160;
 				WriteToStat();
 			}
 			else if(ch == 108)
@@ -793,7 +793,7 @@ void track(cv::Mat frame0)
 				printw("Left position\n");
             			refresh();
 				border_x = 213;
-				border_y = 160;
+				border_y = 106;
 				WriteToStat();
 				//detected_face.x == 0;
 			}
@@ -802,7 +802,7 @@ void track(cv::Mat frame0)
 				printw("Right position\n");
             			refresh();
 				border_x = 426;
-				border_y = 160;
+				border_y = 106;
 				WriteToStat();
 				//detected_face.x == 0;
 			}
@@ -869,7 +869,7 @@ void track(cv::Mat frame0)
             			refresh();
 				//detected_face.x == 0;
 				border_x = 320;
-				border_y = 240;
+				border_y = 160;
 				WriteToStat();
 			}
 			else if(*buf == 108)
@@ -877,7 +877,7 @@ void track(cv::Mat frame0)
 				printw("Left position\n");
             			refresh();
 				border_x = 213;
-				border_y = 160;
+				border_y = 106;
 				WriteToStat();
 				//detected_face.x == 0;
 			}
@@ -886,7 +886,7 @@ void track(cv::Mat frame0)
 				printw("Right position\n");
             			refresh();
 				border_x = 426;
-				border_y = 160;
+				border_y = 106;
 				WriteToStat();
 				//detected_face.x == 0;
 			}
