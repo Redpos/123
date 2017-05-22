@@ -74,12 +74,16 @@ bool camera_control = true;
 bool last = false;
 cv::Rect rect;
 cv::VideoCapture capture;
-float x = 0, y = 0;
+float x = 0, y = 0, z = 0;
 float border_x = 320;
 float border_y = 240;
 char *fifo = "ipcfifo";
 int fd;
 char buf[1024];
+
+float width, height;
+
+float zoom_factor = 0.1;
 
 float speed_x = 0.1;
 float speed_y = 0.2;
@@ -110,12 +114,15 @@ void *CaptureImages(void *threadid)
 {
 	while(1)
 	{
-		if (!capture.isOpened())
+		while(!capture.isOpened())
 		{
+			printw("Error opening video stream\n");
+            		refresh();
+			sleep(3);
 			capture.open(szStreamName);
-			x = 0.0;
-			y = 0.0;
 		}
+		width = capture.get(CAP_PROP_FRAME_WIDTH);
+		height = capture.get(CAP_PROP_FRAME_HEIGHT);
 		while (capture.isOpened())
 		{
 			capture >> im;
@@ -165,6 +172,7 @@ void *ContMove(void *threadid)
 				last = false;
 				x = 0.0;
 				y = 0.0;
+				z = 0.0;
 			}
 			_tptz__ContinuousMove *tptz__ContinuousMove = soap_new__tptz__ContinuousMove(soap, -1);
 			_tptz__ContinuousMoveResponse *tptz__ContinuousMoveResponse = soap_new__tptz__ContinuousMoveResponse(soap, -1);
@@ -175,7 +183,7 @@ void *ContMove(void *threadid)
 			Speed->Zoom = new tt__Vector1D;
 			Speed->PanTilt->x = x;
 			Speed->PanTilt->y = y;
-			Speed->Zoom->x = 0.0;
+			Speed->Zoom->x = z;
 			
 			tptz__ContinuousMove->ProfileToken = "Profile_1";
 			tptz__ContinuousMove->Velocity = Speed;
@@ -381,6 +389,9 @@ int main(int argc, char* argv[])
 	//capture.retrieve(im);
 	WriteToStat();
 	
+	width = capture.get(CAP_PROP_FRAME_WIDTH);
+	height = capture.get(CAP_PROP_FRAME_HEIGHT);
+	
 	pthread_t capture_thread, move_thread;
 	int thread_id1 = 0, thread_id2 = 1;
 	pthread_create(&capture_thread, NULL,
@@ -521,16 +532,16 @@ int main(int argc, char* argv[])
 				printw("Center position\n");
             			refresh();
 				//detected_face.x == 0;
-				border_x = 320;
-				border_y = 240;
+				border_x = width/2;
+				border_y = height/2;
 				WriteToStat();
 			}
 			else if(*buf == 108)
 			{
 				printw("Left position\n");
             			refresh();
-				border_x = 213;
-				border_y = 160;
+				border_x = width/3;
+				border_y = height/3;
 				//detected_face.x == 0;
 				WriteToStat();
 			}
@@ -538,8 +549,8 @@ int main(int argc, char* argv[])
 			{
 				printw("Right position\n");
             			refresh();
-				border_x = 426;
-				border_y = 160;
+				border_x = (width*2)/3;
+				border_y = height/3;
 				//detected_face.x == 0;
 				WriteToStat();
 			}
@@ -721,7 +732,7 @@ void track(cv::Mat frame0)
 			//x = 0.0;
 			//y = 0.0;
 			last = true;
-			usleep(300000);
+			//usleep(300000);
 			tracking = false;
 			WriteToStat();
 			break;
@@ -738,7 +749,7 @@ void track(cv::Mat frame0)
 				//x = 0.0;
 				//y = 0.0;
 				last = true;
-				usleep(300000);
+				//usleep(300000);
 				tracking = false;
 				//moving = false;
 				//StopMove();
@@ -787,16 +798,16 @@ void track(cv::Mat frame0)
 				printw("Center position\n");
             			refresh();
 				//detected_face.x == 0;
-				border_x = 320;
-				border_y = 240;
+				border_x = width/2;
+				border_y = height/2;
 				WriteToStat();
 			}
 			else if(ch == 108)
 			{
 				printw("Left position\n");
             			refresh();
-				border_x = 213;
-				border_y = 160;
+				border_x = width/3;
+				border_y = height/3;
 				WriteToStat();
 				//detected_face.x == 0;
 			}
@@ -804,8 +815,8 @@ void track(cv::Mat frame0)
 			{
 				printw("Right position\n");
             			refresh();
-				border_x = 426;
-				border_y = 160;
+				border_x = (width*2)/3;
+				border_y = height/3;
 				WriteToStat();
 				//detected_face.x == 0;
 			}
@@ -820,7 +831,7 @@ void track(cv::Mat frame0)
 				//x = 0.0;
 				//y = 0.0;
 				last = true;
-				usleep(300000);
+				//usleep(300000);
 				//StopMove();
 				WriteToStat();
 				break;
@@ -872,16 +883,16 @@ void track(cv::Mat frame0)
 				printw("Center position\n");
             			refresh();
 				//detected_face.x == 0;
-				border_x = 320;
-				border_y = 240;
+				border_x = width/2;
+				border_y = height/2;
 				WriteToStat();
 			}
 			else if(*buf == 108)
 			{
 				printw("Left position\n");
             			refresh();
-				border_x = 213;
-				border_y = 160;
+				border_x = width/3;
+				border_y = height/3;
 				WriteToStat();
 				//detected_face.x == 0;
 			}
@@ -889,8 +900,8 @@ void track(cv::Mat frame0)
 			{
 				printw("Right position\n");
             			refresh();
-				border_x = 426;
-				border_y = 160;
+				border_x = (width*2)/3;
+				border_y = height/3;
 				WriteToStat();
 				//detected_face.x == 0;
 			}
@@ -904,13 +915,12 @@ void track(cv::Mat frame0)
 			//y = 0.0;
 			last = true;
 			WriteToStat();
-			usleep(300000);
+			//usleep(300000);
 			break;
 			//StopMove();
 		}
 		else if(camera_control && tracking)
 		{
-			
 			if(abs(cmt.bb_rot.center.x - border_x) > 35 || abs(cmt.bb_rot.center.y - border_y) > 30)
 			{
 				if((cmt.bb_rot.center.x - border_x)/1000 > 0.035)
@@ -937,12 +947,25 @@ void track(cv::Mat frame0)
 				{
 					y = 0;
 				}
+				
+				if((width*zoom_factor) - cmt.bb_rot.size.height > 10)
+				{
+					z = 0.1;
+					rect.height = rect.height + 10;
+				}
+				else if ((width*zoom_factor) - cmt.bb_rot.size.height < 10)
+				{
+					z = -0.1;
+					rect.height = rect.height - 10;
+				}
+				else
+				{
+					z = 0.0;	
+				}
 				moving = true;
 			}
 			else if (moving)
 			{
-				//x = 0.0;
-				//y = 0.0;
 				last = true;
 				usleep(300000);
 				//StopMove();
