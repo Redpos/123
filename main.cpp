@@ -389,8 +389,8 @@ int main(int argc, char* argv[])
 	//capture.retrieve(im);
 	WriteToStat();
 	
-	width = capture.get(CAP_PROP_FRAME_WIDTH);
-	height = capture.get(CAP_PROP_FRAME_HEIGHT);
+	width = capture.get(cv::CAP_PROP_FRAME_WIDTH);
+	height = capture.get(cv::CAP_PROP_FRAME_HEIGHT);
 	
 	pthread_t capture_thread, move_thread;
 	int thread_id1 = 0, thread_id2 = 1;
