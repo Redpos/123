@@ -1,0 +1,2451 @@
+[?1049h[1;24r(B[m[4l[?7h[H[2J[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[56G2.436[67G72.250 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                                2.436      72.250 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[56G4.950     148.310 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                                4.950     148.310 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[56G7.554     224.011 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                                7.554     224.011 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G10.055     300.363 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               10.055     300.363 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.298     368.629 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.298     368.629 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.040     361.306 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.040     361.306 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.091     365.057 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.091     365.057 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.743     361.468 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.743     361.468 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.795     365.254 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.795     365.254 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.614     357.806 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.614     357.806 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.756     365.320 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.756     365.320 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.640     361.511 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.640     361.511 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.808     365.173 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.808     365.173 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.808     361.312 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.808     361.312 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.885     368.585 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.885     368.585 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.743     364.647 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.743     364.647 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.014     368.441 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.014     368.441 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.730     357.209 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.730     357.209 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.924     361.284 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.924     361.284 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.937     359.923 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.937     359.923 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.924     357.219 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.924     357.219 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.143     364.240 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.143     364.240 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.091     363.732 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.091     363.732 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.950     363.241 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.950     363.241 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.885     361.250 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.885     361.250 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.718     359.546 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.718     359.546 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.141     359.867 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.141     359.867 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.089     359.092 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.089     359.092 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.102     356.800 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.102     356.800 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.102     359.981 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.102     359.981 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.012     361.205 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.012     361.205 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.589     359.595 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.589     359.595 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.795     362.766 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.795     362.766 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.627     358.958 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.627     358.958 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.872     364.440 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.872     364.440 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.782     359.587 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.782     359.587 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.859     359.818 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.859     359.818 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.808     360.043 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.808     360.043 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.705     360.095 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.705     360.095 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.795     363.964 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.795     363.964 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.692     360.127 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.692     360.127 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.782     363.308 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.782     363.308 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.653     361.758 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.653     361.758 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.756     362.105 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.756     362.105 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.692     360.266 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.692     360.266 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.614     360.631 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.614     360.631 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.808     362.845 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.808     362.845 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.859     365.355 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.859     365.355 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.898     365.612 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.898     365.612 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.795     361.911 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.795     361.911 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.821     361.998 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.821     361.998 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.808     361.984 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.808     361.984 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.898     361.787 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.898     361.787 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.911     361.930 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.911     361.930 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.988     361.890 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.988     361.890 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.834     358.244 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.834     358.244 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.756     357.853 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.756     357.853 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.027     362.622 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.027     362.622 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.872     361.424 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.872     361.424 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.679     357.630 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.679     357.630 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.756     357.723 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.756     357.723 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.821     357.725 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.821     357.725 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.692     361.248 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.692     361.248 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.859     361.433 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.859     361.433 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.872     362.293 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.872     362.293 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.821     361.445 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.821     361.445 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.808     361.563 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.808     361.563 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.109     361.720 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.109     361.720 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.135     361.644 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.135     361.644 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.212     365.038 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.212     365.038 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.148     357.593 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.148     357.593 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.135     357.666 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.135     357.666 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.924     363.009 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.924     363.009 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.924     361.438 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.924     361.438 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.962     362.831 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.962     362.831 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.898     361.436 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.898     361.436 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.911     361.146 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.911     361.146 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.130     364.811 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.130     364.811 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.975     361.349 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.975     361.349 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.001     361.634 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.001     361.634 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.859     357.683 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.859     357.683 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.079     365.445 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.079     365.445 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.053     363.357 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.053     363.357 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.053     360.719 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.053     360.719 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.053     360.752 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.053     360.752 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.195     364.492 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.195     364.492 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.066     360.712 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.066     360.712 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.066     359.225 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.066     359.225 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.911     357.457 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.911     357.457 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.079     364.856 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.079     364.856 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.950     360.860 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.950     360.860 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.769     360.696 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.769     360.696 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.640     356.550 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.640     356.550 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.962     363.995 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.962     363.995 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.795     356.498 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.795     356.498 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.937     360.374 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.937     360.374 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.040     360.771 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.040     360.771 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.975     360.951 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.975     360.951 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.975     361.169 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.975     361.169 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.117     364.940 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.117     364.940 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.885     357.455 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.885     357.455 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.053     364.859 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.053     364.859 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.885     357.411 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.885     357.411 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.872     362.172 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.872     362.172 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.872     357.586 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.872     357.586 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.040     361.287 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.040     361.287 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.014     361.745 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.014     361.745 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.053     364.143 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.053     364.143 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.962     361.146 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.962     361.146 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.872     361.132 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.872     361.132 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.782     357.163 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.782     357.163 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.975     360.824 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.975     360.824 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.040     364.590 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.040     364.590 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.795     356.998 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.795     356.998 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.769     357.054 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.769     357.054 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.795     360.866 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.795     360.866 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.795     360.828 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.795     360.828 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.769     363.535 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.769     363.535 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.769     362.097 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.769     362.097 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.576     358.129 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.576     358.129 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.460     357.261 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.460     357.261 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.395     359.711 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.395     359.711 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.550     356.821 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.550     356.821 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.769     367.827 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.769     367.827 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.537     356.247 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.537     356.247 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.975     367.673 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.975     367.673 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.986     356.621 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.986     356.621 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.076     359.199 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.076     359.199 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.115     360.900 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.115     360.900 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.999     357.718 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.999     357.718 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.282     365.083 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.282     365.083 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.846     361.252 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.846     361.252 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.885     360.739 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.885     360.739 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.027     361.047 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.027     361.047 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.846     357.204 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.846     357.204 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.975     364.714 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.975     364.714 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.027     363.047 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.027     363.047 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.808     357.308 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.808     357.308 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.924     364.960 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.924     364.960 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.937     365.046 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.937     365.046 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.950     365.268 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.950     365.268 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.898     365.658 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.898     365.658 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.576     362.255 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.576     362.255 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.653     362.472 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.653     362.472 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.498     358.863 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.498     358.863 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.589     362.614 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.589     362.614 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.511     361.486 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.511     361.486 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.602     359.792 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.602     359.792 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.679     362.235 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.679     362.235 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.653     358.405 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.653     358.405 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.975     366.103 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.975     366.103 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.079     365.971 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.079     365.971 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.937     359.852 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.937     359.852 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.692     358.437 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.692     358.437 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.705     362.154 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.705     362.154 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.885     365.793 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.885     365.793 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.640     358.255 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.640     358.255 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.821     365.787 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.821     365.787 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.924     365.687 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.924     365.687 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.821     363.368 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.821     363.368 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.730     361.430 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.730     361.430 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.834     365.054 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.834     365.054 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.834     361.011 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.834     361.011 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.872     360.733 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.872     360.733 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.743     358.801 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.743     358.801 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.859     360.651 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.859     360.651 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.885     356.927 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.885     356.927 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.104     363.796 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.104     363.796 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.911     354.372 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.911     354.372 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G14.494     355.627 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               14.494     355.627 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G15.472     347.999 KB/sec
+[7G? root     ..:42117-192.168.11.41:80[5;56H0.682[68G0.530 KB/sec
+[7G? root     unknown TCP[6;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               16.154     348.529 KB/sec [9;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G17.725     338.479 KB/sec
+[7G? root     ..:42117-192.168.11.41:80[5;56H0.682[68G0.530 KB/sec
+[7G? root     unknown TCP[6;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               18.407     339.009 KB/sec [9;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G18.700     331.037 KB/sec
+[7G? root     ..:42122-192.168.11.41:80[5;56H0.668[68G0.530 KB/sec
+[7G? root     ..:42117-192.168.11.41:80[6;56H0.682[68G0.530 KB/sec
+[7G? root     unknown TCP[7;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               20.050     332.096 KB/sec [10;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G20.393     327.652 KB/sec
+[7G? root     ..:42122-192.168.11.41:80[5;56H0.668[68G0.530 KB/sec
+[7G? root     ..:42117-192.168.11.41:80[6;56H0.682[68G0.530 KB/sec
+[7G? root     unknown TCP[7;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               21.743     328.712 KB/sec [10;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G18.662     322.529 KB/sec
+[7G? root     ..:42131-192.168.11.41:80[5;56H0.680[68G0.530 KB/sec
+[7G? root     ..:42129-192.168.11.41:80[6;56H0.680[68G0.530 KB/sec
+[7G? root     ..:42122-192.168.11.41:80[7;56H0.668[68G0.530 KB/sec
+[7G? root     ..:42117-192.168.11.41:80[8;56H0.682[68G0.530 KB/sec
+[7G? root     unknown TCP[9;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               21.373     324.648 KB/sec [12;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G18.678     326.051 KB/sec
+[7G? root     ..:42135-192.168.11.41:80[5;56H0.680[68G0.530 KB/sec
+[7G? root     ..:42131-192.168.11.41:80[6;56H0.680[68G0.530 KB/sec
+[7G? root     ..:42129-192.168.11.41:80[7;56H0.680[68G0.530 KB/sec
+[7G? root     ..:42122-192.168.11.41:80[8;56H0.668[68G0.530 KB/sec
+[7G? root     ..:42117-192.168.11.41:80[9;56H0.000[68G0.000 KB/sec
+[7G? root     unknown TCP[10;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               21.386     328.170 KB/sec [13;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G18.043     332.066 KB/sec
+[7G? root     ..:42138-192.168.11.41:80[5;56H0.668[68G0.530 KB/sec
+[7G? root     ..:42137-192.168.11.41:80[6;56H0.667[68G0.530 KB/sec
+[7G? root     ..:42135-192.168.11.41:80[7;56H0.680[68G0.530 KB/sec
+[7G? root     ..:42131-192.168.11.41:80[8;56H0.680[68G0.530 KB/sec
+[7G? root     ..:42129-192.168.11.41:80[9;56H0.680[68G0.530 KB/sec
+[7G? root     ..:42122-192.168.11.41:80[10;56H0.653[68G0.530 KB/sec
+[7G? root     ..:42117-192.168.11.41:80[11;56H0.000[68G0.000 KB/sec
+[7G? root     unknown TCP[12;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               22.072     335.245 KB/sec [15;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G17.965     329.940 KB/sec
+[7G? root     ..:42138-192.168.11.41:80[5;56H0.668[68G0.530 KB/sec
+[7G? root     ..:42137-192.168.11.41:80[6;56H0.667[68G0.530 KB/sec
+[7G? root     ..:42135-192.168.11.41:80[7;56H0.680[68G0.530 KB/sec
+[7G? root     ..:42131-192.168.11.41:80[8;56H0.680[68G0.530 KB/sec
+[7G? root     ..:42129-192.168.11.41:80[9;56H0.680[68G0.530 KB/sec
+[7G? root     ..:42143-192.168.11.41:80[10;56H0.680[68G0.517 KB/sec
+[7G? root     ..:42122-192.168.11.41:80[11;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42117-192.168.11.41:80[12;56H0.000[68G0.000 KB/sec
+[7G? root     unknown TCP[13;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               22.021     333.107 KB/sec [16;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G18.127     332.637 KB/sec
+[7G? root     ..:42146-192.168.11.41:80[5;56H0.680[68G0.530 KB/sec
+[7G? root     ..:42143-192.168.11.41:80[6;56H0.680[68G0.530 KB/sec
+[7G? root     ..:42138-192.168.11.41:80[7;56H0.668[68G0.530 KB/sec
+[7G? root     ..:42137-192.168.11.41:80[8;56H0.667[68G0.530 KB/sec
+[7G? root     ..:42135-192.168.11.41:80[9;56H0.680[68G0.530 KB/sec
+[7G? root     ..:42131-192.168.11.41:80[10;56H0.680[68G0.530 KB/sec
+[7G? root     ..:42129-192.168.11.41:80[11;56H0.052[68G0.515 KB/sec
+[7G? root     ..:42122-192.168.11.41:80[12;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42117-192.168.11.41:80[13;56H0.000[68G0.000 KB/sec
+[7G? root     unknown TCP[14;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               22.235     336.332 KB/sec [17;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G18.409     333.855 KB/sec
+[7G? root     ..:42148-192.168.11.41:80[5;56H0.680[68G0.530 KB/sec
+[7G? root     ..:42146-192.168.11.41:80[6;56H0.680[68G0.530 KB/sec
+[7G? root     ..:42143-192.168.11.41:80[7;56H0.680[68G0.530 KB/sec
+[7G? root     ..:42138-192.168.11.41:80[8;56H0.668[68G0.530 KB/sec
+[7G? root     ..:42137-192.168.11.41:80[9;56H0.667[68G0.530 KB/sec
+[7G? root     ..:42135-192.168.11.41:80[10;56H0.680[68G0.530 KB/sec
+[7G? root     ..:42131-192.168.11.41:80[11;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42129-192.168.11.41:80[12;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42122-192.168.11.41:80[13;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42117-192.168.11.41:80[14;56H0.000[68G0.000 KB/sec
+[7G? root     unknown TCP[15;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               22.465     337.035 KB/sec [18;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G17.709     330.361 KB/sec
+[7G? root     ..:42154-192.168.11.41:80[5;56H0.680[68G0.530 KB/sec
+[7G? root     ..:42152-192.168.11.41:80[6;56H0.668[68G0.530 KB/sec
+[7G? root     ..:42148-192.168.11.41:80[7;56H0.680[68G0.530 KB/sec
+[7G? root     ..:42146-192.168.11.41:80[8;56H0.680[68G0.530 KB/sec
+[7G? root     ..:42143-192.168.11.41:80[9;56H0.680[68G0.530 KB/sec
+[7G? root     ..:42138-192.168.11.41:80[10;56H0.668[68G0.530 KB/sec
+[7G? root     ..:42137-192.168.11.41:80[11;56H0.667[68G0.530 KB/sec
+[7G? root     ..:42135-192.168.11.41:80[12;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42131-192.168.11.41:80[13;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42129-192.168.11.41:80[14;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42122-192.168.11.41:80[15;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42117-192.168.11.41:80[16;56H0.000[68G0.000 KB/sec
+[7G? root     unknown TCP[17;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               22.433     334.070 KB/sec [20;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G17.864     333.856 KB/sec
+[7G? root     ..:42156-192.168.11.41:80[5;56H0.668[68G0.530 KB/sec
+[7G? root     ..:42154-192.168.11.41:80[6;56H0.680[68G0.530 KB/sec
+[7G? root     ..:42152-192.168.11.41:80[7;56H0.668[68G0.530 KB/sec
+[7G? root     ..:42148-192.168.11.41:80[8;56H0.680[68G0.530 KB/sec
+[7G? root     ..:42146-192.168.11.41:80[9;56H0.680[68G0.530 KB/sec
+[7G? root     ..:42143-192.168.11.41:80[10;56H0.680[68G0.530 KB/sec
+[7G? root     ..:42158-192.168.11.41:80[11;56H0.680[68G0.517 KB/sec
+[7G? root     ..:42138-192.168.11.41:80[12;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42137-192.168.11.41:80[13;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42135-192.168.11.41:80[14;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42131-192.168.11.41:80[15;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42129-192.168.11.41:80[16;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42122-192.168.11.41:80[17;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42117-192.168.11.41:80[18;56H0.000[68G0.000 KB/sec
+[7G? root     unknown TCP[19;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               22.601     337.552 KB/sec [22;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G17.186     329.515 KB/sec
+[7G? root     ..:42161-192.168.11.41:80[5;56H0.667[68G0.530 KB/sec
+[7G? root     ..:42158-192.168.11.41:80[6;56H0.680[68G0.530 KB/sec
+[7G? root     ..:42156-192.168.11.41:80[7;56H0.668[68G0.530 KB/sec
+[7G? root     ..:42154-192.168.11.41:80[8;56H0.680[68G0.530 KB/sec
+[7G? root     ..:42152-192.168.11.41:80[9;56H0.668[68G0.530 KB/sec
+[7G? root     ..:42148-192.168.11.41:80[10;56H0.680[68G0.530 KB/sec
+[7G? root     ..:42146-192.168.11.41:80[11;56H0.680[68G0.530 KB/sec
+[7G? root     ..:42143-192.168.11.41:80[12;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42138-192.168.11.41:80[13;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42137-192.168.11.41:80[14;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42135-192.168.11.41:80[15;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42131-192.168.11.41:80[16;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42129-192.168.11.41:80[17;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42122-192.168.11.41:80[18;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42117-192.168.11.41:80[19;56H0.000[68G0.000 KB/sec
+[7G? root     unknown TCP[20;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               21.910     333.224 KB/sec [23;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G17.787     329.830 KB/sec
+[7G? root     ..:42165-192.168.11.41:80[5;56H0.680[68G0.530 KB/sec
+[7G? root     ..:42161-192.168.11.41:80[6;56H0.667[68G0.530 KB/sec
+[7G? root     ..:42158-192.168.11.41:80[7;56H0.680[68G0.530 KB/sec
+[7G? root     ..:42156-192.168.11.41:80[8;56H0.668[68G0.530 KB/sec
+[7G? root     ..:42154-192.168.11.41:80[9;56H0.680[68G0.530 KB/sec
+[7G? root     ..:42152-192.168.11.41:80[10;56H0.668[68G0.530 KB/sec
+[7G? root     ..:42148-192.168.11.41:80[11;56H0.052[68G0.515 KB/sec
+[7G? root     ..:42146-192.168.11.41:80[12;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42143-192.168.11.41:80[13;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42138-192.168.11.41:80[14;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42137-192.168.11.41:80[15;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42135-192.168.11.41:80[16;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42131-192.168.11.41:80[17;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42129-192.168.11.41:80[18;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42122-192.168.11.41:80[19;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42117-192.168.11.41:80[20;56H0.000[68G0.000 KB/sec
+[7G? root     unknown TCP[21;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               21.882     333.525 KB/sec [24;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G17.863     331.653 KB/sec
+[7G? root     ..:42167-192.168.11.41:80[5;56H0.680[68G0.530 KB/sec
+[7G? root     ..:42165-192.168.11.41:80[6;56H0.680[68G0.530 KB/sec
+[7G? root     ..:42161-192.168.11.41:80[7;56H0.667[68G0.530 KB/sec
+[7G? root     ..:42158-192.168.11.41:80[8;56H0.680[68G0.530 KB/sec
+[7G? root     ..:42156-192.168.11.41:80[9;56H0.668[68G0.530 KB/sec
+[7G? root     ..:42154-192.168.11.41:80[10;56H0.680[68G0.530 KB/sec
+[7G? root     ..:42152-192.168.11.41:80[11;56H0.668[68G0.530 KB/sec
+[7G? root     ..:42148-192.168.11.41:80[12;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42146-192.168.11.41:80[13;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42143-192.168.11.41:80[14;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42138-192.168.11.41:80[15;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42137-192.168.11.41:80[16;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42135-192.168.11.41:80[17;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42131-192.168.11.41:80[18;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42129-192.168.11.41:80[19;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42122-192.168.11.41:80[20;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42117-192.168.11.41:80[21;56H0.000[68G0.000 KB/sec
+[7G? root     unknown TCP[22;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               22.588     335.362 KB/sec[?7l [?7h(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G18.045     333.286 KB/sec
+[7G? root     ..:42172-192.168.11.41:80[5;56H0.733[68G0.545 KB/sec
+[7G? root     ..:42167-192.168.11.41:80[6;56H0.680[68G0.530 KB/sec
+[7G? root     ..:42165-192.168.11.41:80[7;56H0.680[68G0.530 KB/sec
+[7G? root     ..:42161-192.168.11.41:80[8;56H0.667[68G0.530 KB/sec
+[7G? root     ..:42158-192.168.11.41:80[9;56H0.680[68G0.530 KB/sec
+[7G? root     ..:42156-192.168.11.41:80[10;56H0.668[68G0.530 KB/sec
+[7G? root     ..:42154-192.168.11.41:80[11;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42152-192.168.11.41:80[12;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42148-192.168.11.41:80[13;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42146-192.168.11.41:80[14;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42143-192.168.11.41:80[15;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42138-192.168.11.41:80[16;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42137-192.168.11.41:80[17;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42135-192.168.11.41:80[18;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42131-192.168.11.41:80[19;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42129-192.168.11.41:80[20;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42122-192.168.11.41:80[21;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42117-192.168.11.41:80[22;56H0.000[68G0.000 KB/sec
+[7G? root     unknown TCP[23;56H0.000[68G0.000 KB/sec
+(B[0;7m  TOTAL                                               22.154     336.481 (B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G18.361     324.989 KB/sec
+[7G? root     ..:42172-192.168.11.41:80[5;56H0.733[68G0.545 KB/sec
+[7G? root     ..:42174-192.168.11.41:80[6;56H0.668[68G0.530 KB/sec
+[7G? root     ..:42167-192.168.11.41:80[7;56H0.680[68G0.530 KB/sec
+[7G? root     ..:42165-192.168.11.41:80[8;56H0.680[68G0.530 KB/sec
+[7G? root     ..:42161-192.168.11.41:80[9;56H0.667[68G0.530 KB/sec
+[7G? root     ..:42158-192.168.11.41:80[10;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42156-192.168.11.41:80[11;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42154-192.168.11.41:80[12;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42152-192.168.11.41:80[13;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42148-192.168.11.41:80[14;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42146-192.168.11.41:80[15;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42143-192.168.11.41:80[16;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42138-192.168.11.41:80[17;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42137-192.168.11.41:80[18;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42135-192.168.11.41:80[19;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42131-192.168.11.41:80[20;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42129-192.168.11.41:80[21;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42122-192.168.11.41:80[22;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42117-192.168.11.41:80[23;56H0.000[68G0.000 KB/sec
+(B[0;7m  TOTAL                                               21.790     327.654 (B[mKB/sec[74G[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G17.579     319.384 KB/sec
+[7G? root     ..:42172-192.168.11.41:80[5;56H0.733[68G0.545 KB/sec
+[7G? root     ..:42174-192.168.11.41:80[6;56H0.668[68G0.530 KB/sec
+[7G? root     ..:42167-192.168.11.41:80[7;56H0.680[68G0.530 KB/sec
+[7G? root     ..:42165-192.168.11.41:80[8;56H0.680[68G0.530 KB/sec
+[7G? root     ..:42161-192.168.11.41:80[9;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42158-192.168.11.41:80[10;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42156-192.168.11.41:80[11;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42154-192.168.11.41:80[12;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42152-192.168.11.41:80[13;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42148-192.168.11.41:80[14;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42146-192.168.11.41:80[15;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42143-192.168.11.41:80[16;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42138-192.168.11.41:80[17;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42137-192.168.11.41:80[18;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42135-192.168.11.41:80[19;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42131-192.168.11.41:80[20;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42129-192.168.11.41:80[21;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42122-192.168.11.41:80[22;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42117-192.168.11.41:80[23;56H0.000[68G0.000 KB/sec
+(B[0;7m  TOTAL                                               20.341     321.518 (B[mKB/sec[74G[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G17.852     327.412 KB/sec
+[7G? root     ..:42172-192.168.11.41:80[5;56H0.733[68G0.545 KB/sec
+[7G? root     ..:42174-192.168.11.41:80[6;56H0.668[68G0.530 KB/sec
+[7G? root     ..:42167-192.168.11.41:80[7;56H0.680[68G0.530 KB/sec
+[7G? root     ..:42165-192.168.11.41:80[8;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42161-192.168.11.41:80[9;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42158-192.168.11.41:80[10;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42156-192.168.11.41:80[11;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42154-192.168.11.41:80[12;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42152-192.168.11.41:80[13;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42148-192.168.11.41:80[14;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42146-192.168.11.41:80[15;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42143-192.168.11.41:80[16;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42138-192.168.11.41:80[17;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42137-192.168.11.41:80[18;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42135-192.168.11.41:80[19;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42131-192.168.11.41:80[20;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42129-192.168.11.41:80[21;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42122-192.168.11.41:80[22;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42117-192.168.11.41:80[23;56H0.000[68G0.000 KB/sec
+(B[0;7m  TOTAL                                               19.933     329.017 (B[mKB/sec[74G[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G16.159     335.475 KB/sec
+[7G? root     ..:42172-192.168.11.41:80[5;56H0.733[68G0.545 KB/sec
+[7G? root     ..:42174-192.168.11.41:80[6;56H0.668[68G0.530 KB/sec
+[7G? root     ..:42167-192.168.11.41:80[7;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42165-192.168.11.41:80[8;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42161-192.168.11.41:80[9;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42158-192.168.11.41:80[10;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42156-192.168.11.41:80[11;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42154-192.168.11.41:80[12;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42152-192.168.11.41:80[13;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42148-192.168.11.41:80[14;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42146-192.168.11.41:80[15;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42143-192.168.11.41:80[16;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42138-192.168.11.41:80[17;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42137-192.168.11.41:80[18;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42135-192.168.11.41:80[19;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42131-192.168.11.41:80[20;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42129-192.168.11.41:80[21;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42122-192.168.11.41:80[22;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42117-192.168.11.41:80[23;56H0.000[68G0.000 KB/sec
+(B[0;7m  TOTAL                                               17.559     336.550 (B[mKB/sec[74G[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G15.043     336.850 KB/sec
+[7G? root     ..:42174-192.168.11.41:80[5;56H0.653[68G0.530 KB/sec
+[7G? root     ..:42172-192.168.11.41:80[6;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42167-192.168.11.41:80[7;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42165-192.168.11.41:80[8;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42161-192.168.11.41:80[9;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42158-192.168.11.41:80[10;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42156-192.168.11.41:80[11;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42154-192.168.11.41:80[12;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42152-192.168.11.41:80[13;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42148-192.168.11.41:80[14;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42146-192.168.11.41:80[15;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42143-192.168.11.41:80[16;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42138-192.168.11.41:80[17;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42137-192.168.11.41:80[18;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42135-192.168.11.41:80[19;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42131-192.168.11.41:80[20;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42129-192.168.11.41:80[21;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42122-192.168.11.41:80[22;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42117-192.168.11.41:80[23;56H0.000[68G0.000 KB/sec
+(B[0;7m  TOTAL                                               15.696     337.380 (B[mKB/sec[74G[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G13.633     350.147 KB/sec
+[7G? root     ..:42174-192.168.11.41:80[5;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42172-192.168.11.41:80[6;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42167-192.168.11.41:80[7;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42165-192.168.11.41:80[8;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42161-192.168.11.41:80[9;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42158-192.168.11.41:80[10;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42156-192.168.11.41:80[11;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42154-192.168.11.41:80[12;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42152-192.168.11.41:80[13;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42148-192.168.11.41:80[14;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42146-192.168.11.41:80[15;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42143-192.168.11.41:80[16;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42138-192.168.11.41:80[17;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42137-192.168.11.41:80[18;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42135-192.168.11.41:80[19;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42131-192.168.11.41:80[20;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42129-192.168.11.41:80[21;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42122-192.168.11.41:80[22;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42117-192.168.11.41:80[23;56H0.000[68G0.000 KB/sec
+(B[0;7m  TOTAL                                               13.633     350.147 (B[mKB/sec[74G[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G14.070     360.512 KB/sec
+[7G? root     ..:42174-192.168.11.41:80[5;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42172-192.168.11.41:80[6;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42167-192.168.11.41:80[7;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42165-192.168.11.41:80[8;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42161-192.168.11.41:80[9;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42158-192.168.11.41:80[10;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42156-192.168.11.41:80[11;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42154-192.168.11.41:80[12;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42152-192.168.11.41:80[13;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42148-192.168.11.41:80[14;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42146-192.168.11.41:80[15;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42143-192.168.11.41:80[16;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42138-192.168.11.41:80[17;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42137-192.168.11.41:80[18;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42135-192.168.11.41:80[19;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42131-192.168.11.41:80[20;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42129-192.168.11.41:80[21;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42122-192.168.11.41:80[22;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42117-192.168.11.41:80[23;56H0.000[68G0.000 KB/sec
+(B[0;7m  TOTAL                                               14.070     360.512 (B[mKB/sec[74G[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.414     372.756 KB/sec
+[7G? root     ..:42174-192.168.11.41:80[5;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42172-192.168.11.41:80[6;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42167-192.168.11.41:80[7;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42165-192.168.11.41:80[8;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42161-192.168.11.41:80[9;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42158-192.168.11.41:80[10;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42156-192.168.11.41:80[11;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42154-192.168.11.41:80[12;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42152-192.168.11.41:80[13;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42148-192.168.11.41:80[14;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42146-192.168.11.41:80[15;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42143-192.168.11.41:80[16;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42138-192.168.11.41:80[17;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42137-192.168.11.41:80[18;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42135-192.168.11.41:80[19;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42131-192.168.11.41:80[20;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42129-192.168.11.41:80[21;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42122-192.168.11.41:80[22;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42117-192.168.11.41:80[23;56H0.000[68G0.000 KB/sec
+(B[0;7m  TOTAL                                               12.414     372.756 (B[mKB/sec[74G[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.375     370.126 KB/sec
+[7G? root     ..:42174-192.168.11.41:80[5;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42172-192.168.11.41:80[6;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42167-192.168.11.41:80[7;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42165-192.168.11.41:80[8;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42161-192.168.11.41:80[9;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42158-192.168.11.41:80[10;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42156-192.168.11.41:80[11;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42154-192.168.11.41:80[12;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42152-192.168.11.41:80[13;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42148-192.168.11.41:80[14;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42146-192.168.11.41:80[15;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42143-192.168.11.41:80[16;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42138-192.168.11.41:80[17;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42137-192.168.11.41:80[18;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42135-192.168.11.41:80[19;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42131-192.168.11.41:80[20;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42129-192.168.11.41:80[21;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42122-192.168.11.41:80[22;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42117-192.168.11.41:80[23;56H0.000[68G0.000 KB/sec
+(B[0;7m  TOTAL                                               12.375     370.126 (B[mKB/sec[74G[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.182     366.447 KB/sec
+[7G? root     ..:42174-192.168.11.41:80[5;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42172-192.168.11.41:80[6;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42167-192.168.11.41:80[7;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42165-192.168.11.41:80[8;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42161-192.168.11.41:80[9;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42158-192.168.11.41:80[10;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42156-192.168.11.41:80[11;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42154-192.168.11.41:80[12;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42152-192.168.11.41:80[13;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42148-192.168.11.41:80[14;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42146-192.168.11.41:80[15;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42143-192.168.11.41:80[16;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42138-192.168.11.41:80[17;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42137-192.168.11.41:80[18;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42135-192.168.11.41:80[19;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42131-192.168.11.41:80[20;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42129-192.168.11.41:80[21;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42122-192.168.11.41:80[22;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42117-192.168.11.41:80[23;56H0.000[68G0.000 KB/sec
+(B[0;7m  TOTAL                                               12.182     366.447 (B[mKB/sec[74G[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.104     370.608 KB/sec
+[7G? root     ..:42174-192.168.11.41:80[5;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42172-192.168.11.41:80[6;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42167-192.168.11.41:80[7;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42165-192.168.11.41:80[8;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42161-192.168.11.41:80[9;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42158-192.168.11.41:80[10;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42156-192.168.11.41:80[11;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42154-192.168.11.41:80[12;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42152-192.168.11.41:80[13;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42148-192.168.11.41:80[14;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42146-192.168.11.41:80[15;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42143-192.168.11.41:80[16;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42138-192.168.11.41:80[17;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42137-192.168.11.41:80[18;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42135-192.168.11.41:80[19;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42131-192.168.11.41:80[20;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42129-192.168.11.41:80[21;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42122-192.168.11.41:80[22;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42117-192.168.11.41:80[23;56H0.000[68G0.000 KB/sec
+(B[0;7m  TOTAL                                               12.104     370.608 (B[mKB/sec[74G[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.079     367.154 KB/sec
+[7G? root     ..:42174-192.168.11.41:80[5;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42172-192.168.11.41:80[6;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42167-192.168.11.41:80[7;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42165-192.168.11.41:80[8;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42161-192.168.11.41:80[9;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42158-192.168.11.41:80[10;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42156-192.168.11.41:80[11;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42154-192.168.11.41:80[12;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42152-192.168.11.41:80[13;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42148-192.168.11.41:80[14;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42146-192.168.11.41:80[15;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42143-192.168.11.41:80[16;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42138-192.168.11.41:80[17;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42137-192.168.11.41:80[18;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42135-192.168.11.41:80[19;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42131-192.168.11.41:80[20;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42129-192.168.11.41:80[21;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42122-192.168.11.41:80[22;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42117-192.168.11.41:80[23;56H0.000[68G0.000 KB/sec
+(B[0;7m  TOTAL                                               12.079     367.154 (B[mKB/sec[74G[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.117     371.498 KB/sec
+[7G? root     ..:42174-192.168.11.41:80[5;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42172-192.168.11.41:80[6;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42167-192.168.11.41:80[7;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42165-192.168.11.41:80[8;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42161-192.168.11.41:80[9;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42158-192.168.11.41:80[10;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42156-192.168.11.41:80[11;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42154-192.168.11.41:80[12;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42152-192.168.11.41:80[13;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42148-192.168.11.41:80[14;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42146-192.168.11.41:80[15;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42143-192.168.11.41:80[16;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42138-192.168.11.41:80[17;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42137-192.168.11.41:80[18;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42135-192.168.11.41:80[19;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42131-192.168.11.41:80[20;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42129-192.168.11.41:80[21;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42122-192.168.11.41:80[22;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42117-192.168.11.41:80[23;56H0.000[68G0.000 KB/sec
+(B[0;7m  TOTAL                                               12.117     371.498 (B[mKB/sec[74G[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.014     367.982 KB/sec
+[7G? root     ..:42174-192.168.11.41:80[5;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42172-192.168.11.41:80[6;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42167-192.168.11.41:80[7;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42165-192.168.11.41:80[8;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42161-192.168.11.41:80[9;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42158-192.168.11.41:80[10;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42156-192.168.11.41:80[11;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42154-192.168.11.41:80[12;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42152-192.168.11.41:80[13;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42148-192.168.11.41:80[14;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42146-192.168.11.41:80[15;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42143-192.168.11.41:80[16;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42138-192.168.11.41:80[17;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42137-192.168.11.41:80[18;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42135-192.168.11.41:80[19;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42131-192.168.11.41:80[20;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42129-192.168.11.41:80[21;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42122-192.168.11.41:80[22;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42117-192.168.11.41:80[23;56H0.000[68G0.000 KB/sec
+(B[0;7m  TOTAL                                               12.014     367.982 (B[mKB/sec[74G[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.195     372.407 KB/sec
+[7G? root     ..:42174-192.168.11.41:80[5;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42172-192.168.11.41:80[6;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42167-192.168.11.41:80[7;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42165-192.168.11.41:80[8;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42161-192.168.11.41:80[9;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42158-192.168.11.41:80[10;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42156-192.168.11.41:80[11;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42154-192.168.11.41:80[12;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42152-192.168.11.41:80[13;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42148-192.168.11.41:80[14;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42146-192.168.11.41:80[15;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42143-192.168.11.41:80[16;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42138-192.168.11.41:80[17;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42137-192.168.11.41:80[18;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42135-192.168.11.41:80[19;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42131-192.168.11.41:80[20;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42129-192.168.11.41:80[21;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42122-192.168.11.41:80[22;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42117-192.168.11.41:80[23;56H0.000[68G0.000 KB/sec
+(B[0;7m  TOTAL                                               12.195     372.407 (B[mKB/sec[74G[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.130     365.087 KB/sec
+[7G? root     ..:42174-192.168.11.41:80[5;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42172-192.168.11.41:80[6;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42167-192.168.11.41:80[7;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42165-192.168.11.41:80[8;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42161-192.168.11.41:80[9;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42158-192.168.11.41:80[10;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42156-192.168.11.41:80[11;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42154-192.168.11.41:80[12;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42152-192.168.11.41:80[13;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42148-192.168.11.41:80[14;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42146-192.168.11.41:80[15;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42143-192.168.11.41:80[16;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42138-192.168.11.41:80[17;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42137-192.168.11.41:80[18;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42135-192.168.11.41:80[19;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42131-192.168.11.41:80[20;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42129-192.168.11.41:80[21;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42122-192.168.11.41:80[22;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42117-192.168.11.41:80[23;56H0.000[68G0.000 KB/sec
+(B[0;7m  TOTAL                                               12.130     365.087 (B[mKB/sec[74G[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.298     368.826 KB/sec
+[7G? root     ..:42174-192.168.11.41:80[5;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42172-192.168.11.41:80[6;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42167-192.168.11.41:80[7;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42165-192.168.11.41:80[8;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42161-192.168.11.41:80[9;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42158-192.168.11.41:80[10;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42156-192.168.11.41:80[11;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42154-192.168.11.41:80[12;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42152-192.168.11.41:80[13;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42148-192.168.11.41:80[14;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42146-192.168.11.41:80[15;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42143-192.168.11.41:80[16;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42138-192.168.11.41:80[17;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42137-192.168.11.41:80[18;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42135-192.168.11.41:80[19;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42131-192.168.11.41:80[20;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42129-192.168.11.41:80[21;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42122-192.168.11.41:80[22;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42117-192.168.11.41:80[23;56H0.000[68G0.000 KB/sec
+(B[0;7m  TOTAL                                               12.298     368.826 (B[mKB/sec[74G[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.465     372.631 KB/sec
+[7G? root     ..:42174-192.168.11.41:80[5;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42172-192.168.11.41:80[6;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42167-192.168.11.41:80[7;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42165-192.168.11.41:80[8;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42161-192.168.11.41:80[9;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42158-192.168.11.41:80[10;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42156-192.168.11.41:80[11;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42154-192.168.11.41:80[12;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42152-192.168.11.41:80[13;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42148-192.168.11.41:80[14;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42146-192.168.11.41:80[15;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42143-192.168.11.41:80[16;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42138-192.168.11.41:80[17;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42137-192.168.11.41:80[18;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42135-192.168.11.41:80[19;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42131-192.168.11.41:80[20;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42129-192.168.11.41:80[21;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42122-192.168.11.41:80[22;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42117-192.168.11.41:80[23;56H0.000[68G0.000 KB/sec
+(B[0;7m  TOTAL                                               12.465     372.631 (B[mKB/sec[74G[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.530     372.639 KB/sec
+[7G? root     ..:42174-192.168.11.41:80[5;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42172-192.168.11.41:80[6;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42167-192.168.11.41:80[7;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42165-192.168.11.41:80[8;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42161-192.168.11.41:80[9;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42158-192.168.11.41:80[10;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42156-192.168.11.41:80[11;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42154-192.168.11.41:80[12;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42152-192.168.11.41:80[13;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42148-192.168.11.41:80[14;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42146-192.168.11.41:80[15;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42143-192.168.11.41:80[16;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42138-192.168.11.41:80[17;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42137-192.168.11.41:80[18;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42135-192.168.11.41:80[19;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42131-192.168.11.41:80[20;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42129-192.168.11.41:80[21;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42122-192.168.11.41:80[22;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42117-192.168.11.41:80[23;56H0.000[68G0.000 KB/sec
+(B[0;7m  TOTAL                                               12.530     372.639 (B[mKB/sec[74G[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.336     364.678 KB/sec
+[7G? root     ..:42174-192.168.11.41:80[5;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42172-192.168.11.41:80[6;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42167-192.168.11.41:80[7;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42165-192.168.11.41:80[8;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42161-192.168.11.41:80[9;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42158-192.168.11.41:80[10;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42156-192.168.11.41:80[11;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42154-192.168.11.41:80[12;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42152-192.168.11.41:80[13;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42148-192.168.11.41:80[14;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42146-192.168.11.41:80[15;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42143-192.168.11.41:80[16;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42138-192.168.11.41:80[17;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42137-192.168.11.41:80[18;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42135-192.168.11.41:80[19;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42131-192.168.11.41:80[20;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42129-192.168.11.41:80[21;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42122-192.168.11.41:80[22;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42117-192.168.11.41:80[23;56H0.000[68G0.000 KB/sec
+(B[0;7m  TOTAL                                               12.336     364.678 (B[mKB/sec[74G[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.530     372.203 KB/sec
+[7G? root     ..:42174-192.168.11.41:80[5;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42172-192.168.11.41:80[6;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42167-192.168.11.41:80[7;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42165-192.168.11.41:80[8;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42161-192.168.11.41:80[9;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42158-192.168.11.41:80[10;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42156-192.168.11.41:80[11;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42154-192.168.11.41:80[12;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42152-192.168.11.41:80[13;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42148-192.168.11.41:80[14;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42146-192.168.11.41:80[15;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42143-192.168.11.41:80[16;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42138-192.168.11.41:80[17;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42137-192.168.11.41:80[18;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42135-192.168.11.41:80[19;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42131-192.168.11.41:80[20;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42129-192.168.11.41:80[21;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42122-192.168.11.41:80[22;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42117-192.168.11.41:80[23;56H0.000[68G0.000 KB/sec
+(B[0;7m  TOTAL                                               12.530     372.203 (B[mKB/sec[74G[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.581     373.096 KB/sec
+[7G? root     ..:42174-192.168.11.41:80[5;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42172-192.168.11.41:80[6;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42167-192.168.11.41:80[7;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42165-192.168.11.41:80[8;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42161-192.168.11.41:80[9;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42158-192.168.11.41:80[10;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42156-192.168.11.41:80[11;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42154-192.168.11.41:80[12;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42152-192.168.11.41:80[13;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42148-192.168.11.41:80[14;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42146-192.168.11.41:80[15;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42143-192.168.11.41:80[16;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42138-192.168.11.41:80[17;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42137-192.168.11.41:80[18;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42135-192.168.11.41:80[19;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42131-192.168.11.41:80[20;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42129-192.168.11.41:80[21;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42122-192.168.11.41:80[22;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42117-192.168.11.41:80[23;56H0.000[68G0.000 KB/sec
+(B[0;7m  TOTAL                                               12.581     373.096 (B[mKB/sec[74G[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.414     369.125 KB/sec
+[7G? root     ..:42174-192.168.11.41:80[5;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42172-192.168.11.41:80[6;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42167-192.168.11.41:80[7;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42165-192.168.11.41:80[8;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42161-192.168.11.41:80[9;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42158-192.168.11.41:80[10;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42156-192.168.11.41:80[11;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42154-192.168.11.41:80[12;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42152-192.168.11.41:80[13;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42148-192.168.11.41:80[14;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42146-192.168.11.41:80[15;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42143-192.168.11.41:80[16;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42138-192.168.11.41:80[17;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42137-192.168.11.41:80[18;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42135-192.168.11.41:80[19;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42131-192.168.11.41:80[20;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42129-192.168.11.41:80[21;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42122-192.168.11.41:80[22;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42117-192.168.11.41:80[23;56H0.000[68G0.000 KB/sec
+(B[0;7m  TOTAL                                               12.414     369.125 (B[mKB/sec[74G[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.388     369.325 KB/sec
+[7G? root     ..:42174-192.168.11.41:80[5;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42172-192.168.11.41:80[6;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42167-192.168.11.41:80[7;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42165-192.168.11.41:80[8;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42161-192.168.11.41:80[9;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42158-192.168.11.41:80[10;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42156-192.168.11.41:80[11;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42154-192.168.11.41:80[12;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42152-192.168.11.41:80[13;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42148-192.168.11.41:80[14;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42146-192.168.11.41:80[15;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42143-192.168.11.41:80[16;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42138-192.168.11.41:80[17;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42137-192.168.11.41:80[18;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42135-192.168.11.41:80[19;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42131-192.168.11.41:80[20;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42129-192.168.11.41:80[21;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42122-192.168.11.41:80[22;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42117-192.168.11.41:80[23;56H0.000[68G0.000 KB/sec
+(B[0;7m  TOTAL                                               12.388     369.325 (B[mKB/sec[74G[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.285     369.456 KB/sec
+[7G? root     ..:42174-192.168.11.41:80[5;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42172-192.168.11.41:80[6;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42167-192.168.11.41:80[7;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42165-192.168.11.41:80[8;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42161-192.168.11.41:80[9;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42158-192.168.11.41:80[10;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42156-192.168.11.41:80[11;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42154-192.168.11.41:80[12;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42152-192.168.11.41:80[13;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42148-192.168.11.41:80[14;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42146-192.168.11.41:80[15;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42143-192.168.11.41:80[16;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42138-192.168.11.41:80[17;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42137-192.168.11.41:80[18;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42135-192.168.11.41:80[19;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42131-192.168.11.41:80[20;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42129-192.168.11.41:80[21;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42122-192.168.11.41:80[22;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42117-192.168.11.41:80[23;56H0.000[68G0.000 KB/sec
+(B[0;7m  TOTAL                                               12.285     369.456 (B[mKB/sec[74G[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.414     372.816 KB/sec
+[7G? root     ..:42174-192.168.11.41:80[5;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42172-192.168.11.41:80[6;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42167-192.168.11.41:80[7;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42165-192.168.11.41:80[8;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42161-192.168.11.41:80[9;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42158-192.168.11.41:80[10;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42156-192.168.11.41:80[11;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42154-192.168.11.41:80[12;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42152-192.168.11.41:80[13;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42148-192.168.11.41:80[14;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42146-192.168.11.41:80[15;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42143-192.168.11.41:80[16;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42138-192.168.11.41:80[17;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42137-192.168.11.41:80[18;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42135-192.168.11.41:80[19;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42131-192.168.11.41:80[20;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42129-192.168.11.41:80[21;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42122-192.168.11.41:80[22;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42117-192.168.11.41:80[23;56H0.000[68G0.000 KB/sec
+(B[0;7m  TOTAL                                               12.414     372.816 (B[mKB/sec[74G[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.439     375.934 KB/sec
+[7G? root     ..:42174-192.168.11.41:80[5;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42172-192.168.11.41:80[6;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42167-192.168.11.41:80[7;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42165-192.168.11.41:80[8;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42161-192.168.11.41:80[9;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42158-192.168.11.41:80[10;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42156-192.168.11.41:80[11;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42154-192.168.11.41:80[12;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42152-192.168.11.41:80[13;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42148-192.168.11.41:80[14;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42146-192.168.11.41:80[15;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42143-192.168.11.41:80[16;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42138-192.168.11.41:80[17;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42137-192.168.11.41:80[18;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42135-192.168.11.41:80[19;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42131-192.168.11.41:80[20;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42129-192.168.11.41:80[21;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42122-192.168.11.41:80[22;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42117-192.168.11.41:80[23;56H0.000[68G0.000 KB/sec
+(B[0;7m  TOTAL                                               12.439     375.934 (B[mKB/sec[74G[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.285     372.040 KB/sec
+[7G? root     ..:42174-192.168.11.41:80[5;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42172-192.168.11.41:80[6;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42167-192.168.11.41:80[7;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42165-192.168.11.41:80[8;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42161-192.168.11.41:80[9;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42158-192.168.11.41:80[10;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42156-192.168.11.41:80[11;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42154-192.168.11.41:80[12;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42152-192.168.11.41:80[13;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42148-192.168.11.41:80[14;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42146-192.168.11.41:80[15;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42143-192.168.11.41:80[16;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42138-192.168.11.41:80[17;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42137-192.168.11.41:80[18;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42135-192.168.11.41:80[19;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42131-192.168.11.41:80[20;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42129-192.168.11.41:80[21;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42122-192.168.11.41:80[22;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42117-192.168.11.41:80[23;56H0.000[68G0.000 KB/sec
+(B[0;7m  TOTAL                                               12.285     372.040 (B[mKB/sec[74G[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.066     368.242 KB/sec
+[7G? root     ..:42174-192.168.11.41:80[5;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42172-192.168.11.41:80[6;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42167-192.168.11.41:80[7;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42165-192.168.11.41:80[8;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42161-192.168.11.41:80[9;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42158-192.168.11.41:80[10;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42156-192.168.11.41:80[11;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42154-192.168.11.41:80[12;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42152-192.168.11.41:80[13;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42148-192.168.11.41:80[14;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42146-192.168.11.41:80[15;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42143-192.168.11.41:80[16;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42138-192.168.11.41:80[17;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42137-192.168.11.41:80[18;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42135-192.168.11.41:80[19;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42131-192.168.11.41:80[20;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42129-192.168.11.41:80[21;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42122-192.168.11.41:80[22;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42117-192.168.11.41:80[23;56H0.000[68G0.000 KB/sec
+(B[0;7m  TOTAL                                               12.066     368.242 (B[mKB/sec[74G[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.053     368.174 KB/sec
+[7G? root     ..:42174-192.168.11.41:80[5;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42172-192.168.11.41:80[6;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42167-192.168.11.41:80[7;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42165-192.168.11.41:80[8;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42161-192.168.11.41:80[9;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42158-192.168.11.41:80[10;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42156-192.168.11.41:80[11;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42154-192.168.11.41:80[12;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42152-192.168.11.41:80[13;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42148-192.168.11.41:80[14;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42146-192.168.11.41:80[15;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42143-192.168.11.41:80[16;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42138-192.168.11.41:80[17;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42137-192.168.11.41:80[18;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42135-192.168.11.41:80[19;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42131-192.168.11.41:80[20;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42129-192.168.11.41:80[21;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42122-192.168.11.41:80[22;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42117-192.168.11.41:80[23;56H0.000[68G0.000 KB/sec
+(B[0;7m  TOTAL                                               12.053     368.174 (B[mKB/sec[74G[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.079     368.537 KB/sec
+[7G? root     ..:42174-192.168.11.41:80[5;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42172-192.168.11.41:80[6;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42167-192.168.11.41:80[7;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42165-192.168.11.41:80[8;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42161-192.168.11.41:80[9;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42158-192.168.11.41:80[10;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42156-192.168.11.41:80[11;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42154-192.168.11.41:80[12;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42152-192.168.11.41:80[13;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42148-192.168.11.41:80[14;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42146-192.168.11.41:80[15;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42143-192.168.11.41:80[16;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42138-192.168.11.41:80[17;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42137-192.168.11.41:80[18;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42135-192.168.11.41:80[19;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42131-192.168.11.41:80[20;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42129-192.168.11.41:80[21;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42122-192.168.11.41:80[22;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42117-192.168.11.41:80[23;56H0.000[68G0.000 KB/sec
+(B[0;7m  TOTAL                                               12.079     368.537 (B[mKB/sec[74G[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.001     364.980 KB/sec
+[7G? root     ..:42174-192.168.11.41:80[5;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42172-192.168.11.41:80[6;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42167-192.168.11.41:80[7;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42165-192.168.11.41:80[8;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42161-192.168.11.41:80[9;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42158-192.168.11.41:80[10;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42156-192.168.11.41:80[11;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42154-192.168.11.41:80[12;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42152-192.168.11.41:80[13;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42148-192.168.11.41:80[14;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42146-192.168.11.41:80[15;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42143-192.168.11.41:80[16;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42138-192.168.11.41:80[17;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42137-192.168.11.41:80[18;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42135-192.168.11.41:80[19;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42131-192.168.11.41:80[20;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42129-192.168.11.41:80[21;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42122-192.168.11.41:80[22;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42117-192.168.11.41:80[23;56H0.000[68G0.000 KB/sec
+(B[0;7m  TOTAL                                               12.001     364.980 (B[mKB/sec[74G[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.233     368.907 KB/sec
+[7G? root     ..:42174-192.168.11.41:80[5;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42172-192.168.11.41:80[6;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42167-192.168.11.41:80[7;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42165-192.168.11.41:80[8;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42161-192.168.11.41:80[9;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42158-192.168.11.41:80[10;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42156-192.168.11.41:80[11;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42154-192.168.11.41:80[12;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42152-192.168.11.41:80[13;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42148-192.168.11.41:80[14;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42146-192.168.11.41:80[15;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42143-192.168.11.41:80[16;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42138-192.168.11.41:80[17;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42137-192.168.11.41:80[18;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42135-192.168.11.41:80[19;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42131-192.168.11.41:80[20;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42129-192.168.11.41:80[21;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42122-192.168.11.41:80[22;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42117-192.168.11.41:80[23;56H0.000[68G0.000 KB/sec
+(B[0;7m  TOTAL                                               12.233     368.907 (B[mKB/sec[74G[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.439     372.320 KB/sec
+[7G? root     ..:42174-192.168.11.41:80[5;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42172-192.168.11.41:80[6;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42167-192.168.11.41:80[7;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42165-192.168.11.41:80[8;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42161-192.168.11.41:80[9;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42158-192.168.11.41:80[10;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42156-192.168.11.41:80[11;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42154-192.168.11.41:80[12;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42152-192.168.11.41:80[13;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42148-192.168.11.41:80[14;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42146-192.168.11.41:80[15;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42143-192.168.11.41:80[16;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42138-192.168.11.41:80[17;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42137-192.168.11.41:80[18;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42135-192.168.11.41:80[19;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42131-192.168.11.41:80[20;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42129-192.168.11.41:80[21;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42122-192.168.11.41:80[22;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42117-192.168.11.41:80[23;56H0.000[68G0.000 KB/sec
+(B[0;7m  TOTAL                                               12.439     372.320 (B[mKB/sec[74G[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.401     368.165 KB/sec
+[7G? root     ..:42174-192.168.11.41:80[5;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42172-192.168.11.41:80[6;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42167-192.168.11.41:80[7;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42165-192.168.11.41:80[8;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42161-192.168.11.41:80[9;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42158-192.168.11.41:80[10;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42156-192.168.11.41:80[11;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42154-192.168.11.41:80[12;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42152-192.168.11.41:80[13;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42148-192.168.11.41:80[14;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42146-192.168.11.41:80[15;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42143-192.168.11.41:80[16;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42138-192.168.11.41:80[17;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42137-192.168.11.41:80[18;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42135-192.168.11.41:80[19;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42131-192.168.11.41:80[20;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42129-192.168.11.41:80[21;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42122-192.168.11.41:80[22;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42117-192.168.11.41:80[23;56H0.000[68G0.000 KB/sec
+(B[0;7m  TOTAL                                               12.401     368.165 (B[mKB/sec[74G[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.311     367.961 KB/sec
+[7G? root     ..:42174-192.168.11.41:80[5;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42172-192.168.11.41:80[6;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42167-192.168.11.41:80[7;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42165-192.168.11.41:80[8;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42161-192.168.11.41:80[9;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42158-192.168.11.41:80[10;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42156-192.168.11.41:80[11;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42154-192.168.11.41:80[12;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42152-192.168.11.41:80[13;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42148-192.168.11.41:80[14;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42146-192.168.11.41:80[15;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42143-192.168.11.41:80[16;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42138-192.168.11.41:80[17;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42137-192.168.11.41:80[18;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42135-192.168.11.41:80[19;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42131-192.168.11.41:80[20;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42129-192.168.11.41:80[21;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42122-192.168.11.41:80[22;56H0.000[68G0.000 KB/sec
+[7G? root     unknown TCP[23;56H0.000[68G0.000 KB/sec
+(B[0;7m  TOTAL                                               12.311     367.961 (B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.195     367.949 KB/sec
+[7G? root     ..:42174-192.168.11.41:80[5;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42172-192.168.11.41:80[6;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42167-192.168.11.41:80[7;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42165-192.168.11.41:80[8;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42161-192.168.11.41:80[9;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42158-192.168.11.41:80[10;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42156-192.168.11.41:80[11;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42154-192.168.11.41:80[12;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42152-192.168.11.41:80[13;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42148-192.168.11.41:80[14;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42146-192.168.11.41:80[15;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42143-192.168.11.41:80[16;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42138-192.168.11.41:80[17;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42137-192.168.11.41:80[18;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42135-192.168.11.41:80[19;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42131-192.168.11.41:80[20;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42129-192.168.11.41:80[21;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42122-192.168.11.41:80[22;56H0.000[68G0.000 KB/sec
+[7G? root     unknown TCP[23;56H0.000[68G0.000 KB/sec
+(B[0;7m  TOTAL                                               12.195     367.949 (B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.091     367.705 KB/sec
+[7G? root     ..:42174-192.168.11.41:80[5;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42172-192.168.11.41:80[6;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42167-192.168.11.41:80[7;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42165-192.168.11.41:80[8;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42161-192.168.11.41:80[9;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42158-192.168.11.41:80[10;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42156-192.168.11.41:80[11;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42154-192.168.11.41:80[12;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42152-192.168.11.41:80[13;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42148-192.168.11.41:80[14;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42146-192.168.11.41:80[15;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42143-192.168.11.41:80[16;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42138-192.168.11.41:80[17;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42137-192.168.11.41:80[18;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42135-192.168.11.41:80[19;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42131-192.168.11.41:80[20;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42129-192.168.11.41:80[21;56H0.000[68G0.000 KB/sec
+[7G? root     unknown TCP[22;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.091     367.705 KB/sec[?7l [?7h(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.246     375.631 KB/sec
+[7G? root     ..:42174-192.168.11.41:80[5;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42172-192.168.11.41:80[6;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42167-192.168.11.41:80[7;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42165-192.168.11.41:80[8;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42161-192.168.11.41:80[9;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42158-192.168.11.41:80[10;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42156-192.168.11.41:80[11;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42154-192.168.11.41:80[12;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42152-192.168.11.41:80[13;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42148-192.168.11.41:80[14;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42146-192.168.11.41:80[15;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42143-192.168.11.41:80[16;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42138-192.168.11.41:80[17;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42137-192.168.11.41:80[18;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42135-192.168.11.41:80[19;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42131-192.168.11.41:80[20;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42129-192.168.11.41:80[21;56H0.000[68G0.000 KB/sec
+[7G? root     unknown TCP[22;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.246     375.631 KB/sec[?7l [?7h(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.885     365.691 KB/sec
+[7G? root     ..:42174-192.168.11.41:80[5;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42172-192.168.11.41:80[6;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42167-192.168.11.41:80[7;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42165-192.168.11.41:80[8;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42161-192.168.11.41:80[9;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42158-192.168.11.41:80[10;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42156-192.168.11.41:80[11;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42154-192.168.11.41:80[12;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42152-192.168.11.41:80[13;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42148-192.168.11.41:80[14;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42146-192.168.11.41:80[15;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42143-192.168.11.41:80[16;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42138-192.168.11.41:80[17;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42137-192.168.11.41:80[18;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42135-192.168.11.41:80[19;56H0.000[68G0.000 KB/sec
+[7G? root     unknown TCP[20;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.885     365.691 KB/sec [23;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.898     367.734 KB/sec
+[7G? root     ..:42174-192.168.11.41:80[5;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42172-192.168.11.41:80[6;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42167-192.168.11.41:80[7;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42165-192.168.11.41:80[8;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42161-192.168.11.41:80[9;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42158-192.168.11.41:80[10;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42156-192.168.11.41:80[11;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42154-192.168.11.41:80[12;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42152-192.168.11.41:80[13;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42148-192.168.11.41:80[14;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42146-192.168.11.41:80[15;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42143-192.168.11.41:80[16;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42138-192.168.11.41:80[17;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42137-192.168.11.41:80[18;56H0.000[68G0.000 KB/sec
+[7G? root     unknown TCP[19;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.898     367.734 KB/sec [22;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.885     371.396 KB/sec
+[7G? root     ..:42174-192.168.11.41:80[5;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42172-192.168.11.41:80[6;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42167-192.168.11.41:80[7;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42165-192.168.11.41:80[8;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42161-192.168.11.41:80[9;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42158-192.168.11.41:80[10;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42156-192.168.11.41:80[11;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42154-192.168.11.41:80[12;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42152-192.168.11.41:80[13;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42148-192.168.11.41:80[14;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42146-192.168.11.41:80[15;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42143-192.168.11.41:80[16;56H0.000[68G0.000 KB/sec
+[7G? root     unknown TCP[17;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.885     371.396 KB/sec [20;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.808     367.379 KB/sec
+[7G? root     ..:42174-192.168.11.41:80[5;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42172-192.168.11.41:80[6;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42167-192.168.11.41:80[7;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42165-192.168.11.41:80[8;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42161-192.168.11.41:80[9;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42158-192.168.11.41:80[10;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42156-192.168.11.41:80[11;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42154-192.168.11.41:80[12;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42152-192.168.11.41:80[13;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42148-192.168.11.41:80[14;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42146-192.168.11.41:80[15;56H0.000[68G0.000 KB/sec
+[7G? root     unknown TCP[16;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.808     367.379 KB/sec [19;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.872     366.981 KB/sec
+[7G? root     ..:42174-192.168.11.41:80[5;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42172-192.168.11.41:80[6;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42167-192.168.11.41:80[7;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42165-192.168.11.41:80[8;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42161-192.168.11.41:80[9;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42158-192.168.11.41:80[10;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42156-192.168.11.41:80[11;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42154-192.168.11.41:80[12;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42152-192.168.11.41:80[13;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42148-192.168.11.41:80[14;56H0.000[68G0.000 KB/sec
+[7G? root     unknown TCP[15;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.872     366.981 KB/sec [18;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.937     366.947 KB/sec
+[7G? root     ..:42174-192.168.11.41:80[5;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42172-192.168.11.41:80[6;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42167-192.168.11.41:80[7;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42165-192.168.11.41:80[8;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42161-192.168.11.41:80[9;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42158-192.168.11.41:80[10;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42156-192.168.11.41:80[11;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42154-192.168.11.41:80[12;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42152-192.168.11.41:80[13;56H0.000[68G0.000 KB/sec
+[7G? root     unknown TCP[14;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.937     366.947 KB/sec [17;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.001     367.328 KB/sec
+[7G? root     ..:42174-192.168.11.41:80[5;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42172-192.168.11.41:80[6;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42167-192.168.11.41:80[7;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42165-192.168.11.41:80[8;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42161-192.168.11.41:80[9;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42158-192.168.11.41:80[10;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42156-192.168.11.41:80[11;56H0.000[68G0.000 KB/sec
+[7G? root     unknown TCP[12;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.001     367.328 KB/sec [15;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.001     371.319 KB/sec
+[7G? root     ..:42174-192.168.11.41:80[5;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42172-192.168.11.41:80[6;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42167-192.168.11.41:80[7;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42165-192.168.11.41:80[8;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42161-192.168.11.41:80[9;56H0.000[68G0.000 KB/sec
+[7G? root     unknown TCP[10;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.001     371.319 KB/sec [13;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.679     363.865 KB/sec
+[7G? root     ..:42174-192.168.11.41:80[5;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42172-192.168.11.41:80[6;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42167-192.168.11.41:80[7;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42165-192.168.11.41:80[8;56H0.000[68G0.000 KB/sec
+[7G? root     unknown TCP[9;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.679     363.865 KB/sec [12;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.821     371.783 KB/sec
+[7G? root     ..:42174-192.168.11.41:80[5;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42172-192.168.11.41:80[6;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42167-192.168.11.41:80[7;56H0.000[68G0.000 KB/sec
+[7G? root     unknown TCP[8;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.821     371.783 KB/sec [11;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.679     368.224 KB/sec
+[7G? root     ..:42174-192.168.11.41:80[5;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42172-192.168.11.41:80[6;56H0.000[68G0.000 KB/sec
+[7G? root     unknown TCP[7;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.679     368.224 KB/sec [10;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.821     375.765 KB/sec
+[7G? root     ..:42174-192.168.11.41:80[5;56H0.000[68G0.000 KB/sec
+[7G? root     unknown TCP[6;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.821     375.765 KB/sec [9;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.718     371.837 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.718     371.837 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.846     371.646 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.846     371.646 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G11.821     368.155 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               11.821     368.155 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.009     368.544 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.009     368.544 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.113     368.571 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.113     368.571 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.267     368.249 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.267     368.249 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.435     372.218 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.435     372.218 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.602     373.005 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.602     373.005 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.427     368.250 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.427     368.250 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.427     364.575 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.427     364.575 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.465     363.304 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.465     363.304 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.736     373.371 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.736     373.371 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.568     367.809 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.568     367.809 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.710     370.406 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.710     370.406 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.659     366.361 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.659     366.361 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.607     366.312 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.607     366.312 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.620     370.320 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.620     370.320 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.427     368.936 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.427     368.936 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.349     366.764 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.349     366.764 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.349     366.958 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.349     366.958 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.336     370.333 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.336     370.333 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.336     370.172 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.336     370.172 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.323     369.946 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.323     369.946 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.465     377.376 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.465     377.376 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.401     373.850 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.401     373.850 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.169     366.182 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.169     366.182 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.323     370.258 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.323     370.258 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.711     374.412 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.711     374.412 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.660     370.432 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.660     370.432 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.750     375.996 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.750     375.996 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.286     362.020 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.286     362.020 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.466     369.724 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.466     369.724 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.079     365.898 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.079     365.898 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.311     369.533 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.311     369.533 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.336     369.361 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.336     369.361 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.594     372.946 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.594     372.946 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.362     366.304 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.362     366.304 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.375     368.940 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.375     368.940 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.401     369.539 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.401     369.539 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.940     373.951 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.940     373.951 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.695     367.285 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.695     367.285 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.708     368.717 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.708     368.717 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.811     373.837 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.811     373.837 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.463     365.518 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.463     365.518 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.156     368.739 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.156     368.739 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.156     368.553 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.156     368.553 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.336     372.633 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.336     372.633 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.414     369.969 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.414     369.969 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.594     373.016 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.594     373.016 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.543     369.227 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.543     369.227 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.568     368.996 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.568     368.996 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.362     364.667 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.362     364.667 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.298     369.459 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.298     369.459 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.169     363.862 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.169     363.862 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G14.158     367.530 KB/sec
+[7G? root     unknown TCP[5;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               14.158     367.530 KB/sec [8;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G15.157     364.602 KB/sec
+[7G? root     ..:42189-192.168.11.41:80[5;56H0.680[68G0.530 KB/sec
+[7G? root     unknown TCP[6;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               15.837     365.132 KB/sec [9;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G16.757     360.579 KB/sec
+[7G? root     ..:42191-192.168.11.41:80[5;56H0.720[68G0.545 KB/sec
+[7G? root     ..:42189-192.168.11.41:80[6;56H0.680[68G0.530 KB/sec
+[7G? root     unknown TCP[7;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               18.158     361.654 KB/sec [10;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G17.564     350.479 KB/sec
+[7G? root     ..:42191-192.168.11.41:80[5;56H0.720[68G0.545 KB/sec
+[7G? root     ..:42195-192.168.11.41:80[6;56H0.668[68G0.530 KB/sec
+[7G? root     ..:42189-192.168.11.41:80[7;56H0.680[68G0.530 KB/sec
+[7G? root     unknown TCP[8;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               19.632     352.083 KB/sec [11;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G18.550     344.149 KB/sec
+[7G? root     ..:42191-192.168.11.41:80[5;56H0.720[68G0.545 KB/sec
+[7G? root     ..:42198-192.168.11.41:80[6;56H0.680[68G0.530 KB/sec
+[7G? root     ..:42195-192.168.11.41:80[7;56H0.668[68G0.530 KB/sec
+[7G? root     ..:42189-192.168.11.41:80[8;56H0.680[68G0.530 KB/sec
+[7G? root     unknown TCP[9;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               21.298     346.284 KB/sec [12;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G16.495     345.491 KB/sec
+[7G? root     ..:42191-192.168.11.41:80[5;56H0.720[68G0.545 KB/sec
+[7G? root     ..:42198-192.168.11.41:80[6;56H0.680[68G0.530 KB/sec
+[7G? root     ..:42195-192.168.11.41:80[7;56H0.668[68G0.530 KB/sec
+[7G? root     ..:42189-192.168.11.41:80[8;56H0.680[68G0.530 KB/sec
+[7G? root     unknown TCP[9;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               19.244     347.626 KB/sec [12;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G14.908     350.616 KB/sec
+[7G? root     ..:42191-192.168.11.41:80[5;56H0.720[68G0.545 KB/sec
+[7G? root     ..:42198-192.168.11.41:80[6;56H0.680[68G0.530 KB/sec
+[7G? root     ..:42195-192.168.11.41:80[7;56H0.668[68G0.530 KB/sec
+[7G? root     ..:42189-192.168.11.41:80[8;56H0.000[68G0.000 KB/sec
+[7G? root     unknown TCP[9;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               16.976     352.221 KB/sec [12;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G13.842     346.343 KB/sec
+[7G? root     ..:42198-192.168.11.41:80[5;56H0.680[68G0.530 KB/sec
+[7G? root     ..:42195-192.168.11.41:80[6;56H0.668[68G0.530 KB/sec
+[7G? root     ..:42191-192.168.11.41:80[7;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42189-192.168.11.41:80[8;56H0.000[68G0.000 KB/sec
+[7G? root     unknown TCP[9;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               15.190     347.403 KB/sec [12;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.956     352.211 KB/sec
+[7G? root     ..:42198-192.168.11.41:80[5;56H0.680[68G0.530 KB/sec
+[7G? root     ..:42195-192.168.11.41:80[6;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42191-192.168.11.41:80[7;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42189-192.168.11.41:80[8;56H0.000[68G0.000 KB/sec
+[7G? root     unknown TCP[9;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               13.636     352.741 KB/sec [12;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.011     353.369 KB/sec
+[7G? root     ..:42198-192.168.11.41:80[5;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42195-192.168.11.41:80[6;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42191-192.168.11.41:80[7;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42189-192.168.11.41:80[8;56H0.000[68G0.000 KB/sec
+[7G? root     unknown TCP[9;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.011     353.369 KB/sec [12;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.114     351.073 KB/sec
+[7G? root     ..:42198-192.168.11.41:80[5;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42195-192.168.11.41:80[6;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42191-192.168.11.41:80[7;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42189-192.168.11.41:80[8;56H0.000[68G0.000 KB/sec
+[7G? root     unknown TCP[9;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.114     351.073 KB/sec [12;1H(B[m[H[2JNetHogs version 0.8.1
+
+(B[0;7m    PID USER     PROGRAM                    DEV        SENT      RECEIVED       [4;4H(B[m5086 root     ./ipconvif[4;45Htap0[55G12.207     356.145 KB/sec
+[7G? root     ..:42198-192.168.11.41:80[5;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42195-192.168.11.41:80[6;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42191-192.168.11.41:80[7;56H0.000[68G0.000 KB/sec
+[7G? root     ..:42189-192.168.11.41:80[8;56H0.000[68G0.000 KB/sec
+[7G? root     unknown TCP[9;56H0.000[68G0.000 KB/sec
+
+(B[0;7m  TOTAL                                               12.207     356.145 KB/sec [12;1H(B[m[24;1H[?1049l[?1l>Ethernet link detected
+Couldn't open dir /proc/8347/fd: No such file or directory
