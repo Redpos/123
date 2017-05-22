@@ -121,8 +121,8 @@ void *CaptureImages(void *threadid)
 			sleep(3);
 			capture.open(szStreamName);
 		}
-		width = capture.get(CAP_PROP_FRAME_WIDTH);
-		height = capture.get(CAP_PROP_FRAME_HEIGHT);
+		width = capture.get(cv::CAP_PROP_FRAME_WIDTH);
+		height = capture.get(cv::CAP_PROP_FRAME_HEIGHT);
 		while (capture.isOpened())
 		{
 			capture >> im;
