@@ -206,6 +206,7 @@ void *ContMove(void *threadid)
 				printw("ERROR\n");
 				x = 0.0;
 				y = 0.0;
+				z = 0.0;
 				moving = false;
 				StopMove();
 				/*_tptz__Stop *tptz__Stop = soap_new__tptz__Stop(soap, -1);
@@ -961,12 +962,12 @@ void track(cv::Mat frame0)
 				
 				if((width*zoom_factor) - cmt.bb_rot.size.height > 10)
 				{
-					z = 0.1;
+					z = 0.01;
 					rect.height = rect.height + 10;
 				}
 				else if ((width*zoom_factor) - cmt.bb_rot.size.height < 10)
 				{
-					z = -0.1;
+					z = -0.01;
 					rect.height = rect.height - 10;
 				}
 				else
