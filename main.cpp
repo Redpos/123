@@ -252,7 +252,7 @@ void WriteToStat ()
 	}
 	else if (border_x == (width*2)/3)
 	{
-		myfile << "0" << std::endl;
+		myfile << "2" << std::endl;
 	}
 	myfile.close();	
 }
