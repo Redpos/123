@@ -85,8 +85,8 @@ float width, height;
 
 float zoom_factor = 0.1;
 
-float speed_x = 0.1;
-float speed_y = 0.2;
+float speed_x = 0.2;
+float speed_y = 0.3;
 
 char szHostName[MAX_HOSTNAME_LEN] = {0};
 char szPTZName[MAX_HOSTNAME_LEN] = {0};
