@@ -813,6 +813,10 @@ void track(cv::Mat frame0)
 				border_x = width/2;
 				border_y = height/2;
 				WriteToStat();
+				printw("border X: %f\n", border_x);
+            			refresh();
+				printw("border Y: %f\n", border_y);
+				refresh();
 			}
 			else if(ch == 108)
 			{
@@ -821,6 +825,10 @@ void track(cv::Mat frame0)
 				border_x = width/3;
 				border_y = height/3;
 				WriteToStat();
+				printw("border X: %f\n", border_x);
+            			refresh();
+				printw("border Y: %f\n", border_y);
+				refresh();
 				//detected_face.x == 0;
 			}
 			else if(ch == 114)
@@ -830,6 +838,10 @@ void track(cv::Mat frame0)
 				border_x = (width*2)/3;
 				border_y = height/3;
 				WriteToStat();
+				printw("border X: %f\n", border_x);
+            			refresh();
+				printw("border Y: %f\n", border_y);
+				refresh();
 				//detected_face.x == 0;
 			}
 		}
