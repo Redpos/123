@@ -242,14 +242,17 @@ void WriteToStat ()
 	myfile.open("stat", std::ios::out);
 	myfile << camera_control << std::endl;
 	myfile << tracking << std::endl;
-	switch (border_x)
+	if (border_x == width/2)
 	{
-		case width/2:
-			myfile << "1" << std::endl;
-		case width/3:	
-			myfile << "0" << std::endl;
-		case (width*2)/3:
-			myfile << "2" << std::endl;
+		myfile << "1" << std::endl;
+	}
+	else if (border_x == width/3)
+	{
+		myfile << "0" << std::endl;
+	}
+	else if (border_x == (width*2)/3)
+	{
+		myfile << "0" << std::endl;
 	}
 	myfile.close();	
 }
