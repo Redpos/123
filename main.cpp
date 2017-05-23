@@ -950,17 +950,25 @@ void track(cv::Mat frame0)
 				if((cmt.bb_rot.center.y - border_y)/1000 > 0.03)
 				{
 					y = -((cmt.bb_rot.center.y - border_y)/1000 + speed_y);
+					if(abs(cmt.bb_rot.center.y - height) < 40))
+					{	
+						y = y - 0.3; 	
+					}
 				}
 				else if ((cmt.bb_rot.center.y - border_y)/1000 < -0.03)
 				{
 					y = -((cmt.bb_rot.center.y - border_y)/1000 - speed_y);
+					if(abs(cmt.bb_rot.center.y - height) > 440))
+					{	
+						y = y + 0.3; 	
+					}
 				}
 				else
 				{
 					y = 0;
 				}
 				
-				if((width*zoom_factor) - cmt.bb_rot.size.height > 10)
+				/*/if((width*zoom_factor) - cmt.bb_rot.size.height > 10)
 				{
 					z = 0.01;
 					rect.height = rect.height + 10;
@@ -973,7 +981,7 @@ void track(cv::Mat frame0)
 				else
 				{
 					z = 0.0;	
-				}
+				}*/
 				moving = true;
 			}
 			else if (moving)
