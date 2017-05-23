@@ -642,7 +642,7 @@ void detect(cv::Mat frame)
 	cv::equalizeHist(frame_gray,frame_gray);
 	int i, dif;
 	
-	face_cascade.detectMultiScale(frame_gray, faces, 1.2, 4, 0 | cv::CASCADE_SCALE_IMAGE, cv::Size(30,30));
+	face_cascade.detectMultiScale(frame_gray, faces, 1.2, 5, 0 | cv::CASCADE_SCALE_IMAGE, cv::Size(30,30));
 	if(faces.size()!= 0)
 	{
 		/*profile_cascade.detectMultiScale(frame_gray, faces, 1.1, 2, 0 | cv::CASCADE_SCALE_IMAGE, cv::Size(30,30));
