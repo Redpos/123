@@ -962,7 +962,7 @@ void track(cv::Mat frame0)
 				if((cmt.bb_rot.center.y - border_y)/1000 > 0.03)
 				{
 					y = -((cmt.bb_rot.center.y - border_y)/1000 + speed_y);
-					if(height - cmt.bb_rot.center.y > 90)
+					if(height - cmt.bb_rot.center.y < 90)
 					{	
 						y = y - 0.4; 	
 					}
